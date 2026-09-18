@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import { sheets, groupByMonth, buildMix } from "./data";
+import { sheets, groupByMonth, buildMix, buildStarredMix } from "./data";
 
 const LETTERS = ["A", "B", "C", "D"];
 const STORE_KEY = "ca-drill-results";
@@ -28,6 +28,27 @@ function daysLeft() {
   return Math.max(0, Math.ceil((EXAM - new Date()) / 86400000));
 }
 
+function sheetEyebrow(sheet) {
+  if (sheet.isMonthlyStatic) return `Monthly static · ${sheet.month}`;
+  if (sheet.id === "mix") return "Cross-month";
+  if (sheet.id === "starred") return "Every month";
+  const id = sheet.baseId ?? sheet.id;
+  return `Sheet ${String(id).padStart(2, "0")} · ${sheet.month}`;
+}
+
+function onlyStarred(sheet) {
+  if (sheet.starredOnly) return sheet;
+  const questions = sheet.questions.filter((q) => q.mustKnow);
+  return {
+    ...sheet,
+    id: `starred-${sheet.id}`,
+    baseId: sheet.baseId ?? sheet.id,
+    subtitle: `${sheet.subtitle} · ★ only`,
+    starredOnly: true,
+    questions,
+  };
+}
+
 export default function App() {
   const [view, setView] = useState({ name: "home" });
   const [results, setResults] = useState(loadResults);
@@ -52,9 +73,17 @@ export default function App() {
       {view.name === "mode" && (
         <ModePicker
           sheet={view.sheet}
-          onStart={(mode) =>
-            setView({ name: "drill", sheet: view.sheet, mode })
-          }
+          onStart={(mode, starredOnly) => {
+            const activeSheet = starredOnly
+              ? onlyStarred(view.sheet)
+              : view.sheet;
+            setView({
+              name: "drill",
+              sheet: activeSheet,
+              sourceSheet: view.sheet,
+              mode,
+            });
+          }}
           onBack={() => setView({ name: "home" })}
         />
       )}
@@ -66,7 +95,11 @@ export default function App() {
           onFinish={(payload) => {
             saveResult(view.sheet.id, payload);
             setResults(loadResults());
-            setView({ name: "review", sheet: view.sheet });
+            setView({
+              name: "review",
+              sheet: view.sheet,
+              sourceSheet: view.sourceSheet,
+            });
           }}
           onQuit={() => setView({ name: "home" })}
         />
@@ -77,7 +110,12 @@ export default function App() {
           sheet={view.sheet}
           result={results[view.sheet.id]}
           onBack={() => setView({ name: "home" })}
-          onRetake={() => setView({ name: "mode", sheet: view.sheet })}
+          onRetake={() =>
+            setView({
+              name: "mode",
+              sheet: view.sourceSheet ?? view.sheet,
+            })
+          }
         />
       )}
     </div>
@@ -89,6 +127,10 @@ export default function App() {
 function Home({ results, onPick, onReview }) {
   const months = groupByMonth(sheets);
   const totalQ = sheets.reduce((n, s) => n + s.questions.length, 0);
+  const starredQ = sheets.reduce(
+    (n, s) => n + s.questions.filter((q) => q.mustKnow).length,
+    0
+  );
   const mixResult = results["mix"];
 
   return (
@@ -114,9 +156,20 @@ function Home({ results, onPick, onReview }) {
             )}
           </p>
         </div>
-        <button className="btn" onClick={() => onPick(buildMix(sheets, 50))}>
-          Start mixed drill
-        </button>
+        <div className="mix-card__actions">
+          <button
+            className="btn"
+            onClick={() => onPick(buildMix(sheets, 50))}
+          >
+            Start mixed drill
+          </button>
+          <button
+            className="btn btn--star"
+            onClick={() => onPick(buildStarredMix(sheets))}
+          >
+            ★ Must-know drill ({starredQ})
+          </button>
+        </div>
       </div>
 
       {months.map(([month, list]) => {
@@ -146,10 +199,15 @@ function Home({ results, onPick, onReview }) {
             <div className="sheet-grid">
               {list.map((s) => {
                 const r = results[s.id];
+                const starCount = s.questions.filter(
+                  (q) => q.mustKnow
+                ).length;
                 return (
                   <div className="sheet-card" key={s.id}>
                     <div className="sheet-card__no">
-                      Sheet {String(s.id).padStart(2, "0")}
+                      {s.isMonthlyStatic
+                        ? "Monthly static"
+                        : `Sheet ${String(s.id).padStart(2, "0")}`}
                     </div>
                     <h3 className="sheet-card__name">{s.subtitle}</h3>
                     <p className="sheet-card__desc">
@@ -158,8 +216,13 @@ function Home({ results, onPick, onReview }) {
                         s.questions.filter((q) => q.type === "statements")
                           .length
                       }{" "}
-                      two-statement
+                      two-statement · <span className="star-count">★ {starCount} must-know</span>
                     </p>
+                    {s.isMonthlyStatic && (
+                      <p className="sheet-card__desc">
+                        Each question links to this month's news. See the connection after answering.
+                      </p>
+                    )}
                     <div className="btn-row">
                       <button className="btn" onClick={() => onPick(s)}>
                         {r ? "Take again" : "Start"}
@@ -197,18 +260,41 @@ function Home({ results, onPick, onReview }) {
 /* ---------------- mode picker ---------------- */
 
 function ModePicker({ sheet, onStart, onBack }) {
+  const starCount = sheet.questions.filter((q) => q.mustKnow).length;
+  const [starredOnly, setStarredOnly] = useState(Boolean(sheet.starredOnly));
+  const runCount = starredOnly ? starCount : sheet.questions.length;
+
   return (
     <div className="modal">
-      <div className="sheet-card__no">
-        {sheet.id === "mix"
-          ? "Cross-month"
-          : `Sheet ${String(sheet.id).padStart(2, "0")} · ${sheet.month}`}
-      </div>
+      <div className="sheet-card__no">{sheetEyebrow(sheet)}</div>
       <h2 className="sheet-card__name" style={{ marginBottom: 18 }}>
         {sheet.subtitle}
       </h2>
 
-      <button className="mode-opt" onClick={() => onStart("practice")}>
+      <label
+        className={`star-filter${starredOnly ? " star-filter--on" : ""}`}
+      >
+        <input
+          type="checkbox"
+          checked={starredOnly}
+          disabled={sheet.starredOnly || starCount === 0}
+          onChange={(e) => setStarredOnly(e.target.checked)}
+        />
+        <span>
+          <b>Only ★ must-know questions</b>
+          <small>
+            {starCount
+              ? `${runCount} questions in this run`
+              : "No starred questions in this set"}
+          </small>
+        </span>
+        <strong>{starCount}</strong>
+      </label>
+
+      <button
+        className="mode-opt"
+        onClick={() => onStart("practice", starredOnly)}
+      >
         <b>Practice</b>
         <span>
           Answer is revealed immediately with the linked facts. Use this on a
@@ -216,7 +302,10 @@ function ModePicker({ sheet, onStart, onBack }) {
         </span>
       </button>
 
-      <button className="mode-opt" onClick={() => onStart("test")}>
+      <button
+        className="mode-opt"
+        onClick={() => onStart("test", starredOnly)}
+      >
         <b>Test</b>
         <span>
           No feedback until you submit. Closer to the real thing — time
@@ -292,9 +381,12 @@ function Drill({ sheet, mode, onFinish, onQuit }) {
           <span>
             Q{String(i + 1).padStart(2, "0")} / {sheet.questions.length}
           </span>
-          <span className="tag">
-            {q.type === "statements" ? "Two statements" : "Single correct"}
-          </span>
+          <div className="qcard__tags">
+            {q.mustKnow && <span className="must-know">★ Must know</span>}
+            <span className="tag">
+              {q.type === "statements" ? "Two statements" : "Single correct"}
+            </span>
+          </div>
         </div>
 
         <div className="qcard__body">
@@ -329,6 +421,7 @@ function Drill({ sheet, mode, onFinish, onQuit }) {
                 Remember with it{q.from ? ` · ${q.from}` : ""}
               </span>
               {q.note}
+              <NewsContext question={q} />
             </div>
           )}
         </div>
@@ -388,6 +481,7 @@ function Drill({ sheet, mode, onFinish, onQuit }) {
               }
             }
             if (idx === i) cls += " pip--here";
+            if (qq.mustKnow) cls += " pip--star";
             return (
               <button
                 key={idx}
@@ -427,6 +521,32 @@ function Drill({ sheet, mode, onFinish, onQuit }) {
 
 /* ---------------- review ---------------- */
 
+function NewsContext({ question }) {
+  const news = question.news;
+  if (!news) return null;
+  return (
+    <div className="news-context">
+      <span className="note__label">Why this question · {news.month}</span>
+      <p>{news.headline}</p>
+      <p>{news.reason}</p>
+      {news.sheetId && (
+        <small>
+          Linked question: Sheet {String(news.sheetId).padStart(2, "0")},
+          Q{String(news.questionNumber).padStart(2, "0")}
+        </small>
+      )}
+      {(news.url || question.sources?.length > 0) && (
+        <div className="news-context__sources">
+          {news.url && <a href={news.url} target="_blank" rel="noreferrer">News source</a>}
+          {question.sources?.map((source) => (
+            <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label}</a>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Review({ sheet, result, onBack, onRetake }) {
   const [filter, setFilter] = useState("wrong");
 
@@ -458,10 +578,7 @@ function Review({ sheet, result, onBack, onRetake }) {
     <>
       <div className="score">
         <div className="sheet-card__no">
-          {sheet.id === "mix"
-            ? "Cross-month"
-            : `Sheet ${String(sheet.id).padStart(2, "0")} · ${sheet.month}`}{" "}
-          · {sheet.subtitle}
+          {sheetEyebrow(sheet)} · {sheet.subtitle}
         </div>
         <div className="score__figure">
           {result.score}
@@ -512,6 +629,7 @@ function Review({ sheet, result, onBack, onRetake }) {
             <div className="sheet-card__no">
               Q{String(idx + 1).padStart(2, "0")}
               {q.from ? ` · ${q.from}` : ""}
+              {q.mustKnow ? " · ★ Must know" : ""}
             </div>
             <p className="review-item__q">{q.q}</p>
             <p className="review-item__ans">
@@ -530,6 +648,7 @@ function Review({ sheet, result, onBack, onRetake }) {
             <div className="note">
               <span className="note__label">Remember with it</span>
               {q.note}
+              <NewsContext question={q} />
             </div>
           </div>
         );

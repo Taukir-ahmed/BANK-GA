@@ -30,6 +30,7 @@ export default {
       options: ["A", "B", "C", "D"],
       answer: 2,            // zero-indexed
       note: "Linked facts to fix in memory.",
+      mustKnow: true,       // optional: shows ★ and enters starred-only drills
     },
   ],
 };
@@ -69,11 +70,32 @@ fact worth knowing.
   carrying the surrounding facts: HQs, heads, full forms, related schemes.
 - **Test** — no feedback until submit.
 
+Before either mode, switch on **Only ★ must-know questions** to run just the
+curated high-priority subset. Stars are shown in the question header, answer
+sheet and review screen. The home page also has a cross-month must-know drill.
+
 ### Mixed drill
 
 Pulls 50 questions at random across every month loaded, reshuffled each run,
 with no month labels. Take this once several months are in — the exam doesn't
 tell you which month a fact came from either.
+
+The starred mixed drill includes every starred question, without the normal
+mixed drill's 50-question limit.
+
+### Monthly static
+
+Each May–August section contains a Monthly static sheet. Every item must have
+a `news` object with a month, concrete headline, relevance explanation, and
+either an exact source-sheet/question reference or a dated official news URL.
+Relevant heads, capitals, full forms, organisational facts and related systems
+can produce several questions from one story. A broad topic match alone is
+insufficient. No invented acronym expansions or money/percentage recall.
+
+News links and context appear after an answer in Practice and after submission
+in Test. Monthly static sets use versioned IDs so attempts on the previous
+question lists are not displayed as scores on the replacements. Old static
+sets are recoverable under `docs/static-archive/` and are not loaded by the app.
 
 Scores save to localStorage. The review screen defaults to **Got wrong**.
 
