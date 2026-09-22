@@ -15,6 +15,13 @@ npm run dev
 grouped by their `month` field — no index file to edit, no imports to add. If
 the dev server is running it hot-reloads; your saved scores are untouched.
 
+**Building a month from weekly PDFs** (September onwards): create the four
+sheets once, then append each new week's questions at the *end* of every
+sheet's `questions` array under a `// ── Week N ──` marker. Never insert in the
+middle — question numbers drive `mustKnow.js` and the static sheets' news
+references. When the monthly Smart Points PDF arrives, add whatever the weeklies
+missed the same way.
+
 Sheet file shape:
 
 ```js
