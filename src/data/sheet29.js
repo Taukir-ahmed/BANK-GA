@@ -1,411 +1,1762 @@
-// September 2026 is built week by week from the CA Weekly PDFs. Each week's
-// questions sit under a marker below — append the next week at the end of the
-// array so existing question numbers (and any mustKnow refs) stay stable.
-const S = ["Only I", "Only II", "Both I and II", "Neither I nor II"];
-
+// September 2026 monthly replacement. Versioned score ID keeps weekly attempts separate.
 export default {
-  id: 29,
-  month: "September 2026",
-  title: "Sheet 29",
-  subtitle: "National, States & International",
-  questions: [
-    // ── Week 1 (Sep 1–7) ─────────────────────────────────────────────────
+  "id": "september-2026-monthly-29-v1",
+  "baseId": 29,
+  "order": 29,
+  "month": "September 2026",
+  "title": "Sheet 29",
+  "subtitle": "Monthly · National, States & International",
+  "source": {
+    "document": "Smart Points PDF (September 2026)",
+    "publisher": "Smartkeeda",
+    "period": "monthly"
+  },
+  "questions": [
     {
-      type: "mcq",
-      q: "The PPPAC granted in-principle approval to privatise 11 AAI airports in 5 bundles. Which of the following is NOT one of the bundles?",
-      options: [
-        "Amritsar with Kangra-Gaggal",
-        "Bhubaneswar with Hubballi",
-        "Lucknow with Ahmedabad",
-        "Tiruchirappalli with Tirupati",
+      "type": "mcq",
+      "q": "Which airport pair belongs to the five PPP bundles approved by PPPAC in September 2026?",
+      "options": [
+        "Bhubaneswar and Hubballi",
+        "Lucknow and Ahmedabad",
+        "Delhi and Mumbai",
+        "Kochi and Kannur"
       ],
-      answer: 2,
-      note: "Lucknow and Ahmedabad were part of the first round in 2019, when 6 airports (also Jaipur, Mangaluru, Thiruvananthapuram, Guwahati) went to the Adani Group for 50 years. The 2026 bundles: Amritsar–Kangra (₹523 Cr), Varanasi–Gaya–Kushinagar (₹2,467 Cr), Bhubaneswar–Hubballi (₹2,725 Cr, largest), Raipur–Aurangabad (₹1,496 Cr), Tiruchirappalli–Tirupati (₹1,411 Cr). Total private investment ₹8,622 Cr. HQ of AAI – New Delhi | Chairman – Vipin Kumar.",
+      "answer": 0,
+      "note": "The proposal covers 11 AAI airports in five bundles. PPPAC is chaired by the Secretary, Department of Economic Affairs.\nSource: September 2026 Smart Points, PDF p. 4, News 1.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 4,
+        "newsItem": 1
+      }
     },
     {
-      type: "statements",
-      q: "Consider the following about the Public Private Partnership Appraisal Committee (PPPAC):\nI. It is chaired by the Secretary, Department of Economic Affairs, Ministry of Finance.\nII. Under the airport proposal, each bundle goes to a single concessionaire for a 50-year concession while AAI retains ownership of the assets.",
-      options: S,
-      answer: 2,
-      note: "Both correct. The approval came at PPPAC's 149th meeting on Aug 4, 2026, chaired by Anuradha Thakur. The Finance Ministry flagged the sector's 'oligopolistic nature' — Adani operates 8 airports (~24-25% of passengers) and GMR ~27.5%; MoCA proposed capping bundles per bidder.",
-    },
-    {
-      type: "mcq",
-      q: "DGFT relaxed the 'One Star Export House' criteria. Exporters now qualify if they meet the export performance threshold in:",
-      options: [
-        "All 3 preceding financial years",
-        "Any 2 of the 3 preceding financial years",
-        "Any 1 of the 3 preceding financial years",
-        "The immediately preceding financial year only",
+      "type": "mcq",
+      "q": "WAE Ltd joined which network to commit to the UN Global Compact's Ten Principles?",
+      "options": [
+        "UNESCO Creative Cities Network",
+        "United Nations Global Compact Network India",
+        "Global Environment Facility",
+        "International Solar Alliance"
       ],
-      answer: 1,
-      note: "Any 2 of 3. The relaxation does not apply to gems and jewellery, which already has a separate 2-year requirement under FTP 2023. Status Holder certificates (One to Five Star) are valid 5 years. HQ of DGFT – New Delhi | DG – Lav Aggarwal | Established 1991.",
+      "answer": 1,
+      "note": "WAE is based in Noida. The commitment concerns the UN Global Compact's Ten Principles.\nSource: September 2026 Smart Points, PDF p. 4, News 2.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 4,
+        "newsItem": 2
+      }
     },
     {
-      type: "mcq",
-      q: "The menhir site of Kawtchhuah Ropui at Vangchhia village, a Monument of National Importance under ASI, is in which state?",
-      options: ["Manipur", "Meghalaya", "Mizoram", "Nagaland"],
-      answer: 2,
-      note: "Mizoram (Champhai district, bordering Myanmar) — ~170 engraved menhirs, declared the state's first centrally protected monument in 2012. Lianpui Hmun (114 carved menhirs) became the 2nd on Jul 14, 2025. Mizoram has 79 State Protected Monuments under its 2001 Act. Mizoram: Capital – Aizawl | CM – Lalduhoma | Governor – General V. K. Singh.",
-    },
-    {
-      type: "mcq",
-      q: "BIS expanded HUID-based silver hallmarking to 341 centres. A Hallmark Unique Identification (HUID) is a:",
-      options: [
-        "4-digit numeric code",
-        "6-digit alphanumeric code",
-        "8-digit alphanumeric code",
-        "12-digit numeric code",
+      "type": "mcq",
+      "q": "IICT's scholarships supported by the Netflix Fund for Creative Equity focus on which field?",
+      "options": [
+        "Agricultural extension",
+        "Commercial pilot licensing",
+        "Creative media and entertainment training",
+        "Banking risk management"
       ],
-      answer: 1,
-      note: "6-digit alphanumeric, laser-marked with the BIS Standard Mark, the word 'SILVER' and the purity grade, verifiable on the BIS CARE app. Silver hallmarking is voluntary, but from Sep 1, 2025 HUID is mandatory on any silver article that is hallmarked (IS 2112:2025). Gold hallmarking has been mandatory since June 2021 and covers 380 districts. Southern Region leads volumes at 62%. HQ of BIS – Manek Bhawan, Delhi | DG – Sanjay Garg.",
+      "answer": 2,
+      "note": "The Mumbai-based IICT and Netflix announced support across six diploma and certificate programmes.\nSource: September 2026 Smart Points, PDF p. 4, News 3.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 4,
+        "newsItem": 3
+      }
     },
     {
-      type: "mcq",
-      q: "The 'Critical Minerals Innovation Hackathon 2026 (CMiH 2026)' launched by G. Kishan Reddy will be organised and hosted by:",
-      options: [
-        "Geological Survey of India, Kolkata",
+      "type": "mcq",
+      "q": "DGFT's revised One Star Export House rule requires the performance threshold in how many of the preceding three financial years?",
+      "options": [
+        "All three",
+        "Only the immediately preceding year",
+        "None of the three",
+        "Any two"
+      ],
+      "answer": 3,
+      "note": "The relaxation excludes gems and jewellery, which already has a separate two-year requirement under FTP 2023.\nSource: September 2026 Smart Points, PDF p. 5, News 4.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 5,
+        "newsItem": 4
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Kawtchhuah Ropui and Lianpui Hmun, protected heritage sites in Champhai district, are in which state?",
+      "options": [
+        "Mizoram",
+        "Manipur",
+        "Meghalaya",
+        "Nagaland"
+      ],
+      "answer": 0,
+      "note": "Kawtchhuah Ropui is at Vangchhia; Lianpui Hmun is at Lianpui. Both are recognised by ASI.\nSource: September 2026 Smart Points, PDF p. 5, News 5.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 5,
+        "newsItem": 5
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "What is the format of BIS's Hallmark Unique Identification code on hallmarked silver?",
+      "options": [
+        "Four-digit numeric code",
+        "Six-character alphanumeric code",
+        "Eight-character alphabetic code",
+        "Twelve-digit numeric code"
+      ],
+      "answer": 1,
+      "note": "HUID accompanies the BIS mark, SILVER and purity grade. The revised standard is IS 2112:2025.\nSource: September 2026 Smart Points, PDF p. 5, News 6.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 5,
+        "newsItem": 6
+      }
+    },
+    {
+      "type": "statements",
+      "q": "Consider the following about silver hallmarking:\nI. BIS requires every silver article sold in India to be hallmarked.\nII. A hallmarked silver article must carry a six-character alphanumeric HUID under IS 2112:2025.",
+      "options": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "answer": 1,
+      "note": "Only II. The requirement described is HUID on silver that is hallmarked; it does not make hallmarking every silver article mandatory.\nSource: September 2026 Smart Points, PDF p. 5, News 6.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 5,
+        "newsItem": 6
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which institution hosts the Critical Minerals Innovation Hackathon 2026?",
+      "options": [
+        "IIT Madras",
+        "National Institute of Oceanography, Goa",
         "JNARDDC, Nagpur",
-        "IIT (ISM) Dhanbad",
-        "NMDC, Hyderabad",
+        "Indian Institute of Petroleum, Dehradun"
       ],
-      answer: 1,
-      note: "Jawaharlal Nehru Aluminium Research Development and Design Centre, Nagpur — an autonomous body under the Ministry of Mines. Two problem statements: Mineral Prospectivity Mapping from Open Data, and a Smart Technology & Patent Tracker. Winners announced at India Mining Week 2026 (Nov 15-17). Minister of Coal & Mines: G. Kishan Reddy (Secunderabad).",
+      "answer": 2,
+      "note": "Jawaharlal Nehru Aluminium Research Development and Design Centre hosts the hackathon supporting the National Critical Mineral Mission.\nSource: September 2026 Smart Points, PDF p. 6, News 7.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 6,
+        "newsItem": 7
+      }
     },
     {
-      type: "mcq",
-      q: "The National Shipping Board held its first 'Sagar Samvad', pressing a roadmap to add how many vessels to India's merchant fleet over 5 years?",
-      options: ["50", "100", "200", "500"],
-      answer: 1,
-      note: "100 vessels. India pays close to $75 billion a year to foreign shipping lines; the Indian flag is 16-20% costlier to operate. India has ~1,600 Indian-flagged seagoing vessels. HQ of NSB – New Delhi | Chairperson – Sameer Kumar Khare | Established 1959.",
+      "type": "mcq",
+      "q": "Which body held the first Sagar Samvad dialogue on India's maritime roadmap?",
+      "options": [
+        "Inland Waterways Authority of India",
+        "National Fisheries Development Board",
+        "Indian Ports Association",
+        "National Shipping Board"
+      ],
+      "answer": 3,
+      "note": "The New Delhi dialogue linked Maritime India Vision 2030 with Maritime Amrit Kaal Vision 2047.\nSource: September 2026 Smart Points, PDF p. 6, News 8.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 6,
+        "newsItem": 8
+      }
     },
     {
-      type: "mcq",
-      q: "The Mediation Council of India was notified under which section of the Mediation Act, 2023?",
-      options: ["Section 12(1)", "Section 21(1)", "Section 31(1)", "Section 41(1)"],
-      answer: 2,
-      note: "Section 31(1), via a Gazette notification on Aug 27, 2026. Head office – Delhi. Under Section 31(2) it is a body corporate with perpetual succession and a common seal. Its functions include registering mediators and maintaining an electronic repository of mediated settlement agreements. MoS (I/C) Law & Justice: Arjun Ram Meghwal (Bikaner).",
+      "type": "mcq",
+      "q": "Where is the notified Mediation Council of India's head office located?",
+      "options": [
+        "Delhi",
+        "Mumbai",
+        "Hyderabad",
+        "Chennai"
+      ],
+      "answer": 0,
+      "note": "The Department of Legal Affairs notified the Council. It is a body corporate under Section 31(2) of the Mediation Act.\nSource: September 2026 Smart Points, PDF p. 6, News 9.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 6,
+        "newsItem": 9
+      }
     },
     {
-      type: "mcq",
-      q: "India secured 'dialogue partner' status in the Global Combat Air Programme (GCAP). Which of the following is NOT one of the three GCAP partner nations?",
-      options: ["United Kingdom", "Japan", "Italy", "Germany"],
-      answer: 3,
-      note: "GCAP ('Tempest') is run by the UK, Japan and Italy; its industrial JV 'Edgewing' is held equally (33.3%) by BAE Systems, Mitsubishi Heavy Industries and Leonardo. Germany was part of the rival FCAS (with France and Spain), terminated in June 2026. Induction is planned by 2034 after $6.1 bn funding in Jul 2026. India's own 5th-gen AMCA is expected by 2035.",
+      "type": "mcq",
+      "q": "Which three countries jointly run the Global Combat Air Programme, in which India secured dialogue-partner status?",
+      "options": [
+        "France, Germany and Spain",
+        "United Kingdom, Japan and Italy",
+        "United States, Canada and Australia",
+        "Japan, South Korea and Singapore"
+      ],
+      "answer": 1,
+      "note": "GCAP concerns a sixth-generation fighter. Its industrial JV Edgewing brings together BAE Systems, Leonardo and Mitsubishi Heavy Industries.\nSource: September 2026 Smart Points, PDF p. 6, News 10.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 6,
+        "newsItem": 10
+      }
     },
     {
-      type: "statements",
-      q: "Consider the following about India and the Global Combat Air Programme:\nI. Dialogue partner status makes India a co-developer with access to protected programme technologies.\nII. Canada joined GCAP in July 2026 as its first observer nation.",
-      options: S,
-      answer: 1,
-      note: "Only II. Dialogue partner status allows discussions on progress and capabilities but does not make India a buyer or co-developer and grants no access to classified design information. Observer status (Canada) gives privileged access to governance without decision-making authority. The move builds on the India-UK Vision 2035 and its 10-year Defence Industrial Roadmap.",
+      "type": "mcq",
+      "q": "Where did Hindalco commission its greenfield Superfine PPT ATH plant?",
+      "options": [
+        "Renukoot, Uttar Pradesh",
+        "Hirakud, Odisha",
+        "Belagavi, Karnataka",
+        "Muri, Jharkhand"
+      ],
+      "answer": 2,
+      "note": "Precipitated Aluminium Trihydrate is used as a halogen-free flame retardant. The plant runs entirely on renewable energy.\nSource: September 2026 Smart Points, PDF p. 7, News 11.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 7,
+        "newsItem": 11
+      }
     },
     {
-      type: "mcq",
-      q: "Hindalco commissioned India's first Superfine PPT ATH (Precipitated Aluminium Trihydrate) plant. It is located at:",
-      options: ["Renukoot, UP", "Belagavi, Karnataka", "Hirakud, Odisha", "Muri, Jharkhand"],
-      answer: 1,
-      note: "Belagavi, Karnataka — Phase 1 capacity 30,000 tonnes, expandable to 60,000. It is the world's only specialty alumina facility running entirely on renewable energy. PPT ATH is a halogen-free flame retardant used in HFFR cables, marketed as 'InnoSafe'. Hindalco: Chairman – Kumar Mangalam Birla | Established 1958.",
+      "type": "mcq",
+      "q": "The first uniform national minimum standards for mortuaries are anchored in which law?",
+      "options": [
+        "Epidemic Diseases Act, 1897",
+        "Mental Healthcare Act, 2017",
+        "National Medical Commission Act, 2019",
+        "Clinical Establishments Act, 2010"
+      ],
+      "answer": 3,
+      "note": "The standards apply where the Clinical Establishments (Registration and Regulation) Act has been adopted and require ground-floor mortuaries.\nSource: September 2026 Smart Points, PDF p. 7, News 12.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 7,
+        "newsItem": 12
+      }
     },
     {
-      type: "mcq",
-      q: "Under India's first uniform national standards for mortuaries finalised by the NCCE, dead-body cold storage units must maintain a temperature range of:",
-      options: ["0°C to 4°C", "2°C to 6°C", "4°C to 8°C", "8°C to 12°C"],
-      answer: 2,
-      note: "4°C to 8°C, minimum capacity 4 bodies, each with a unique serial number; medico-legal bodies stored separately. Mortuaries cannot be in basements or near waste dumps and must be on the ground floor. Anchored in the Clinical Establishments (Registration and Regulation) Act, 2010, under the National Council for Clinical Establishments (DGHS, MoHFW).",
-    },
-    {
-      type: "mcq",
-      q: "The 5th edition of 'Swachh Sagar, Surakshit Sagar' (Sep 12-19, 2026) is led by which ministry?",
-      options: [
-        "Ministry of Environment, Forest & Climate Change",
+      "type": "mcq",
+      "q": "Which ministry leads Swachh Sagar, Surakshit Sagar 5.0?",
+      "options": [
         "Ministry of Earth Sciences",
-        "Ministry of Ports, Shipping & Waterways",
-        "Ministry of Jal Shakti",
+        "Ministry of Defence",
+        "Ministry of Tourism",
+        "Ministry of Rural Development"
       ],
-      answer: 1,
-      note: "MoES, launched by Dr. Jitendra Singh, culminating on International Coastal Cleanup Day (3rd Saturday of September — Sep 19 in 2026), with the 'SAGAR PRAHARI' app for citizen participation. First launched in 2022 as a 75-day campaign (Jul 5–Sep 17) covering 75 beaches for Azadi Ka Amrit Mahotsav — described as the world's longest-running coastal cleanup campaign.",
+      "answer": 0,
+      "note": "The September 12-19 coastal cleanliness campaign includes the SAGAR PRAHARI app for citizen participation.\nSource: September 2026 Smart Points, PDF p. 7, News 13.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 7,
+        "newsItem": 13
+      }
     },
     {
-      type: "statements",
-      q: "Consider the following about the Central Adoption Resource Authority (CARA):\nI. It is a statutory body under Section 68 of the Juvenile Justice (Care and Protection of Children) Act, 2015.\nII. It is India's Central Authority for inter-country adoptions under the Hague Convention of 1993, which India ratified in 2003.",
-      options: S,
-      answer: 2,
-      note: "Both correct. CARA (MoWCD) launched the Adoption Awareness 2026 theme — 'Legal Adoption. Safe Childhood. Secure Future. Say No to Illegal Adoption!' — via CEO Bhavna Saxena on DD National, expanding awareness workshops beyond the earlier November-only practice.",
-    },
-    {
-      type: "mcq",
-      q: "C-DOT unveiled 14 indigenous quantum products at its 43rd Foundation Day. Its Q-AKSHAY CD and Q-AKSHAY MD systems belong to which product category?",
-      options: [
-        "Post-Quantum Cryptography encryptors",
-        "Quantum Key Distribution hardware",
-        "Single-photon detectors",
-        "6G access infrastructure",
+      "type": "mcq",
+      "q": "CARA serves as India's central authority for inter-country adoption under which convention?",
+      "options": [
+        "Ramsar Convention",
+        "Hague Convention on Inter-country Adoption, 1993",
+        "Basel Convention",
+        "Vienna Convention on Consular Relations"
       ],
-      answer: 1,
-      note: "QKD hardware — Q-AKSHAY CD uses Coherent One Way and Differential Phase Shift protocols in a 1U form factor; Q-AKSHAY MD uses the Measurement Device Independent protocol. The 14 products span 5 categories (QKD, PQC encryptors, sub-components, endpoint devices, access infrastructure); PQC solutions use NIST-standardised algorithms. C-DOT was established in 1984. CEO – Rajkumar Upadhyay; works under DoT.",
+      "answer": 1,
+      "note": "CARA is a statutory body under Section 68 of the Juvenile Justice Act, 2015, and works under the Ministry of Women and Child Development.\nSource: September 2026 Smart Points, PDF p. 8, News 14.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 8,
+        "newsItem": 14
+      }
     },
     {
-      type: "mcq",
-      q: "Vice President C. P. Radhakrishnan released 'Mission Rangeen Machhli 2031' at Agatti, Lakshadweep. It is a strategic action plan for:",
-      options: [
-        "Coral reef restoration",
-        "Ornamental fisheries development",
-        "Tuna export promotion",
-        "Seaweed cultivation",
+      "type": "mcq",
+      "q": "Which organisation unveiled 14 indigenous quantum products on its 43rd Foundation Day?",
+      "options": [
+        "C-DAC",
+        "NIC",
+        "C-DOT",
+        "TRAI"
       ],
-      answer: 1,
-      note: "Ornamental Fisheries, setting national standards for broodstock, breeding, quarantine, biosecurity and trade. Lakshadweep has a ~4,200 sq km lagoon area and ~4 lakh sq km EEZ with a potential of over 1 lakh MT (including ~94,000 t of tuna) against a harvest of ~15,000 MT. Projects worth over ₹62 Cr are approved under PMMSY, and Lakshadweep is a notified Seaweed Cluster.",
+      "answer": 2,
+      "note": "C-DOT works under the Department of Telecommunications. The products include QKD hardware and post-quantum cryptography encryptors.\nSource: September 2026 Smart Points, PDF p. 8, News 15.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 8,
+        "newsItem": 15
+      }
     },
     {
-      type: "mcq",
-      q: "A massive flash flood in late August 2026 struck the Bhote Koshi and Trishuli river systems, originating in the Rasuwa district of:",
-      options: ["Bhutan", "Nepal", "Sikkim, India", "Tibet, China"],
-      answer: 1,
-      note: "Nepal (Bagmati province), also destroying the Gyirong checkpoint on the China-Nepal border. The UN released $2 million (raised to $2.5 mn) from CERF; the World Bank, India, China and the US pledged a combined $229 million to Nepal's relief fund; UNICEF appealed for $17.2 million. Nepal – Kathmandu – Nepalese Rupee | President – Ram Chandra Poudel | PM – Balendra Shah.",
-    },
-    {
-      type: "mcq",
-      q: "Türkiye became the ___ country to sign the Artemis Accords:",
-      options: ["65th", "68th", "71st", "75th"],
-      answer: 2,
-      note: "71st, signed by Industry & Technology Minister Mehmet Fatih Kacır at NASA HQ, hosted by Administrator Jared Isaacman. It is the 7th West Asian signatory after UAE, Saudi Arabia, Bahrain, Oman, Jordan and Israel. Türkiye will host the International Astronautical Congress in Antalya in Oct 2026 and is preparing its first lunar mission AYAP-1. Türkiye – Ankara – Lira | President – Recep Tayyip Erdogan.",
-    },
-    {
-      type: "statements",
-      q: "Consider the following about the Artemis Accords:\nI. They were established in October 2020 by the US and seven other founding countries.\nII. India signed the Accords on June 21, 2023, as the 27th signatory.",
-      options: S,
-      answer: 2,
-      note: "Both correct. The Accords set common principles for peaceful civil exploration of the Moon, Mars and deep space. Recall from August: NASA invited ISRO into its 'Moon Base' programme building on the Artemis partnership.",
-    },
-    {
-      type: "mcq",
-      q: "China's Type 076 amphibious assault ship 'Sichuan', described as the world's first 'drone carrier', is unique among such ships for having:",
-      options: [
-        "A nuclear propulsion system",
-        "An electromagnetic catapult launch system",
-        "A ski-jump ramp",
-        "A submersible well deck",
+      "type": "mcq",
+      "q": "Mission Rangeen Machhli 2031 is a strategic action plan for which sector?",
+      "options": [
+        "Deep-sea mineral extraction",
+        "Marine cargo insurance",
+        "River navigation",
+        "Ornamental fisheries"
       ],
-      answer: 1,
-      note: "An electromagnetic catapult like China's carrier Fujian and the US Ford-class — the only amphibious assault ship with one. Built at Hudong-Zhonghua Shipyard, Shanghai (hull 51), launched Dec 27, 2024. It flight-tested the GJ-21 stealth attack drone, the naval variant of the GJ-11 'Sharp Sword'. China also test-fired a stealth-coated YJ-18A ('Eagle Strike') anti-ship cruise missile.",
+      "answer": 3,
+      "note": "The Department of Fisheries organised the launch programme at Agatti, Lakshadweep.\nSource: September 2026 Smart Points, PDF p. 8, News 16.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 8,
+        "newsItem": 16
+      }
     },
     {
-      type: "mcq",
-      q: "Russia test-launched the RS-24 Yars ICBM from the Plesetsk Cosmodrome to the Kura test site on the Kamchatka Peninsula. The Yars was developed by:",
-      options: [
-        "Moscow Institute of Thermal Technology",
-        "NPO Mashinostroyeniya",
-        "Makeyev Rocket Design Bureau",
-        "Almaz-Antey",
+      "type": "mcq",
+      "q": "Gollala Gudi, newly declared a Monument of National Importance, is located in which state?",
+      "options": [
+        "Telangana",
+        "Tamil Nadu",
+        "Karnataka",
+        "Odisha"
       ],
-      answer: 0,
-      note: "Moscow Institute of Thermal Technology, as an evolution of the Topol-M. It is a solid-fuel, three-stage, MIRV-capable ICBM deployable from road-mobile and silo launchers with a range exceeding 10,000 km. Plesetsk is in the Arkhangelsk region. Russia – Moscow – Ruble | President – Vladimir Putin | PM – Mikhail Mishustin.",
-    },
-
-    // ── Week 2 (Sep 8–14) ────────────────────────────────────────────────
-    {
-      type: "mcq",
-      q: "Gollala Gudi, declared a 'Monument of National Importance' by ASI, is a Kakatiya-era temple at Palampet village in which state?",
-      options: ["Andhra Pradesh", "Telangana", "Karnataka", "Maharashtra"],
-      answer: 1,
-      note: "Telangana (Mulugu district). It is a Trikutalaya — a three-shrine temple with an east-facing mandapa surrounded by 3 garbhagrihas. Notified under Section 4(3) of the AMASR Act, 1958. HQ of ASI – New Delhi | DG – Yadubir Singh Rawat | Established 1861.",
+      "answer": 0,
+      "note": "It is a Kakatiya-era three-shrine temple at Palampet in Mulugu district.\nSource: September 2026 Smart Points, PDF p. 8, News 17.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 8,
+        "newsItem": 17
+      }
     },
     {
-      type: "mcq",
-      q: "DMRC became the first metro organisation in India to receive ISO 55001:2024 certification for its Asset Management System. The certification was awarded for its management of:",
-      options: [
-        "Delhi Metro Magenta Line",
-        "Mumbai Metro Line-3 (Aqua Line)",
-        "Delhi Airport Express Line",
-        "Patna Metro",
+      "type": "mcq",
+      "q": "DMRC received ISO 55001:2024 certification for management of which Mumbai Metro line?",
+      "options": [
+        "Line 1, Blue Line",
+        "Line 3, Aqua Line",
+        "Line 2A, Yellow Line",
+        "Line 7, Red Line"
       ],
-      answer: 1,
-      note: "Mumbai Metro Line-3, the Aqua Line — not a Delhi line. ISO 55001:2024 is the latest standard for managing physical assets across their lifecycle. DMRC is a 50:50 JV of GoI and the Government of Delhi. Chairman – Katikithala Srinivas | MD – Dr. Vikas Kumar | Established 1995.",
+      "answer": 1,
+      "note": "ISO 55001 provides a framework for asset management across the asset lifecycle.\nSource: September 2026 Smart Points, PDF p. 9, News 18.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 9,
+        "newsItem": 18
+      }
     },
     {
-      type: "mcq",
-      q: "Which state ranked first nationally in the third phase of 'Jal Sanchay Jan Bhagidari (JSJB 3.0)'?",
-      options: ["Gujarat", "Rajasthan", "Chhattisgarh", "Madhya Pradesh"],
-      answer: 2,
-      note: "Chhattisgarh, after finishing 2nd in both earlier phases, with 5 districts in the national top 10 (Surajpur, Mahasamund, Balod, Balodabazar-Bhatapara, Kabirdham). Its water-stressed blocks fell to 19 from 26. Koriya's '5 Per Cent Model' has farmers set aside ~5% of land for rainwater harvesting. JSJB is the community component of Jal Shakti's 'Catch the Rain', launched from Gujarat in 2024.",
-    },
-    {
-      type: "mcq",
-      q: "Birkbeck, University of London received UGC's Letter of Approval to open its first overseas campus, in Bengaluru. Its partner for the campus is:",
-      options: [
-        "Manipal Academy of Higher Education",
-        "Education Centre of Australia",
-        "Sattva Group",
-        "Christ University",
+      "type": "mcq",
+      "q": "Which state ranked first in Jal Sanchay Jan Bhagidari 3.0?",
+      "options": [
+        "Gujarat",
+        "Rajasthan",
+        "Chhattisgarh",
+        "Maharashtra"
       ],
-      answer: 1,
-      note: "Education Centre of Australia (ECA); the campus is at Sattva Tech Park. Approved under UGC's 2023 Foreign Higher Educational Institutions regulations; degrees in business management and business analytics awarded by the University of London. Recall from August: University of Western Australia is setting up Tamil Nadu's first foreign campus at Velachery, Chennai.",
+      "answer": 2,
+      "note": "JSJB is the community-participation component of the Jal Shakti Ministry's Catch the Rain campaign.\nSource: September 2026 Smart Points, PDF p. 9, News 19.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 9,
+        "newsItem": 19
+      }
     },
     {
-      type: "mcq",
-      q: "Tamil Nadu CM C. Joseph Vijay announced a 'Tamil Nadu Olympic City' in Chennai and a separate Motor Sports City. The Olympic City will be developed by:",
-      options: [
-        "Tamil Nadu Sports Development Authority",
-        "SIPCOT",
-        "Chennai Metropolitan Development Authority",
-        "TIDCO",
+      "type": "mcq",
+      "q": "Birkbeck, University of London received approval for its first overseas campus in which city?",
+      "options": [
+        "Hyderabad",
+        "Pune",
+        "Ahmedabad",
+        "Bengaluru"
       ],
-      answer: 0,
-      note: "TN Sports Development Authority. The Motor Sports City will have an international racing circuit for Formula 1, 2, 3 and 4. Announced under Rule 110 of the TN Legislative Assembly. Tamil Nadu: Capital – Chennai | CM – C Joseph Vijay | Governor – Rajendra Vishwanath Arlekar.",
+      "answer": 3,
+      "note": "The campus is planned at Sattva Tech Park with Education Centre of Australia under UGC's 2023 foreign-university regulations.\nSource: September 2026 Smart Points, PDF p. 9, News 20.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 9,
+        "newsItem": 20
+      }
     },
     {
-      type: "mcq",
-      q: "Amit Shah outlined a 3-year roadmap (July 2026 – July 2029) to make India drug-free by 2029. It rests on how many pillars?",
-      options: ["3", "4", "5", "7"],
-      answer: 1,
-      note: "4 pillars — intelligence- and operations-based enforcement; control of precursor and synthetic drugs; demand and harm reduction; capacity building and coordination — with 25 components and 200+ action points. Announced in Panaji, Goa; 2026-29 is the 'mission mode' phase.",
-    },
-    {
-      type: "mcq",
-      q: "India submitted the 'Rangpur-Sivasagar Historical Ensemble' for UNESCO's World Heritage Tentative List. It represents the historic capital of which dynasty?",
-      options: ["Kachari", "Koch", "Ahom", "Chutiya"],
-      answer: 2,
-      note: "Ahom, in Sivasagar district, Assam — including Rang Ghar, Talatal Ghar, the Namdang Stone Bridge and the Sivasagar, Joysagar and Gaurisagar tanks, under cultural criteria (iii) and (iv). The Ahom royal burial mounds, Charaideo Moidams, became India's 43rd World Heritage Site on Jul 26, 2024. Recall from July: Sarnath became the 45th. HQ of UNESCO – Paris | DG – Khaled El-Enany.",
-    },
-    {
-      type: "mcq",
-      q: "NITI Aayog launched the 'Platform for Aggregating Clean Transport (PACT)' and the 'Zero Emission Truck (ZET) Marketplace' at which event?",
-      options: [
-        "India Mobility Global Expo",
-        "5th e-FAST India Summit 2026",
-        "Bharat Mandapam EV Conclave",
-        "Auto Expo 2026",
+      "type": "mcq",
+      "q": "The Rangpur-Sivasagar Historical Ensemble proposed for UNESCO's Tentative List represents which dynasty?",
+      "options": [
+        "Ahom",
+        "Chola",
+        "Kakatiya",
+        "Chalukya"
       ],
-      answer: 1,
-      note: "The 5th e-FAST India Summit in New Delhi, to scale up electric truck adoption. Electric freight vehicle deployments rose to 826 in FY26 from 201 in FY25. NITI Aayog: CEO – Anurag Jain | VC – Ashok Kumar Lahiri.",
+      "answer": 0,
+      "note": "The Assam ensemble includes Rang Ghar, Talatal Ghar, Namdang Stone Bridge and historic tanks.\nSource: September 2026 Smart Points, PDF p. 10, News 23.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 10,
+        "newsItem": 23
+      }
     },
     {
-      type: "mcq",
-      q: "India joined a US-led initiative of 26 countries on next-generation 6G networks. The initiative is led by which US agency?",
-      options: [
-        "Federal Communications Commission",
-        "National Telecommunications and Information Administration",
-        "National Institute of Standards and Technology",
-        "Defense Advanced Research Projects Agency",
+      "type": "mcq",
+      "q": "NITI Aayog's PACT platform and ZET Marketplace promote adoption of what?",
+      "options": [
+        "Hydrogen passenger aircraft",
+        "Electric freight trucks",
+        "Offshore wind turbines",
+        "Urban metro ticketing"
       ],
-      answer: 1,
-      note: "NTIA (US Department of Commerce), building on the 'Call to Action for 6G Leadership and Security' launched in Jul 2026. Announced around the G20 Innovation Ministers' Meeting at Chapel Hill, North Carolina. India's Bharat 6G Mission targets at least 10% of global 6G patents by 2030, and India already engages via the Bharat 6G Alliance.",
+      "answer": 1,
+      "note": "PACT means Platform for Aggregating Clean Transport; ZET means Zero Emission Truck.\nSource: September 2026 Smart Points, PDF p. 10, News 24.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 10,
+        "newsItem": 24
+      }
     },
     {
-      type: "mcq",
-      q: "PM Modi dedicated the ₹73,000 Cr Western Dedicated Freight Corridor to the nation. It connects Dadri (UP) with:",
-      options: ["Kandla Port", "JNPA near Mumbai", "Mundra Port", "Hazira Port"],
-      answer: 1,
-      note: "Jawaharlal Nehru Port Authority — 1,506 km across Maharashtra, Gujarat, Rajasthan, Haryana and UP, financed by JICA. The Eastern DFC (1,337 km, ₹51,000 Cr) was completed in Oct 2023. Together 2,843 km at ~₹1.24 lakh Cr, built and run by DFCCIL — India's 2nd-largest infrastructure programme after the Golden Quadrilateral.",
+      "type": "mcq",
+      "q": "The Western Dedicated Freight Corridor connects which endpoints?",
+      "options": [
+        "Ludhiana and Dankuni",
+        "Delhi and Chennai",
+        "Dadri and JNPA",
+        "Varanasi and Haldia"
+      ],
+      "answer": 2,
+      "note": "The 1,506-km corridor crosses Uttar Pradesh, Haryana, Rajasthan, Gujarat and Maharashtra, with JICA support.\nSource: September 2026 Smart Points, PDF p. 11, News 26.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 11,
+        "newsItem": 26
+      }
     },
     {
-      type: "statements",
-      q: "Consider the following about India's Dedicated Freight Corridors:\nI. The Western DFC runs across five states and was financed by the Japan International Cooperation Agency.\nII. The Eastern DFC is longer than the Western DFC.",
-      options: S,
-      answer: 0,
-      note: "Only I. The Western DFC is 1,506 km; the Eastern is 1,337 km. The final 3 sections of the Western DFC (326 route km) included the New Saphale–JNPA stretch.",
+      "type": "mcq",
+      "q": "India's first hydrogen train operates on which Haryana section?",
+      "options": [
+        "Ambala-Kalka",
+        "Rewari-Hisar",
+        "Panipat-Karnal",
+        "Jind-Sonipat"
+      ],
+      "answer": 3,
+      "note": "The train follows RDSO specifications and has two hydrogen driving power cars and eight trailer coaches.\nSource: September 2026 Smart Points, PDF p. 11, News 28.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 11,
+        "newsItem": 28
+      }
     },
     {
-      type: "mcq",
-      q: "Piyush Goyal set a target of how many international medical value tourists annually for India, announced at 'Sanjeevani 2026' during the Bharat Health Global Expo?",
-      options: ["2 million", "5 million", "10 million", "25 million"],
-      answer: 2,
-      note: "10 million. India's clinical care is estimated to be 60-80% cheaper than in developed nations. At the Pharma MachTech & LabNext Expo he also announced 100% central funding through BIS for advanced testing equipment for domestic medical equipment manufacturers. Minister of Commerce & Industry: Piyush Goyal (Mumbai North).",
+      "type": "mcq",
+      "q": "Which ministry launched the Quarterly Progress Report Portal on Data Harmonisation?",
+      "options": [
+        "Ministry of Statistics and Programme Implementation",
+        "Ministry of Corporate Affairs",
+        "Ministry of Home Affairs",
+        "Ministry of External Affairs"
+      ],
+      "answer": 0,
+      "note": "The portal aims to strengthen the National Data System and harmonised use of administrative data.\nSource: September 2026 Smart Points, PDF p. 11, News 29.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 11,
+        "newsItem": 29
+      }
     },
     {
-      type: "mcq",
-      q: "Indian Railways plans to raise the operational speed of India's first hydrogen train to 110 kmph. Its maintenance facility is at:",
-      options: ["Jind, Haryana", "Shakurbasti, Delhi", "Sonipat, Haryana", "Ghaziabad, UP"],
-      answer: 1,
-      note: "Shakurbasti, Delhi. It currently runs at 75 kmph on the 89-km Jind–Sonipat section after trials at 120 kmph. Configuration: 2 Hydrogen Driving Power Cars (1,200 kW each) + 8 trailer coaches, 2,400 kW total, built to RDSO specs. India aims to deploy 35 hydrogen trains on heritage routes. Recall from July: it was inaugurated as 'NaMo Green Rail'.",
-    },
-    {
-      type: "mcq",
-      q: "The 9th Rashtriya Poshan Maah 2026, launched by Annpurna Devi in Varanasi, has the theme:",
-      options: [
-        "Sahi Poshan Desh Roshan",
+      "type": "mcq",
+      "q": "What is the theme of the ninth Rashtriya Poshan Maah in 2026?",
+      "options": [
+        "Beti Bachao Beti Padhao",
         "Hamari Anganwadi Hamari Jimmedari",
-        "Poshan Bhi Padhai Bhi",
-        "Suposhit Bharat, Sashakt Bharat",
+        "Har Ghar Jal",
+        "Sashakt Nari Sashakt Bharat"
       ],
-      answer: 1,
-      note: "'Hamari Anganwadi Hamari Jimmedari', with 5 focus themes including 10 years of PMMVY. Poshan Maah is observed every September under Poshan Abhiyaan, launched in 2018. PMMVY (launched Jan 1, 2017, under Mission Shakti): ₹5,000 for the first child in 2 instalments; ₹6,000 in one instalment for the second child only if a girl; registration window up to 270 days from childbirth.",
+      "answer": 1,
+      "note": "Annpurna Devi launched it in Varanasi. Focus areas include dietary diversity, protein and community ownership of Anganwadis.\nSource: September 2026 Smart Points, PDF p. 12, News 30.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 12,
+        "newsItem": 30
+      }
     },
     {
-      type: "mcq",
-      q: "The CCEA approved 8 railway multi-tracking projects under PM Gati Shakti, adding about 1,196 km across 31 districts in 9 states. Their total cost is:",
-      options: ["₹13,041 Cr", "₹20,804 Cr", "₹26,850 Cr", "₹38,357 Cr"],
-      answer: 1,
-      note: "₹20,804 Cr, completion target 2029-30. Five southern projects (₹10,021 Cr, ~540 km) include Arakkonam–Renigunta and Whitefield–Bangarapet 3rd/4th lines; three eastern-central projects (₹10,783 Cr, ~656 km) include the Kharagpur–Jharsuguda 4th line. Recall from August: CCEA cleared 5 rail and highway projects worth ₹13,041 Cr.",
-    },
-    {
-      type: "mcq",
-      q: "The Ministry of Coal and CIL launched India's first sector-specific CSR framework. Under its 'Thalassemia Bal Sewa Yojana', support per patient for bone marrow transplant is up to:",
-      options: ["₹5 lakh", "₹10 lakh", "₹15 lakh", "₹25 lakh"],
-      answer: 1,
-      note: "₹10 lakh, for children with Thalassemia and Aplastic Anaemia — 21 empanelled hospitals (from 4), 1,050+ BMTs, ₹130 Cr across 4 phases. 'Nanha Sa Dil' provides free treatment for congenital heart defects (2 lakh+ children screened, 1,500+ surgeries since Mar 2024). It is the first sector-specific CSR framework since Section 135 of the Companies Act, 2013. HQ of CIL – Kolkata | CMD – B. Sairam.",
-    },
-    {
-      type: "mcq",
-      q: "Karnataka approved its Aerospace Policy 2026-31 targeting ₹60,000 Cr in investment. It also cleared India's first state-led drone-testing facility at:",
-      options: ["Tumakuru", "Chikkaballapur", "Belagavi", "Mysuru"],
-      answer: 1,
-      note: "Chikkaballapur (₹42.83 Cr). The policy targets 60,000 jobs with a zone-based incentive model. Also approved: 'Udyoga Nidhi' (₹300 Cr employment fund for 10 less-developed districts, up to ₹2,500 per additional employee per month for 24 months), an AI Hub at IIIT-Bangalore, and 'Shramika Nivasa' worker housing (10,000 houses in phase 1).",
-    },
-    {
-      type: "statements",
-      q: "Consider the following about TV advertisement regulation:\nI. TRAI repealed its 2012 Quality of Service regulations that had prescribed a 12-minute-per-hour advertisement ceiling.\nII. The ceiling was originally enforced under Rule 7(11) of the Cable Television Networks Rules, 1994, which MoI&B omitted through a Gazette notification on Aug 21, 2026.",
-      options: S,
-      answer: 2,
-      note: "Both correct. Recall from August: MoI&B removed the 12-minute cap (10 minutes ads + 2 minutes self-promotion). TRAI's 'Standards of Quality of Service (Duration of Advertisements in Television Channels) (Repealing) Regulations, 2026' completes the change. HQ of TRAI – New Delhi | Chairman – Anil Kumar Lahoti.",
-    },
-    {
-      type: "mcq",
-      q: "Thailand cut the maximum visa-free stay for tourists, including Indians, effective Sep 15, 2026, to:",
-      options: ["15 days", "30 days", "45 days", "60 days"],
-      answer: 1,
-      note: "30 days, from 60. Visa exemption continues for 60 countries; Indians stay visa-exempt rather than moving to paid Visa on Arrival as earlier proposed. Thailand – Bangkok – Baht | King – Maha Vajiralongkorn | PM – Anutin Charnvirakul.",
-    },
-    {
-      type: "mcq",
-      q: "The UNGA adopted the 'Correct the Map' resolution on rebalancing global cartographic representation, particularly of Africa. It was introduced by:",
-      options: ["Nigeria", "Togo", "South Africa", "Ethiopia"],
-      answer: 1,
-      note: "Togo, on behalf of the 54-member Group of African States. UNGA 80th Session President – Annalena Baerbock (Germany); 193 members.",
-    },
-    {
-      type: "mcq",
-      q: "The UNGA proclaimed which date as the 'International Day for the Elimination of Child, Early and Forced Marriage'?",
-      options: ["October 11", "November 27", "December 10", "March 8"],
-      answer: 1,
-      note: "November 27, in a resolution led by Sierra Leone and co-sponsored by ~70 nations including India. India's 'Bal Vivah Mukt Bharat' campaign was launched on Nov 27, 2024, targeting a 10% reduction in child marriage by 2026 and a child-marriage-free India by 2030.",
-    },
-    {
-      type: "mcq",
-      q: "The UK recognised India's Carbon Credit Trading Scheme (CCTS) as a qualifying carbon pricing mechanism under its Carbon Border Adjustment Mechanism. The UK CBAM takes effect on:",
-      options: [
-        "October 1, 2026",
-        "January 1, 2027",
-        "April 1, 2027",
-        "January 1, 2028",
+      "type": "mcq",
+      "q": "Coal India's Nanha Sa Dil initiative supports treatment of which condition in children?",
+      "options": [
+        "Tuberculosis",
+        "Sickle-cell anaemia only",
+        "Congenital heart defects",
+        "Hearing loss"
       ],
-      answer: 1,
-      note: "January 1, 2027. India and the UK signed the Comprehensive Economic and Trade Agreement (CETA) on Jul 15, 2026; bilateral merchandise trade was $25.1 bn (2025-26) and services trade $35.4 bn (2024). UK – London – Pound Sterling | PM – Andy Burnham | King Charles III.",
+      "answer": 2,
+      "note": "The linked coal-sector CSR framework also includes Thalassemia Bal Sewa Yojana for bone marrow transplants.\nSource: September 2026 Smart Points, PDF p. 13, News 32.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 13,
+        "newsItem": 32
+      }
     },
     {
-      type: "mcq",
-      q: "The SCO named which city its 'Tourism and Cultural Capital' for 2026-27?",
-      options: ["Islamabad", "Lahore", "Tashkent", "Astana"],
-      answer: 1,
-      note: "Lahore, Pakistan, announced at the 26th SCO Council of Heads of State in Bishkek, Kyrgyzstan, as Pakistan assumed the rotating chair (theme: 'Turning Vision into Action: Connectivity, Innovation and Shared Prosperity'). Previous titleholders: Varanasi (2022-23), Almaty (2023-24), Qingdao (2024-25), Cholpon-Ata (2025-26). SCO Secretariat – Beijing | SG – Nurlan Yermekbayev | Established 2001.",
+      "type": "mcq",
+      "q": "Udyoga Nidhi, an employment fund programme for less-developed districts, was approved by which state?",
+      "options": [
+        "Kerala",
+        "Telangana",
+        "Maharashtra",
+        "Karnataka"
+      ],
+      "answer": 3,
+      "note": "Karnataka also approved its Aerospace Policy 2026-31 and a state-led drone-testing facility at Chikkaballapur.\nSource: September 2026 Smart Points, PDF p. 13, News 33.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 13,
+        "newsItem": 33
+      }
     },
     {
-      type: "mcq",
-      q: "The 18th BRICS Summit was held at Bharat Mandapam, New Delhi, on Sep 12, 2026. India's 2026 Chairship is its ___ of the grouping:",
-      options: ["2nd", "3rd", "4th", "5th"],
-      answer: 2,
-      note: "4th, after 2012, 2016 and 2021; it began Jan 1, 2026. Theme – 'Building for Resilience, Innovation, Cooperation and Sustainability'. The first BRIC Summit was at Yekaterinburg, Russia, on Jun 16, 2009. BRICS has 11 members: Brazil, Russia, India, China, South Africa, Egypt, Ethiopia, Iran, UAE, Saudi Arabia and Indonesia.",
+      "type": "mcq",
+      "q": "TRAI's September 2026 repealing regulations removed which television advertising restriction?",
+      "options": [
+        "The statutory 12-minute-per-hour ceiling",
+        "A complete ban on advertisements",
+        "A ban on regional-language advertisements",
+        "A requirement for only government advertisements"
+      ],
+      "answer": 0,
+      "note": "The 2026 regulations repeal the 2012 advertising-duration regulations after omission of Rule 7(11).\nSource: September 2026 Smart Points, PDF p. 14, News 34.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 14,
+        "newsItem": 34
+      }
     },
-  ],
+    {
+      "type": "mcq",
+      "q": "GRSE is building ORV Sagar Manthan for which institution?",
+      "options": [
+        "National Institute of Hydrology",
+        "National Centre for Polar and Ocean Research",
+        "Indian National Science Academy",
+        "Central Marine Fisheries Research Institute"
+      ],
+      "answer": 1,
+      "note": "The ocean research vessel falls under the Deep Ocean Mission and is intended to replace ORV Sagar Kanya.\nSource: September 2026 Smart Points, PDF p. 14, News 35.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 14,
+        "newsItem": 35
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which airline operated its first commercial flight using a BPCL-supplied SAF blend on the Mumbai-Goa route?",
+      "options": [
+        "IndiGo",
+        "SpiceJet",
+        "Akasa Air",
+        "Alliance Air"
+      ],
+      "answer": 2,
+      "note": "The flight used aviation turbine fuel blended with sustainable aviation fuel. Akasa is headquartered in Mumbai.\nSource: September 2026 Smart Points, PDF p. 14, News 36.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 14,
+        "newsItem": 36
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Under DILRMP 3.0, Bhu-Aadhaar identifies what?",
+      "options": [
+        "A farmer's bank account",
+        "A registered company",
+        "A rural household's electricity meter",
+        "An individual land parcel"
+      ],
+      "answer": 3,
+      "note": "Bhu-Aadhaar is the 14-digit Unique Land Parcel Identification Number. DILRMP is administered by the Department of Land Resources.\nSource: September 2026 Smart Points, PDF p. 15, News 37.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 15,
+        "newsItem": 37
+      }
+    },
+    {
+      "type": "statements",
+      "q": "Consider the following about DILRMP 3.0:\nI. It is a Central Sector Scheme administered by the Department of Land Resources.\nII. Bhu-Aadhaar is a 14-digit unique identifier for a land parcel.",
+      "options": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "answer": 2,
+      "note": "Both are correct. DILRMP 3.0 covers 2026-31, and Bhu-Aadhaar is also called ULPIN.\nSource: September 2026 Smart Points, PDF p. 15, News 37.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 15,
+        "newsItem": 37
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who became the first Director General of the India Photonics Association?",
+      "options": [
+        "Ashwini Aggarwal",
+        "V. Narayanan",
+        "Rajkumar Upadhyay",
+        "Saurabh Garg"
+      ],
+      "answer": 0,
+      "note": "The independent industry body was launched in Delhi to support India's photonics ecosystem.\nSource: September 2026 Smart Points, PDF p. 15, News 38.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 15,
+        "newsItem": 38
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Chhattisgarh's NIPUN Mission expands to which of the following?",
+      "options": [
+        "National Initiative for Primary Understanding and Numeracy",
+        "New Age Industrial Preparedness for Upskilling New Generation Youth",
+        "New Industrial Parks for Urban Networks",
+        "National Innovation Programme for Unorganised Networks"
+      ],
+      "answer": 1,
+      "note": "The Chief Minister Startup and NIPUN Mission includes district entrepreneurship centres and emerging-technology labs.\nSource: September 2026 Smart Points, PDF p. 15, News 39.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 15,
+        "newsItem": 39
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "MISHTI, linked to mangrove plantations in Kutch, stands for what?",
+      "options": [
+        "Marine Infrastructure Scheme for Harbour Trade and Investment",
+        "Mission for Inland Shipping and Transport Integration",
+        "Mangrove Initiative for Shoreline Habitats and Tangible Incomes",
+        "Mangrove Insurance System for Habitat and Tourism Improvement"
+      ],
+      "answer": 2,
+      "note": "MISHTI was launched on World Environment Day, June 5, 2023. Guneri in Kutch is Gujarat's first Biodiversity Heritage Site.\nSource: September 2026 Smart Points, PDF p. 16, News 40.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 16,
+        "newsItem": 40
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which platform tracks vaccinations under the National HPV Vaccination Campaign?",
+      "options": [
+        "CoWIN Trade",
+        "e-Shram",
+        "PM Gati Shakti",
+        "U-WIN"
+      ],
+      "answer": 3,
+      "note": "The campaign offers a free voluntary dose of quadrivalent Gardasil-4 to 14-year-old girls.\nSource: September 2026 Smart Points, PDF p. 16, News 41.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 16,
+        "newsItem": 41
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which helpline is NHAI upgrading for multilingual assistance and precise caller location?",
+      "options": [
+        "1033",
+        "1122",
+        "14416",
+        "1930"
+      ],
+      "answer": 0,
+      "note": "The round-the-clock National Highway Helpline has operated since 2018.\nSource: September 2026 Smart Points, PDF p. 17, News 43.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 17,
+        "newsItem": 43
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which set lists the three schemes administered by EPFO?",
+      "options": [
+        "NPS, APY and PMJJBY",
+        "EPF, EPS and EDLI",
+        "PMJDY, PMSBY and PMFBY",
+        "PPF, SCSS and NSC"
+      ],
+      "answer": 1,
+      "note": "Employees' Provident Fund, Employees' Pension Scheme and Employees' Deposit Linked Insurance are administered by EPFO.\nSource: September 2026 Smart Points, PDF p. 17, News 45.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 17,
+        "newsItem": 45
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who chairs the reconstituted Central Board of Film Certification described in the September PDF?",
+      "options": [
+        "Prasoon Joshi",
+        "Anurag Thakur",
+        "Shashi Shekhar Vempati",
+        "Shekhar Kapur"
+      ],
+      "answer": 2,
+      "note": "The board functions under the Ministry of Information and Broadcasting and was reconstituted under the Cinematograph Act, 1952.\nSource: September 2026 Smart Points, PDF p. 18, News 47.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 18,
+        "newsItem": 47
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which institution launched the Ayurveda dialogue series AyurVarta?",
+      "options": [
+        "AIIMS New Delhi",
+        "Indian Council of Medical Research",
+        "National Institute of Nutrition",
+        "All India Institute of Ayurveda"
+      ],
+      "answer": 3,
+      "note": "The Ayush ministry institution launched the series ahead of Ayurveda Day, fixed annually on September 23 since 2025.\nSource: September 2026 Smart Points, PDF p. 18, News 48.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 18,
+        "newsItem": 48
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which airport became the third origin integrated into the Hub & Spoke international-flight framework after Varanasi and Amritsar?",
+      "options": [
+        "Ahmedabad",
+        "Jaipur",
+        "Lucknow",
+        "Patna"
+      ],
+      "answer": 0,
+      "note": "Delhi is the designated hub; check-in, customs and immigration are completed at the origin airport.\nSource: September 2026 Smart Points, PDF p. 18, News 49.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 18,
+        "newsItem": 49
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Dinamalar, honoured with a Platinum Jubilee postage stamp, is a newspaper in which language?",
+      "options": [
+        "Telugu",
+        "Tamil",
+        "Malayalam",
+        "Kannada"
+      ],
+      "answer": 1,
+      "note": "T. V. Ramasubbaiyer founded the daily in 1951; its youth publication is Pattam.\nSource: September 2026 Smart Points, PDF p. 19, News 50.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 19,
+        "newsItem": 50
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The National Biodiversity Authority's Access and Benefit-Sharing framework derives from which law?",
+      "options": [
+        "Forest Conservation Act, 1980",
+        "Wildlife Protection Act, 1972",
+        "Biological Diversity Act, 2002",
+        "Environment Protection Act, 1986"
+      ],
+      "answer": 2,
+      "note": "ABS shares benefits from use of biological resources. NBA is headquartered in Chennai.\nSource: September 2026 Smart Points, PDF p. 19, News 51.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 19,
+        "newsItem": 51
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "CSS Shield provides support for whom?",
+      "options": [
+        "Retired defence personnel",
+        "Farmers affected by crop failure",
+        "Exporters facing currency losses",
+        "Bereaved families of Central Secretariat Service officers"
+      ],
+      "answer": 3,
+      "note": "The CSS Forum launched this mutual support mechanism under the principle Contribute for Family, Support with Dignity.\nSource: September 2026 Smart Points, PDF p. 19, News 53.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 19,
+        "newsItem": 53
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "What is the theme of Swachhata Hi Seva 2026?",
+      "options": [
+        "Swachhata Mein Sahbhag; Swachh Bharat, Viksit Bharat",
+        "Swachh Sagar, Surakshit Sagar",
+        "One Earth, One Family, One Future",
+        "Green Growth for All"
+      ],
+      "answer": 0,
+      "note": "The September 17-October 2 campaign is led by MoHUA and the Department of Drinking Water and Sanitation.\nSource: September 2026 Smart Points, PDF p. 20, News 55.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 20,
+        "newsItem": 55
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The SPROUT facility at NIPGR is designed primarily for which purpose?",
+      "options": [
+        "Marine litter tracking",
+        "High-throughput plant phenotyping and stress screening",
+        "Satellite debris monitoring",
+        "Blood-bank management"
+      ],
+      "answer": 1,
+      "note": "SPROUT means SpeedSeed Phenotyping and Resource Optimization for Unified Trait Analysis. The New Delhi facility operates under BioE3.\nSource: September 2026 Smart Points, PDF p. 20, News 56.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 20,
+        "newsItem": 56
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Karnataka's official Engineers' Day observance honours whose birth anniversary?",
+      "options": [
+        "A. P. J. Abdul Kalam",
+        "Vikram Sarabhai",
+        "Sir M. Visvesvaraya",
+        "Satish Dhawan"
+      ],
+      "answer": 2,
+      "note": "Engineers' Day falls on September 15. Visvesvaraya received the Bharat Ratna in 1955.\nSource: September 2026 Smart Points, PDF p. 21, News 57.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 21,
+        "newsItem": 57
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "What does OneTag, integrated into NHAI's Rajmargyatra app, allow a FASTag user to do?",
+      "options": [
+        "Use one tag for unlimited vehicles",
+        "Bypass all highway tolls permanently",
+        "Convert FASTag into a driving licence",
+        "Change issuer bank while retaining the physical tag"
+      ],
+      "answer": 3,
+      "note": "OneTag is a joint IHMCL-NPCI initiative. A six-month cooling period applies before another port.\nSource: September 2026 Smart Points, PDF p. 21, News 59.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 21,
+        "newsItem": 59
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Tulu's additional-official-language status in Karnataka is limited to which districts?",
+      "options": [
+        "Dakshina Kannada and Udupi",
+        "Mysuru and Mandya",
+        "Belagavi and Dharwad",
+        "Bengaluru Urban and Rural"
+      ],
+      "answer": 0,
+      "note": "Tulu is a Dravidian language also spoken in Kerala's Kasaragod district.\nSource: September 2026 Smart Points, PDF p. 22, News 60.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 22,
+        "newsItem": 60
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "DGFT's de minimis exemption for small export consignments removes the need for which document?",
+      "options": [
+        "Importer-Exporter Code in every case",
+        "Registration-cum-Membership Certificate",
+        "Certificate of incorporation",
+        "Passport of every director"
+      ],
+      "answer": 1,
+      "note": "The RCMC exemption applies up to the specified FOB threshold and reduces compliance for small exporters under FTP 2023.\nSource: September 2026 Smart Points, PDF p. 22, News 61.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 22,
+        "newsItem": 61
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Flipkart's Eat In food-delivery service was built in partnership with which network?",
+      "options": [
+        "NPCI",
+        "SWIFT",
+        "ONDC",
+        "GeM"
+      ],
+      "answer": 2,
+      "note": "Eat In was piloted in Bengaluru, with processing and fulfilment through Flipkart Minutes.\nSource: September 2026 Smart Points, PDF p. 22, News 62.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 22,
+        "newsItem": 62
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Maharashtra's draft DELTA Act concerns tokenisation of what?",
+      "options": [
+        "School examination certificates only",
+        "Agricultural crop forecasts",
+        "Vehicle pollution certificates",
+        "Land and immovable property"
+      ],
+      "answer": 3,
+      "note": "DELTA means Digitisation and Exchange of Land Token Assets, a proposed blockchain-based framework.\nSource: September 2026 Smart Points, PDF p. 23, News 63.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 23,
+        "newsItem": 63
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The dissolved Digital Communications Commission was the apex decision-making body of which department?",
+      "options": [
+        "Department of Telecommunications",
+        "Department of Financial Services",
+        "Department of Commerce",
+        "Department of Space"
+      ],
+      "answer": 0,
+      "note": "It began as the Telecom Commission in 1989 and was renamed in 2018.\nSource: September 2026 Smart Points, PDF p. 23, News 64.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 23,
+        "newsItem": 64
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The seventh National Formulary of India was launched at a programme organised by which body?",
+      "options": [
+        "National Medical Commission",
+        "Indian Pharmacopoeia Commission",
+        "Food Safety and Standards Authority of India",
+        "Pharmacy Council of India"
+      ],
+      "answer": 1,
+      "note": "The launch formed part of National Pharmacovigilance Week; ADR-PvPI 2.0 was also introduced for iOS.\nSource: September 2026 Smart Points, PDF p. 23, News 65.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 23,
+        "newsItem": 65
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which authentication was made mandatory for subsidised domestic LPG refill booking from October 1, 2026 in the source?",
+      "options": [
+        "Passport-based video verification",
+        "PAN-only authentication",
+        "Biometric Aadhaar Authentication",
+        "Voter-card-only authentication"
+      ],
+      "answer": 2,
+      "note": "The Petroleum and Natural Gas Ministry's BAA process can be completed at delivery, distributors or OMC apps.\nSource: September 2026 Smart Points, PDF p. 24, News 66.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 24,
+        "newsItem": 66
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Smartphone screen protectors were added to which compulsory-registration framework?",
+      "options": [
+        "Securities and Exchange Board of India",
+        "National Accreditation Board for Hospitals",
+        "Directorate General of Foreign Trade",
+        "Bureau of Indian Standards"
+      ],
+      "answer": 3,
+      "note": "The notification requires conformity with IS 19348:2025 from April 1, 2027.\nSource: September 2026 Smart Points, PDF p. 24, News 67.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 24,
+        "newsItem": 67
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "TRAI's thirteenth amendment requires more Special Tariff Vouchers dedicated to which services?",
+      "options": [
+        "Voice and SMS without bundled data",
+        "International roaming data only",
+        "Broadband and television bundles",
+        "Satellite internet only"
+      ],
+      "answer": 0,
+      "note": "Operators must offer a voice-and-SMS-only STV for every validity period of 30 days or less.\nSource: September 2026 Smart Points, PDF p. 24, News 68.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 24,
+        "newsItem": 68
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which of the first four notified mega ports is privately owned?",
+      "options": [
+        "Paradip",
+        "Mundra",
+        "Deendayal",
+        "Jawaharlal Nehru"
+      ],
+      "answer": 1,
+      "note": "The other three are Deendayal, Jawaharlal Nehru and Paradip. The notification uses the Indian Ports Act, 2025.\nSource: September 2026 Smart Points, PDF p. 24, News 69.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 24,
+        "newsItem": 69
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Premier Energies commissioned its TOPCon G12R solar-cell facility at which location?",
+      "options": [
+        "Dholera, Gujarat",
+        "Tuticorin, Tamil Nadu",
+        "Naidupeta, Andhra Pradesh",
+        "Pavagada, Karnataka"
+      ],
+      "answer": 2,
+      "note": "The new solar-cell facility follows the company's solar-module facility at Seetharampur, Telangana.\nSource: September 2026 Smart Points, PDF p. 25, News 70.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 25,
+        "newsItem": 70
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "India's first LNG-powered train was flagged off from which station in the monthly PDF?",
+      "options": [
+        "Jind, Haryana",
+        "Secunderabad, Telangana",
+        "Chennai Central",
+        "Sabarmati, Ahmedabad"
+      ],
+      "answer": 3,
+      "note": "Amit Shah and Bhupendra Patel flagged it off in Gujarat.\nSource: September 2026 Smart Points, PDF p. 25, News 71.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 25,
+        "newsItem": 71
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Make in India was launched on which date?",
+      "options": [
+        "September 25, 2014",
+        "August 15, 2015",
+        "January 26, 2016",
+        "October 2, 2013"
+      ],
+      "answer": 0,
+      "note": "Make in India completed 12 years in September 2026; Make in India 2.0 covers manufacturing and service sectors.\nSource: September 2026 Smart Points, PDF p. 25, News 72.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 25,
+        "newsItem": 72
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The Bhote Koshi and Trishuli river-system flash floods occurred in which country?",
+      "options": [
+        "Bhutan",
+        "Nepal",
+        "Bangladesh",
+        "Myanmar"
+      ],
+      "answer": 1,
+      "note": "The floods originated in high-altitude areas of Rasuwa district; the UN released Central Emergency Response Fund support.\nSource: September 2026 Smart Points, PDF p. 26, News 73.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 26,
+        "newsItem": 73
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which country became the 71st Artemis Accords signatory in the September source?",
+      "options": [
+        "Thailand",
+        "Indonesia",
+        "Türkiye",
+        "South Africa"
+      ],
+      "answer": 2,
+      "note": "Türkiye is preparing AYAP lunar missions. India joined the Artemis Accords as the 27th signatory in June 2023.\nSource: September 2026 Smart Points, PDF p. 26, News 74.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 26,
+        "newsItem": 74
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "China's GJ-21 is the naval variant of which unmanned combat aircraft?",
+      "options": [
+        "Bayraktar TB2",
+        "MQ-9 Reaper",
+        "Orion-E",
+        "GJ-11 Sharp Sword"
+      ],
+      "answer": 3,
+      "note": "The drone was flight-tested by the PLA Navy; Sichuan is the lead Type 076 vessel with an electromagnetic catapult.\nSource: September 2026 Smart Points, PDF p. 26, News 75.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 26,
+        "newsItem": 75
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Under Thailand's revised rules effective September 15, 2026, what is the maximum visa-free tourist stay for Indians?",
+      "options": [
+        "30 days",
+        "15 days",
+        "60 days",
+        "90 days"
+      ],
+      "answer": 0,
+      "note": "The monthly source says Indians remain visa-exempt for tourism; the permitted stay falls from 60 days to 30.\nSource: September 2026 Smart Points, PDF p. 27, News 78.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 27,
+        "newsItem": 78
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which country introduced the UNGA Correct the Map resolution on behalf of the Group of African States?",
+      "options": [
+        "Kenya",
+        "Togo",
+        "Ghana",
+        "South Africa"
+      ],
+      "answer": 1,
+      "note": "The resolution seeks more equitable cartographic representation, particularly of Africa.\nSource: September 2026 Smart Points, PDF p. 27, News 79.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 27,
+        "newsItem": 79
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which date did UNGA proclaim as the International Day for the Elimination of Child, Early and Forced Marriage?",
+      "options": [
+        "October 11",
+        "March 8",
+        "November 27",
+        "December 10"
+      ],
+      "answer": 2,
+      "note": "Sierra Leone led the resolution. India's Bal Vivah Mukt Bharat campaign was launched on November 27, 2024.\nSource: September 2026 Smart Points, PDF p. 28, News 80.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 28,
+        "newsItem": 80
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which country recognised India's Carbon Credit Trading Scheme under its Carbon Border Adjustment Mechanism?",
+      "options": [
+        "Japan",
+        "Canada",
+        "Australia",
+        "United Kingdom"
+      ],
+      "answer": 3,
+      "note": "The source links recognition of CCTS to the UK's CBAM, planned for January 1, 2027.\nSource: September 2026 Smart Points, PDF p. 28, News 81.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 28,
+        "newsItem": 81
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which US agency leads the 6G Leadership and Security initiative joined by India?",
+      "options": [
+        "National Telecommunications and Information Administration",
+        "Federal Aviation Administration",
+        "National Science Foundation",
+        "Securities and Exchange Commission"
+      ],
+      "answer": 0,
+      "note": "The initiative concerns secure, interoperable and resilient 6G networks; India also engages through the Bharat 6G Alliance.\nSource: September 2026 Smart Points, PDF p. 28, News 82.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 28,
+        "newsItem": 82
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "IAEA's ATLAS initiative concerns peaceful nuclear applications in which area?",
+      "options": [
+        "Only medical isotope production",
+        "Civilian shipping and floating nuclear power plants",
+        "Only lunar exploration",
+        "Only agricultural irradiation"
+      ],
+      "answer": 1,
+      "note": "ATLAS means Atomic Technologies Licensed for Applications at Sea. IAEA is headquartered in Vienna.\nSource: September 2026 Smart Points, PDF p. 28, News 83.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 28,
+        "newsItem": 83
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "JICA and MoEFCC's Capacity Enhancement for Effective Forest Management Project focuses on whom?",
+      "options": [
+        "Commercial airline pilots",
+        "Bank compliance officers",
+        "Frontline forest personnel",
+        "Coast Guard divers"
+      ],
+      "answer": 2,
+      "note": "The seven-year project addresses changing forest, wildlife and climate-management needs.\nSource: September 2026 Smart Points, PDF p. 117, News 398.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 117,
+        "newsItem": 398
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "India extended a concessional line of credit for energy projects to which Himalayan neighbour?",
+      "options": [
+        "Nepal",
+        "Bangladesh",
+        "Myanmar",
+        "Bhutan"
+      ],
+      "answer": 3,
+      "note": "The source also lists joint hydropower projects including Chukha, Kurichhu, Tala, Mangdechhu and Punatsangchhu-II.\nSource: September 2026 Smart Points, PDF p. 117, News 399.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 117,
+        "newsItem": 399
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The Tribunals Reforms Bill, 2026 proposes which central digital repository?",
+      "options": [
+        "National Tribunals Data Grid",
+        "National Judicial Appointments Grid",
+        "National Consumer Price Grid",
+        "Central Election Data Vault"
+      ],
+      "answer": 0,
+      "note": "The proposed National Tribunals Commission would develop and maintain the repository for listed tribunals and appellate bodies.\nSource: September 2026 Smart Points, PDF p. 118, News 400.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 118,
+        "newsItem": 400
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which institution maintains Indian Standard Time under the Legal Metrology rules in the source?",
+      "options": [
+        "India Meteorological Department",
+        "CSIR-National Physical Laboratory",
+        "ISRO",
+        "Survey of India"
+      ],
+      "answer": 1,
+      "note": "IST is UTC plus 5 hours 30 minutes, based on the 82.5°E longitude reference. The rules require clock synchronisation.\nSource: September 2026 Smart Points, PDF p. 118, News 401.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 118,
+        "newsItem": 401
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who chairs the Joint Parliamentary Committee examining the FCRA Amendment Bill, 2026?",
+      "options": [
+        "P. P. Chaudhary",
+        "Om Birla",
+        "Sanjay Jaiswal",
+        "Nitin Kumar Yadav"
+      ],
+      "answer": 2,
+      "note": "The committee has 31 members, with 21 from Lok Sabha and 10 from Rajya Sabha.\nSource: September 2026 Smart Points, PDF p. 118, News 402.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 118,
+        "newsItem": 402
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Under the 2026 e-commerce rules, the prior price shown during a discount refers to what?",
+      "options": [
+        "The highest price ever advertised",
+        "Only the manufacturer's original list price",
+        "The average competitor price",
+        "The lowest price offered in the preceding 30 days"
+      ],
+      "answer": 3,
+      "note": "The source also requires dark-pattern compliance and an annual self-audit.\nSource: September 2026 Smart Points, PDF p. 119, News 403.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 119,
+        "newsItem": 403
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Under the 2026 births-and-deaths amendment, registration delayed beyond two years requires whose order?",
+      "options": [
+        "Judicial Magistrate of First Class",
+        "Village sarpanch alone",
+        "District education officer",
+        "Police station house officer alone"
+      ],
+      "answer": 0,
+      "note": "The source distinguishes this from delays over one year but within two years, handled by specified executive authorities.\nSource: September 2026 Smart Points, PDF p. 119, News 404.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 119,
+        "newsItem": 404
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The Inter-State Council amendment was notified using powers under which constitutional Article?",
+      "options": [
+        "Article 280",
+        "Article 263",
+        "Article 324",
+        "Article 338"
+      ],
+      "answer": 1,
+      "note": "The amendment specifies circumstances for Governors and Lieutenant Governors to attend Council meetings.\nSource: September 2026 Smart Points, PDF p. 119, News 405.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 119,
+        "newsItem": 405
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which ministry notified the Passports Amendment Rules, 2026?",
+      "options": [
+        "Ministry of Home Affairs",
+        "Ministry of Civil Aviation",
+        "Ministry of External Affairs",
+        "Ministry of Law and Justice"
+      ],
+      "answer": 2,
+      "note": "The rules revise validity provisions for ordinary passports issued to children below 15 years.\nSource: September 2026 Smart Points, PDF p. 120, News 406.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 120,
+        "newsItem": 406
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "UNDP and HUL's circular-economy partnership focuses on which material?",
+      "options": [
+        "Only ferrous metals",
+        "Only construction sand",
+        "Only glass bottles",
+        "Plastics"
+      ],
+      "answer": 3,
+      "note": "The partnership includes support for Safai Mitras, urban waste systems, recycling efficiency and knowledge transfer.\nSource: September 2026 Smart Points, PDF p. 120, News 407.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 120,
+        "newsItem": 407
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Air India partnered with which Bhutanese airline to improve connections via Delhi to Paro?",
+      "options": [
+        "Drukair",
+        "Buddha Air",
+        "Yeti Airlines",
+        "Biman Bangladesh Airlines"
+      ],
+      "answer": 0,
+      "note": "The partnership aims to improve India-Bhutan and onward international connectivity.\nSource: September 2026 Smart Points, PDF p. 120, News 408.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 120,
+        "newsItem": 408
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Bihar and Jharkhand signed a water-sharing agreement for which river?",
+      "options": [
+        "Damodar",
+        "Sone",
+        "Mahanadi",
+        "Teesta"
+      ],
+      "answer": 1,
+      "note": "The Sone originates near Amarkantak in Madhya Pradesh and joins the Ganges near Patna.\nSource: September 2026 Smart Points, PDF p. 123, News 417.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 123,
+        "newsItem": 417
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "India's Joint Declaration of Intent on wetland conservation was signed with which country?",
+      "options": [
+        "Netherlands",
+        "France",
+        "Germany",
+        "Denmark"
+      ],
+      "answer": 2,
+      "note": "It was signed at the fourth Indo-German Environment Forum in New Delhi, themed Together for More Resilience.\nSource: September 2026 Smart Points, PDF p. 123, News 421.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 123,
+        "newsItem": 421
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Odisha's IDS-DRR disaster-risk platform partnership is with which organisation?",
+      "options": [
+        "Google Cloud",
+        "Current AI",
+        "Pratithi Investments",
+        "CivicDataLab"
+      ],
+      "answer": 3,
+      "note": "OSDMA signed one MoU with CivicDataLab for digital public infrastructure and another with UNDP for resilience and preparedness.\nSource: September 2026 Smart Points, PDF p. 125, News 426.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 125,
+        "newsItem": 426
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NALCO licensed DX+ Ultra aluminium-smelting technology from which company?",
+      "options": [
+        "Emirates Global Aluminium",
+        "Hindalco Industries",
+        "Vedanta Aluminium",
+        "Rio Tinto"
+      ],
+      "answer": 0,
+      "note": "The technology is intended for the brownfield smelter expansion at Angul, Odisha.\nSource: September 2026 Smart Points, PDF p. 126, News 430.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 126,
+        "newsItem": 430
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which state is implementing the Amended BharatNet Programme through JDICL under a state-led model?",
+      "options": [
+        "Bihar",
+        "Jharkhand",
+        "Odisha",
+        "West Bengal"
+      ],
+      "answer": 1,
+      "note": "Jharkhand Digital Infrastructure Corporation Ltd is the state SPV; Digital Bharat Nidhi, BSNL and other parties signed the agreement.\nSource: September 2026 Smart Points, PDF p. 128, News 440.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 128,
+        "newsItem": 440
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The first additional protocol to the India-MERCOSUR PTA gives legal validity to which document?",
+      "options": [
+        "Digital driving licences",
+        "Electronic boarding passes",
+        "Electronic Certificates of Origin",
+        "Dematerialised land deeds"
+      ],
+      "answer": 2,
+      "note": "The protocol gives e-CoOs the same validity as paper certificates under the PTA's Rules of Origin.\nSource: September 2026 Smart Points, PDF p. 128, News 441.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 128,
+        "newsItem": 441
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Cochin Shipyard's JV with Drydocks World concerns which facility?",
+      "options": [
+        "Dighi shipbuilding cluster",
+        "Chennai container terminal",
+        "Paradip dry port",
+        "International Ship Repair Facility, Kochi"
+      ],
+      "answer": 3,
+      "note": "The parties signed a 50:50 JV agreement to operate and expand the Kochi facility.\nSource: September 2026 Smart Points, PDF p. 129, News 442.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 129,
+        "newsItem": 442
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Chharra, Balurghat, Hasimara and Kalaikunda were proposed for regional airport development in which state?",
+      "options": [
+        "West Bengal",
+        "Odisha",
+        "Bihar",
+        "Assam"
+      ],
+      "answer": 0,
+      "note": "The Union government, West Bengal and AAI signed a tripartite MoU for the four sites.\nSource: September 2026 Smart Points, PDF p. 130, News 445.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 130,
+        "newsItem": 445
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The Kishau Multipurpose Project is a dam on which river?",
+      "options": [
+        "Sone",
+        "Tons",
+        "Teesta",
+        "Beas"
+      ],
+      "answer": 1,
+      "note": "It lies along the Uttarakhand-Himachal Pradesh border; six Yamuna-basin states signed the agreement.\nSource: September 2026 Smart Points, PDF p. 130, News 448.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 130,
+        "newsItem": 448
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "MDL's proposed greenfield shipbuilding cluster at Dighi is in which district?",
+      "options": [
+        "Tirupati, Andhra Pradesh",
+        "Kochi, Kerala",
+        "Raigad, Maharashtra",
+        "Kutch, Gujarat"
+      ],
+      "answer": 2,
+      "note": "NSHIPML is an SPV of Maharashtra Maritime Board and Mumbai Port Authority. Distinguish Dighi from Dugarajapatnam in Andhra Pradesh.\nSource: September 2026 Smart Points, PDF p. 133, News 457.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 133,
+        "newsItem": 457
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Delhi's Town Hall complex is being conserved and redeveloped as what?",
+      "options": [
+        "A stock exchange",
+        "A civil aviation academy",
+        "A new parliament building",
+        "A Global Heritage Centre"
+      ],
+      "answer": 3,
+      "note": "DTTDC and MCD signed the MoU for the Chandni Chowk complex, with ownership remaining with MCD.\nSource: September 2026 Smart Points, PDF p. 133, News 458.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 133,
+        "newsItem": 458
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "UDAN, linked to regional-connectivity MoUs, expands to what?",
+      "options": [
+        "Ude Desh ka Aam Nagrik",
+        "Unified Development of Aviation Networks",
+        "Urban Domestic Air Navigation",
+        "Universal District Aerodrome Network"
+      ],
+      "answer": 0,
+      "note": "The Ministry of Civil Aviation and AAI signed 21 MoUs under the next phase of the Regional Connectivity Scheme.\nSource: September 2026 Smart Points, PDF p. 133, News 459.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 133,
+        "newsItem": 459
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "India partnered with which country for technical cooperation on Gujarat's Kalpasar Project?",
+      "options": [
+        "Germany",
+        "Netherlands",
+        "Japan",
+        "Norway"
+      ],
+      "answer": 1,
+      "note": "The MoUs involve CWC, Gujarat's Kalpasar Department, Deltares and TU Delft and concern water-management cooperation.\nSource: September 2026 Smart Points, PDF p. 134, News 461.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 134,
+        "newsItem": 461
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "MDL's Dugarajapatnam greenfield shipyard is proposed in which state?",
+      "options": [
+        "Maharashtra",
+        "Odisha",
+        "Andhra Pradesh",
+        "Tamil Nadu"
+      ],
+      "answer": 2,
+      "note": "Dugarajapatnam is in Tirupati district; NSHIP-AP is an SPV of the AP Maritime Board and Visakhapatnam Port Authority.\nSource: September 2026 Smart Points, PDF p. 134, News 463.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 134,
+        "newsItem": 463
+      }
+    }
+  ]
 };

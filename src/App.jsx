@@ -207,7 +207,7 @@ function Home({ results, onPick, onReview }) {
                     <div className="sheet-card__no">
                       {s.isMonthlyStatic
                         ? "Monthly static"
-                        : `Sheet ${String(s.id).padStart(2, "0")}`}
+                        : `Sheet ${String(s.baseId ?? s.id).padStart(2, "0")}`}
                     </div>
                     <h3 className="sheet-card__name">{s.subtitle}</h3>
                     <p className="sheet-card__desc">

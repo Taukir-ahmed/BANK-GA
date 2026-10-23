@@ -1,443 +1,1816 @@
-// September 2026 is built week by week from the CA Weekly PDFs. Each week's
-// questions sit under a marker below — append the next week at the end of the
-// array so existing question numbers (and any mustKnow refs) stay stable.
-const S = ["Only I", "Only II", "Both I and II", "Neither I nor II"];
-
+// September 2026 monthly replacement. Versioned score ID keeps weekly attempts separate.
 export default {
-  id: 31,
-  month: "September 2026",
-  title: "Sheet 31",
-  subtitle: "Science, Defence, Sports & Persons",
-  questions: [
-    // ── Week 1 (Sep 1–7) ─────────────────────────────────────────────────
+  "id": "september-2026-monthly-31-v1",
+  "baseId": 31,
+  "order": 31,
+  "month": "September 2026",
+  "title": "Sheet 31",
+  "subtitle": "Monthly · Science, Defence, Sports & Persons",
+  "source": {
+    "document": "Smart Points PDF (September 2026)",
+    "publisher": "Smartkeeda",
+    "period": "monthly"
+  },
+  "questions": [
     {
-      type: "mcq",
-      q: "The 2nd edition of joint maritime exercise 'SAHYOG HOP-TAC' concluded off Chennai between the Indian Coast Guard and the coast guard of:",
-      options: ["Thailand", "Vietnam", "Indonesia", "Philippines"],
-      answer: 1,
-      note: "Vietnam — India fielded 8 ships and 6 aircraft; Vietnam deployed CSB 8002. The 7th High-Level Meeting between the two coast guards was also held in Chennai. Vietnam – Hanoi – Dong | President – To Lam | PM – Le Minh Hung.",
+      "type": "mcq",
+      "q": "SAHYOG HOP-TAC 2026 was a joint coast-guard exercise between India and which country?",
+      "options": [
+        "Vietnam",
+        "Thailand",
+        "Indonesia",
+        "Philippines"
+      ],
+      "answer": 0,
+      "note": "The second edition concluded off Chennai. Vietnam deployed CSB 8002.\nSource: September 2026 Smart Points, PDF p. 56, News 177.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 56,
+        "newsItem": 177
+      }
     },
     {
-      type: "mcq",
-      q: "Goa Shipyard handed over 'ICGS Ajit' to the Indian Coast Guard. It is the 7th vessel of which class?",
-      options: ["Samarth-class OPV", "Adamya-class FPV", "Vikram-class OPV", "Rani Abbakka-class"],
-      answer: 1,
-      note: "Adamya-class Fast Patrol Vessel — 51.43 m long, 330 tonnes, twin diesel engines with Controllable Pitch Propellers. GSL: HQ – Vasco da Gama | CMD – Brajesh Kumar Upadhyay. ICG: DG – S Paramesh | Founded 1977.",
+      "type": "mcq",
+      "q": "ICGS Ajit is a Fast Patrol Vessel of which class?",
+      "options": [
+        "Nistar class",
+        "Adamya class",
+        "Nilgiri class",
+        "Sandhayak class"
+      ],
+      "answer": 1,
+      "note": "Goa Shipyard handed over the seventh Adamya-class vessel to the Indian Coast Guard at Vasco da Gama.\nSource: September 2026 Smart Points, PDF p. 56, News 178.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 56,
+        "newsItem": 178
+      }
     },
     {
-      type: "mcq",
-      q: "DRDO tested its 'Military Combat Parachute System' with a jump from 22,000 feet at the Nyoma-Mudh Drop Zone in Leh. The system was developed by which DRDO lab?",
-      options: [
-        "ADRDE, Agra",
-        "DEBEL, Bengaluru",
+      "type": "mcq",
+      "q": "DRDO's Military Combat Parachute System was developed by which establishment?",
+      "options": [
         "ARDE, Pune",
-        "DRDL, Hyderabad",
+        "LRDE, Bengaluru",
+        "ADRDE, Agra",
+        "DLRL, Hyderabad"
       ],
-      answer: 0,
-      note: "Aerial Delivery Research and Development Establishment, Agra, in collaboration with DEBEL Bengaluru. The jump (Wing Commander Rahul Jha, MWO R.J. Singh, MWO Vivek Tiwari) was made in temperatures as low as minus 15°C. DRDO Chairman – Rajesh Kumar Singh (additional charge).",
+      "answer": 2,
+      "note": "The Aerial Delivery Research and Development Establishment worked with DEBEL, Bengaluru; testing took place at Nyoma-Mudh in Leh.\nSource: September 2026 Smart Points, PDF p. 57, News 179.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 57,
+        "newsItem": 179
+      }
     },
     {
-      type: "mcq",
-      q: "L&T delivered 'Samarthak', the Indian Navy's first indigenously designed and built Multi-Purpose Vessel, from its shipyard at:",
-      options: ["Hazira", "Kattupalli", "Mazagon", "Vizag"],
-      answer: 1,
-      note: "Kattupalli near Chennai, under an ₹887 Cr 'Buy (Indian)' contract of Mar 2022 for 2 vessels — the second, 'Utkarsh', was launched Jan 14, 2025. Samarthak: 3,750 tonnes, 107 m, max speed 15 knots. L&T: CEO & MD – S. N. Subrahmanyan.",
-    },
-    {
-      type: "mcq",
-      q: "The Indian Army signed a Letter of Offer and Acceptance with the US for FGM-148 'Javelin' anti-tank missiles worth $45.7 million. The Javelin is manufactured by a joint venture of:",
-      options: [
-        "Boeing and Northrop Grumman",
-        "RTX and Lockheed Martin",
-        "General Dynamics and BAE Systems",
-        "L3Harris and Textron",
-      ],
-      answer: 1,
-      note: "Javelin Joint Venture (RTX + Lockheed Martin), which signed an MoU on Aug 30, 2026 making TASL its prime Indian partner to co-produce the Javelin All Up Round. The LOA covers 100 missiles, 1 fly-to-buy round and 25 Lightweight Command Launch Units, part of a $93 mn DSCA clearance (Nov 2025) that also included 216 M982A1 Excalibur projectiles. DRDO is developing an indigenous MPATGM.",
-    },
-    {
-      type: "mcq",
-      q: "The Indian Army raised its first 'Baaz Battalion', a dedicated drone-operating unit, at:",
-      options: ["Ambala, Haryana", "Jalandhar, Punjab", "Jaisalmer, Rajasthan", "Leh, Ladakh"],
-      answer: 1,
-      note: "Jalandhar, under 11 Corps. Each infantry battalion separately has an 'Ashini drone platoon' for tactical surveillance; artillery regiments operate loitering munitions. Army Chief – General Dhiraj Seth | Vice Chief – Lt Gen Sandeep Jain.",
-    },
-    {
-      type: "mcq",
-      q: "'INS Nipun', commissioned at Naval Dockyard Mumbai, is the Navy's second Nistar-class:",
-      options: [
-        "Survey Vessel",
+      "type": "mcq",
+      "q": "Samarthak, delivered by L&T, is the Indian Navy's first indigenous vessel of which type?",
+      "options": [
+        "Nuclear attack submarine",
+        "Aircraft carrier",
         "Diving Support Vessel",
-        "Fleet Tanker",
-        "Anti-Submarine Corvette",
+        "Multi-Purpose Vessel"
       ],
-      answer: 1,
-      note: "Diving Support Vessel — 118.4 m, 9,350 tonnes, cruising speed 14 knots, endurance 60 days, built by Hindustan Shipyard, Visakhapatnam. INS Nistar was commissioned in Jul 2025 and operates from the Eastern Naval Command. Recall from August: HSL delivered Nipun in August; September saw its commissioning.",
+      "answer": 3,
+      "note": "It was built at Kattupalli near Chennai. The second vessel under the contract is Utkarsh.\nSource: September 2026 Smart Points, PDF p. 57, News 180.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 57,
+        "newsItem": 180
+      }
     },
     {
-      type: "mcq",
-      q: "The IAF conducted a drop trial of the 'Khagantak-243' Long Range Glide Bomb. It was developed by:",
-      options: ["DRDO", "JSR Dynamics", "Bharat Dynamics Ltd", "Solar Industries"],
-      answer: 1,
-      note: "JSR Dynamics, a private Indian defence company, with guidance systems from Bharat Electronics Ltd. IAF Chief – Air Marshal Amar Preet Singh.",
-    },
-    {
-      type: "mcq",
-      q: "Rajnath Singh laid the foundation stone of a ₹472 Cr T-series main battle tank overhaul facility at Vehicle Factory Jabalpur. Its annual overhaul capacity will be:",
-      options: ["50 tanks", "80 tanks", "150 tanks", "230 tanks"],
-      answer: 1,
-      note: "80 T-72 'Ajeya' and T-90 'Bhishma' tanks per year. The Army needs ~230 overhauled annually; Heavy Vehicles Factory, Avadi currently handles ~150.",
-    },
-    {
-      type: "mcq",
-      q: "Kajal Dhochak won gold in the women's 76 kg at the 2026 U20 World Wrestling Championships, becoming only the 2nd Indian to win this title twice. The championships were held in:",
-      options: ["Amman, Jordan", "Bratislava, Slovakia", "Pontevedra, Spain", "Ufa, Russia"],
-      answer: 1,
-      note: "Bratislava; she beat China's Jingru Sun, after winning the 72 kg gold in 2025. In 2026 she took 5 consecutive golds. Tanu Sharma and Savita won silvers. The USA topped men's freestyle with medals in all 10 categories.",
-    },
-    {
-      type: "mcq",
-      q: "R. Praggnanandhaa became the first Indian to win the Grand Chess Tour, beating whom in the 2026 GCT Finals at Saint Louis?",
-      options: ["Magnus Carlsen", "Fabiano Caruana", "Wesley So", "Javokhir Sindarov"],
-      answer: 1,
-      note: "Fabiano Caruana, earning $200,000 and a guaranteed 2027 GCT spot. Recall from August: he won the St. Louis Rapid & Blitz leg to move to 2nd behind Caruana in the standings.",
-    },
-    {
-      type: "mcq",
-      q: "Lallianzuala Chhangte won the FPAI 'Indian Player of the Year' (Men's) for the 3rd time at the Indian Football Awards 2026. Who holds the record for most wins (four)?",
-      options: ["Bhaichung Bhutia", "Sunil Chhetri", "Gurpreet Singh Sandhu", "Sandesh Jhingan"],
-      answer: 1,
-      note: "Sunil Chhetri; Chhangte (Mohun Bagan) is only the 2nd to win thrice. Women's Player of the Year – Manisha Kalyan; Young Player – Sanan Mohammed K; ISL champions – East Bengal FC. Hosted by the Football Players' Association of India in Kolkata.",
-    },
-    {
-      type: "mcq",
-      q: "Vaibhav Suryavanshi became the youngest player to score a half-century in Duleep Trophy history at 15 years and 157 days. The youngest to score a century in the tournament is:",
-      options: ["Laxman Singh", "Sachin Tendulkar", "Prithvi Shaw", "Virat Kohli"],
-      answer: 1,
-      note: "Sachin Tendulkar (17 years, 262 days, 1990-91). The previous youngest fifty was Laxman Singh (16 years, 23 days) in 1969. East Zone, captained by Ishan Kishan, went on to win the Duleep Trophy 2026-27 beating South Zone in Chennai; Tilak Varma was Player of the Series.",
-    },
-    {
-      type: "mcq",
-      q: "Germany won the Men's FIH Hockey World Cup 2026 in Wavre, Belgium, its 4th title, equalling the record of:",
-      options: ["Netherlands", "Australia", "Pakistan", "India"],
-      answer: 2,
-      note: "Pakistan (4). Germany beat Spain 1-0 and became the first men's team to win back-to-back World Cups on two separate occasions. Argentina won the women's title in Amstelveen, beating the Netherlands. India's men (led by Harmanpreet Singh) finished 8th; the women (Salima Tete) 5th — their best since 4th in the inaugural 1974 edition.",
-    },
-    {
-      type: "mcq",
-      q: "Roger Federer was inducted into the International Tennis Hall of Fame in the Player Category. The ceremony was held at Newport in which US state?",
-      options: ["Massachusetts", "Rhode Island", "Connecticut", "New York"],
-      answer: 1,
-      note: "Rhode Island, on the historic Horseshoe Court. Sportscaster Mary Carillo was inducted in the Contributor Category. Federer: 20 Grand Slam singles titles, 103 ATP titles, a record 237 consecutive weeks at No. 1 (2004-08).",
-    },
-    {
-      type: "mcq",
-      q: "India's eFootball national team won the inaugural FIFAe Continental Championship Asia 2026 in Kuala Lumpur, defeating:",
-      options: ["South Korea", "Japan", "Indonesia", "Saudi Arabia"],
-      answer: 1,
-      note: "Japan, represented by Danial Patel ('DaNiAL') and Mujtaba Husaini ('MujjiCool') — India's 3rd successive qualification for the FIFAe World Cup, to be held in Saudi Arabia later in 2026. Indonesia won the console category.",
-    },
-    {
-      type: "mcq",
-      q: "The North East's first National Centre of Excellence for swimming will be established at Amingaon Sports Complex in:",
-      options: ["Meghalaya", "Assam", "Manipur", "Tripura"],
-      answer: 1,
-      note: "Assam (Kamrup district), under a tripartite agreement of SAI, the Badminton Association of India and the Swimming Association of Assam; the ₹50 Cr Olympic-size pool was built by the state. BAI President – Dr. Himanta Biswa Sarma (also Assam CM). SAI DG – Hari Ranjan Rao.",
-    },
-    {
-      type: "mcq",
-      q: "Lionel Messi retired from international football as Argentina's most-capped player with:",
-      options: ["147 appearances", "187 appearances", "207 appearances", "221 appearances"],
-      answer: 2,
-      note: "207 caps, 125 goals and 68 assists, surpassing Javier Mascherano's 147. He played 6 World Cups (record 34 appearances, 21 goals), winning the 2022 World Cup, Copa América 2021 and 2024, the 2022 Finalissima and Beijing 2008 Olympic gold.",
-    },
-    {
-      type: "mcq",
-      q: "Mitchell Starc became the leading wicket-taker in ICC World Test Championship history. Which of the following bowlers has NOT crossed 200 WTC wickets?",
-      options: ["Pat Cummins", "Nathan Lyon", "Ravichandran Ashwin", "Mitchell Starc"],
-      answer: 2,
-      note: "Only Starc (234 at 24.25), Cummins and Lyon have 200+ WTC wickets. The milestone came in the 2nd Test against Bangladesh at Mackay, where he was Player of the Series.",
-    },
-    {
-      type: "mcq",
-      q: "Air Vice Marshal Shakti Sharma became the first woman officer from a non-medical branch in the Indian Armed Forces to attain two-star rank, taking charge as:",
-      options: [
-        "Assistant Chief of Air Staff (Education)",
-        "Director General Medical Services (Air)",
-        "Air Officer Commanding, Western Air Command",
-        "Assistant Chief of Air Staff (Plans)",
+      "type": "mcq",
+      "q": "Javelin, procured through the US Foreign Military Sales route, is what type of weapon?",
+      "options": [
+        "Anti-tank guided missile",
+        "Anti-submarine torpedo",
+        "Airborne early-warning radar",
+        "Surface-to-air interceptor"
       ],
-      answer: 0,
-      note: "ACAS (Education) at Air HQ. Air Marshal Padma Bandopadhyay was the IAF's first woman Air Vice Marshal (2002) and Air Marshal, but from the Medical Branch. Recall from August: Sqn Ldr Bhawana Kanth became the first woman to complete the Fighter Combat Leader course.",
+      "answer": 0,
+      "note": "FGM-148 Javelin is produced by an RTX-Lockheed Martin joint venture; TASL was selected as an Indian co-production partner.\nSource: September 2026 Smart Points, PDF p. 57, News 181.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 57,
+        "newsItem": 181
+      }
     },
     {
-      type: "mcq",
-      q: "Who took charge as CEO of Apple on Sep 1, 2026, with Tim Cook becoming Executive Chairman?",
-      options: ["Craig Federighi", "John Ternus", "Jeff Williams", "Greg Joswiak"],
-      answer: 1,
-      note: "John Ternus. Separately, Crown Prince Haakon became King Haakon VIII of Norway on the death of King Harald V — the 4th generation of the House of Glücksburg. Norway – Oslo – Krone | PM – Jonas Gahr Store.",
-    },
-    {
-      type: "mcq",
-      q: "'RK-251', an experimental smart anticancer compound that activates only inside cancer cells, was developed by IIT Guwahati with:",
-      options: ["IASST, Guwahati", "NIPER, Guwahati", "CSIR-NEIST, Jorhat", "AIIMS, Guwahati"],
-      answer: 0,
-      note: "Institute of Advanced Study in Science and Technology, Guwahati (Director – Prof. Ashis K. Mukherjee). RK-251 stays inactive until it detects elevated Reactive Oxygen Species, then releases NBDHEX, which targets the GSTP1 protein. Published in the Journal of Medicinal Chemistry (ACS).",
-    },
-    {
-      type: "mcq",
-      q: "SpaceX announced a $100 billion launch complex, 'Starbase Louisiana', on Pecan Island. It is meant to support:",
-      options: [
-        "Falcon 9 rideshare missions only",
-        "Starship and AI satellite missions",
-        "Crew Dragon launches to ISS",
-        "Military reconnaissance launches",
+      "type": "mcq",
+      "q": "The Indian Army raised its first dedicated Baaz drone battalion at which location?",
+      "options": [
+        "Leh, Ladakh",
+        "Jalandhar, Punjab",
+        "Pune, Maharashtra",
+        "Jodhpur, Rajasthan"
       ],
-      answer: 1,
-      note: "Starship and AI satellite missions — its largest site yet, on 1,25,000 acres in Vermilion Parish. Recall from August: SpaceX set a 38-minute record between two Falcon 9 launches. HQ – Texas | CEO – Elon Musk | Founded 2002.",
+      "answer": 1,
+      "note": "The unit operates under 11 Corps. Infantry battalions separately operate Ashini drone platoons.\nSource: September 2026 Smart Points, PDF p. 58, News 182.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 58,
+        "newsItem": 182
+      }
     },
     {
-      type: "mcq",
-      q: "VP C. P. Radhakrishnan launched 'Gnani Artha', a sovereign AI stack by GNANI AI. Its language model 'Evon v3.3' is trained across how many Indian languages?",
-      options: ["8", "11", "22", "27"],
-      answer: 1,
-      note: "11, with weights released under Apache 2.0 on Hugging Face; the stack combines Evon v3.3 and 'Plexus'. GNANI AI (CEO Ganesh Gopalan) raised $10 million in Series B led by Aavishkaar Capital.",
-    },
-    {
-      type: "mcq",
-      q: "India's Quantum Computing Thematic Hub (QC T-Hub) under the National Quantum Mission is housed at:",
-      options: ["IIT Madras", "IISc Bengaluru", "IIT Bombay", "TIFR Mumbai"],
-      answer: 1,
-      note: "IISc Bengaluru, run by the Foundation for QC Innovation (a Section-8 company) at the TATA Smart-X Hub building, with ₹653.13 Cr sanctioned. NQM was approved on Apr 19, 2023 with ₹6,003.65 Cr for 2023-24 to 2030-31, implemented by DST.",
-    },
-    {
-      type: "mcq",
-      q: "NASA launched the 'Nancy Grace Roman Space Telescope' aboard a SpaceX Falcon Heavy. It is travelling to:",
-      options: [
-        "Low Earth Orbit",
-        "Geostationary orbit",
-        "Sun-Earth Lagrange Point 2",
-        "Lunar orbit",
+      "type": "mcq",
+      "q": "INS Nipun, commissioned in Mumbai, belongs to which vessel category?",
+      "options": [
+        "Nilgiri-class frigate",
+        "Kalvari-class submarine",
+        "Nistar-class Diving Support Vessel",
+        "Shivalik-class destroyer"
       ],
-      answer: 2,
-      note: "L2, a ~100-day journey. Total cost $4.3 billion; its Wide Field Instrument is a 300-megapixel infrared camera with 18 detectors. Its primary mirror came from one of two optical systems donated by the National Reconnaissance Office in 2012. NASA Administrator (15th) – Jared Isaacman.",
+      "answer": 2,
+      "note": "Hindustan Shipyard, Visakhapatnam designed and built the second Nistar-class DSV.\nSource: September 2026 Smart Points, PDF p. 58, News 183.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 58,
+        "newsItem": 183
+      }
     },
-
-    // ── Week 2 (Sep 8–14) ────────────────────────────────────────────────
     {
-      type: "mcq",
-      q: "Thales and Kalyani Strategic Systems signed an alliance to co-develop and manufacture which rocket system in India?",
-      options: [
-        "122-mm Grad rockets",
-        "2.75-inch / 70-mm rockets",
-        "Pinaka guided rockets",
-        "Hydra-90 rockets",
+      "type": "mcq",
+      "q": "Which company developed the Khagantak-243 Long Range Glide Bomb tested by the IAF?",
+      "options": [
+        "Bharat Dynamics",
+        "Solar Industries",
+        "Tata Advanced Systems",
+        "JSR Dynamics"
       ],
-      answer: 1,
-      note: "Unguided and laser-guided 2.75-inch/70-mm rockets, used by 70 armed forces in 55 countries; the first fully India-produced rocket is targeted for early 2027. KSSL is Bharat Forge's defence arm (HQ – Pune | Chairman – Rajinder Singh Bhatia). France – Paris – Euro | President – Emmanuel Macron | PM – Sebastien Lecornu.",
+      "answer": 3,
+      "note": "Bharat Electronics supplied guidance systems for the indigenously developed glide bomb.\nSource: September 2026 Smart Points, PDF p. 58, News 184.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 58,
+        "newsItem": 184
+      }
     },
     {
-      type: "mcq",
-      q: "Rajnath Singh released the 'RAKSHA' document on defence diplomacy. Which of the following is NOT one of its four pillars?",
-      options: [
-        "Strategic Partnerships",
-        "Capacity Building",
-        "Nuclear Deterrence",
-        "Maritime Security",
+      "type": "mcq",
+      "q": "A T-series tank-overhaul facility was planned at which factory?",
+      "options": [
+        "Vehicle Factory Jabalpur",
+        "Heavy Alloy Penetrator Project, Tiruchirappalli",
+        "Ordnance Factory Medak",
+        "Rifle Factory Ishapore"
       ],
-      answer: 2,
-      note: "The four pillars are Strategic Partnerships, Capacity Building, Indigenous Exports and Maritime Security. Released at Kartavya Bhawan, alongside talks with Belgium's Defence Minister Theo Francken.",
+      "answer": 0,
+      "note": "The facility will overhaul T-72 Ajeya and T-90 Bhishma main battle tanks.\nSource: September 2026 Smart Points, PDF p. 58, News 185.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 58,
+        "newsItem": 185
+      }
     },
     {
-      type: "mcq",
-      q: "DRDO and ACRHEM (University of Hyderabad) were granted Indian Patent No. 599900 for 'BAM-H24', a next-generation:",
-      options: [
-        "Solid rocket propellant fuel",
-        "Body armour composite",
-        "Radar-absorbing coating",
-        "Battery electrolyte",
+      "type": "mcq",
+      "q": "Kalyani Strategic Systems partnered with which French company for 70-mm rocket systems?",
+      "options": [
+        "Safran",
+        "Thales",
+        "Dassault Aviation",
+        "Naval Group"
       ],
-      answer: 0,
-      note: "Solid rocket propellant compound rich in boron, hydrogen and nitrogen, granted Aug 20, 2026. Inventors: Dr. Muddamarri Hanumantha Rao and Prof. Muralidharan Krishnamurthi. ACRHEM is now the DIA-CoE at UoH.",
+      "answer": 1,
+      "note": "The agreement covers co-development and manufacture of unguided and laser-guided rocket systems in India.\nSource: September 2026 Smart Points, PDF p. 58, News 186.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 58,
+        "newsItem": 186
+      }
     },
     {
-      type: "mcq",
-      q: "The 2nd edition of 'Veer Guardian 2026' between the IAF and Japan Air Self-Defense Force is being held at Air Force Station:",
-      options: ["Jodhpur", "Agra", "Gwalior", "Kalaikunda"],
-      answer: 0,
-      note: "Jodhpur (Sep 9-21, 2026), with Japan deploying 3 Mitsubishi F-2A fighters — the first Japanese fighter deployment to India for a bilateral air exercise. The 1st edition was in Jan 2023 at Hyakuri and Iruma bases, Japan. Recall from August: IAF flew Udara Shakti with Malaysia and Pitch Black in Australia.",
-    },
-    {
-      type: "mcq",
-      q: "The DAC accorded Acceptance of Necessity for capital acquisitions worth ~₹1.10 lakh Cr. 'DEFSAC', among the approvals, will replace paper-based identity cards with:",
-      options: [
-        "Biometric passports",
-        "RFID-based smart cards",
-        "Aadhaar-linked QR passes",
-        "Facial recognition gates",
+      "type": "mcq",
+      "q": "The RAKSHA document released by Rajnath Singh concerns which subject?",
+      "options": [
+        "Civil aviation safety",
+        "Coastal fisheries",
+        "Defence diplomacy",
+        "Domestic pension taxation"
       ],
-      answer: 1,
-      note: "Interoperable RFID-based smart cards (Defence Forces Secure Access Card). ~98% of the procurements are from Indian industry. Army items include CBRN reconnaissance vehicles and the Sarvatra bridge system; Navy items include Arudhra radars and domestic marine gas turbines.",
+      "answer": 2,
+      "note": "Its four pillars are strategic partnerships, capacity building, indigenous exports and maritime security.\nSource: September 2026 Smart Points, PDF p. 59, News 187.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 59,
+        "newsItem": 187
+      }
     },
     {
-      type: "mcq",
-      q: "'Ahuti Mk II' by Apollyon Dynamics became India's fastest multirotor UAV with a certified top speed of:",
-      options: ["325 km/h", "410 km/h", "498 km/h", "560 km/h"],
-      answer: 2,
-      note: "498 km/h, entering the India Book of Records (previous benchmark 325 km/h). Apollyon is incubated at BITS Pilani Hyderabad (founders Jayant Khatri and Sourya Choudhary); tested at Babina and Gopalpur ranges with Army support.",
-    },
-    {
-      type: "statements",
-      q: "Consider the following about Indo-Russian Rifles Private Limited (IRRPL):\nI. Its shareholding is India 50.5% and Russia 49.5%, with Advanced Weapons and Equipment India Ltd and Munitions India Ltd on the Indian side.\nII. Adani Defence & Aerospace signed a 5-year agreement to supply indigenous 7.62x39 mm ammunition for its AK-203 rifles.",
-      options: S,
-      answer: 2,
-      note: "Both correct. IRRPL manufactures AK-203 rifles at Korwa, Amethi (UP) under a 2021 contract for 6,01,427 rifles; Russian partners are Concern Kalashnikov and Rosoboronexport. Recall from August: the first fully indigenised AK-203, 'Sher', was test-fired at Korwa. IRRPL CEO & MD – Maj Gen S.K. Sharma.",
-    },
-    {
-      type: "mcq",
-      q: "The Indian Army established the 'AASHVAST' laboratory at DG EME headquarters, Delhi Cantonment, to:",
-      options: [
-        "Test cold-weather clothing",
-        "Screen military drones for Chinese-origin components and vulnerabilities",
-        "Certify body armour",
-        "Calibrate artillery fire-control systems",
+      "type": "mcq",
+      "q": "BAM-H24, patented by DRDO and the University of Hyderabad centre, is what?",
+      "options": [
+        "A malaria vaccine",
+        "A marine navigation satellite",
+        "A new battery-recycling process",
+        "A solid rocket propellant fuel compound"
       ],
-      answer: 1,
-      note: "AASHVAST = Assessment and Analysis of Electronic Systems Hardware for Vulnerabilities And Security Threats, built by QuickPay Tech and inaugurated by Gen Dhiraj Seth.",
+      "answer": 3,
+      "note": "The compound is rich in boron, hydrogen and nitrogen and relates to next-generation solid rocket propellants.\nSource: September 2026 Smart Points, PDF p. 59, News 188.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 59,
+        "newsItem": 188
+      }
     },
     {
-      type: "mcq",
-      q: "DRDO issued an RFP for 'SHIELD' under the Technology Development Fund. SHIELD is:",
-      options: [
-        "A hypersonic interceptor",
-        "An S-band High-Power Microwave evaluation system",
-        "A shipborne laser weapon",
-        "A satellite jamming pod",
+      "type": "mcq",
+      "q": "Veer Guardian is a bilateral air exercise between India and which country?",
+      "options": [
+        "Japan",
+        "France",
+        "Australia",
+        "United Kingdom"
       ],
-      answer: 1,
-      note: "S-band High-Power Microwave Integrated Evaluation System for Lethality and Damage, using a Gallium Nitride solid-state power amplifier targeting at least 3 kV/m field strength in the far field.",
+      "answer": 0,
+      "note": "The second edition was scheduled at Jodhpur in September 2026; the first was held in Japan in 2023.\nSource: September 2026 Smart Points, PDF p. 59, News 190.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 59,
+        "newsItem": 190
+      }
     },
     {
-      type: "mcq",
-      q: "The ICC ratified India as host of the inaugural Women's Champions Trophy 2027, replacing:",
-      options: ["Bangladesh", "Sri Lanka", "UAE", "South Africa"],
-      answer: 1,
-      note: "Sri Lanka. The T20I event runs Feb 14-28, 2027 at CCI Mumbai and Vadodara; teams — Australia, England, India, New Zealand, South Africa, Sri Lanka. It is India's 4th ICC event in 4 years (Men's ODI WC 2023, Women's WC 2025, Men's T20 WC 2026). ICC: HQ – Dubai | Chairman – Jay Shah | CEO – Sanjog Gupta.",
+      "type": "mcq",
+      "q": "DEFSAC is intended to replace paper defence identity documents with what?",
+      "options": [
+        "Cryptocurrency tokens",
+        "Interoperable RFID-based smart cards",
+        "Only handwritten permits",
+        "Satellite phones"
+      ],
+      "answer": 1,
+      "note": "The Defence Forces Secure Access Card system formed part of DAC's approved acquisition proposals.\nSource: September 2026 Smart Points, PDF p. 60, News 191.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 60,
+        "newsItem": 191
+      }
     },
     {
-      type: "mcq",
-      q: "Satwiksairaj Rankireddy and Chirag Shetty won the China Masters 2026 (Super 750) in Shenzhen, becoming the first Indians to win it since its inception in:",
-      options: ["2001", "2005", "2010", "2015"],
-      answer: 1,
-      note: "2005. It was their 10th BWF World Tour title and 4th Super 750 (2nd of 2026 after the Singapore Open), beating He Jiting and Ren Xiangyu. An Se-young won women's singles — her 3rd straight China Masters and 7th title of 2026.",
+      "type": "mcq",
+      "q": "Ahuti Mk II, recognised as India's fastest multirotor UAV in the source, was developed by whom?",
+      "options": [
+        "Agnikul Cosmos",
+        "Astrogate Labs",
+        "Apollyon Dynamics",
+        "GalaxEye"
+      ],
+      "answer": 2,
+      "note": "The Hyderabad company was incubated at BITS Pilani's Hyderabad campus; the certified speed cited is 498 km/h.\nSource: September 2026 Smart Points, PDF p. 60, News 192.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 60,
+        "newsItem": 192
+      }
     },
     {
-      type: "mcq",
-      q: "India's U20 football team, the 'Blue Colts', qualified for the AFC U20 Asian Cup China 2027 — their first appearance since:",
-      options: ["1998", "2002", "2006", "2012"],
-      answer: 2,
-      note: "2006. Coached by Mahesh Gawali, they beat Bangladesh in Tashkent to finish 2nd in Group B. The finals run Mar 24 – Apr 10, 2027; the top 4 qualify for the FIFA U20 World Cup 2027.",
+      "type": "mcq",
+      "q": "IRRPL manufactures AK-203 rifles at which location?",
+      "options": [
+        "Avadi, Chennai",
+        "Jabalpur",
+        "Nashik",
+        "Korwa, Amethi"
+      ],
+      "answer": 3,
+      "note": "The Indo-Russian venture signed a five-year ammunition-supply agreement with Adani Defence and Aerospace.\nSource: September 2026 Smart Points, PDF p. 60, News 193.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 60,
+        "newsItem": 193
+      }
     },
     {
-      type: "mcq",
-      q: "India won a record 9 medals (4 gold, 3 silver, 2 bronze) at the 19th International Earth Science Olympiad 2026, held in:",
-      options: ["Turin, Italy", "Beijing, China", "Jeju, South Korea", "Lisbon, Portugal"],
-      answer: 0,
-      note: "Turin (Aug 20-27). Soumik Mandal of Durgapur, West Bengal won 2 gold and 1 silver, ranking 3rd globally. 39 countries participated; India's selection is run by the Geological Society of India.",
+      "type": "mcq",
+      "q": "The Indian Army's AASHVAST laboratory primarily screens what?",
+      "options": [
+        "Military drones for insecure components and vulnerabilities",
+        "Food rations for contamination",
+        "Military uniforms for camouflage",
+        "Vehicles for exhaust emissions"
+      ],
+      "answer": 0,
+      "note": "Located at DG EME headquarters in Delhi Cantonment, it assesses electronic hardware and security threats.\nSource: September 2026 Smart Points, PDF p. 60, News 194.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 60,
+        "newsItem": 194
+      }
     },
     {
-      type: "mcq",
-      q: "Smriti Mandhana became the leading run-scorer in women's international cricket across formats with 10,880 runs, passing:",
-      options: ["Meg Lanning", "Mithali Raj", "Charlotte Edwards", "Suzie Bates"],
-      answer: 1,
-      note: "Mithali Raj (10,868). Her 124 off 64 vs Hong Kong at the Women's Asia Cup 2026 in Dubai is the highest score in Women's T20 Asia Cup history (previous: Chamari Athapaththu's 119) and by an Indian in WT20Is. She also holds the record for most international centuries (18), passing Meg Lanning and Laura Wolvaardt (17).",
+      "type": "mcq",
+      "q": "DRDO's SHIELD project uses which broad technology for its proposed evaluation system?",
+      "options": [
+        "Underwater acoustic propulsion",
+        "High-power microwave technology",
+        "Solar thermal desalination",
+        "Optical telescope interferometry"
+      ],
+      "answer": 1,
+      "note": "SHIELD means S-band High-Power Microwave Integrated Evaluation System for Lethality and Damage and uses GaN-based amplifiers.\nSource: September 2026 Smart Points, PDF p. 61, News 195.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 61,
+        "newsItem": 195
+      }
     },
     {
-      type: "mcq",
-      q: "India finished 4th among 82 nations at the Pickleball World Cup 2026, held in:",
-      options: ["Bangkok, Thailand", "Da Nang, Vietnam", "Bali, Indonesia", "Lima, Peru"],
-      answer: 1,
-      note: "Da Nang, with 7 gold, 17 silver and 17 bronze, up from 7th place last edition.",
+      "type": "mcq",
+      "q": "Yudh Abhyas 2026 involved the armies of India and which country?",
+      "options": [
+        "Russia",
+        "United Kingdom",
+        "United States",
+        "France"
+      ],
+      "answer": 2,
+      "note": "The 22nd edition used two theatres for the first time: Mahajan, Rajasthan and Auli, Uttarakhand.\nSource: September 2026 Smart Points, PDF p. 61, News 196.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 61,
+        "newsItem": 196
+      }
     },
     {
-      type: "mcq",
-      q: "BCCI named three Associate Partners for India's home international season through March 2028. Which was the highest bidder at ₹1.31 Cr per match?",
-      options: ["SBI Life", "ChatGPT", "Campa", "Dream11"],
-      answer: 2,
-      note: "Campa; ChatGPT and SBI Life came in at ₹1.2 Cr per match each. The 35-match, 2-season deal is worth over ₹130 Cr — a 44% increase over the previous cycle. BCCI: President – Mithun Manhas | Secretary – Devajit Saikia.",
+      "type": "mcq",
+      "q": "Samudra Laksamana is India's bilateral maritime exercise with which country?",
+      "options": [
+        "Singapore",
+        "Indonesia",
+        "Thailand",
+        "Malaysia"
+      ],
+      "answer": 3,
+      "note": "The fourth edition was held at Lumut with INS Mysore and Malaysian ships.\nSource: September 2026 Smart Points, PDF p. 61, News 197.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 61,
+        "newsItem": 197
+      }
     },
     {
-      type: "mcq",
-      q: "Velavan Senthilkumar won the Budapest Open 2026 squash title, his 11th PSA title. Squash will make its Olympic debut at:",
-      options: ["Paris 2024", "Los Angeles 2028", "Brisbane 2032", "Tokyo 2020"],
-      answer: 1,
-      note: "Los Angeles 2028. He beat Hungary's Balazs Farkas for his first PSA Copper-level title; world ranking 54. Also in week 1: Abhay Singh won his 3rd Tuanku Muhriz Trophy in Malaysia (13th PSA title).",
+      "type": "mcq",
+      "q": "DRDO's proposed Junput weapon-testing range is in which state?",
+      "options": [
+        "West Bengal",
+        "Odisha",
+        "Andhra Pradesh",
+        "Tamil Nadu"
+      ],
+      "answer": 0,
+      "note": "Junput is in Purba Medinipur on the Bay of Bengal coast and will supplement Chandipur's Integrated Test Range.\nSource: September 2026 Smart Points, PDF p. 61, News 198.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 61,
+        "newsItem": 198
+      }
     },
     {
-      type: "mcq",
-      q: "Dr. Jitendra Singh launched 'BIO-NIVESH', a platform connecting biotech innovators and investors. Which body was designated Second-Level Fund Manager for the ₹1 lakh Cr Research, Development & Innovation (RDI) Fund for biotechnology?",
-      options: ["DBT", "BIRAC", "CSIR", "ANRF"],
-      answer: 1,
-      note: "BIRAC (Biotechnology Industry Research Assistance Council), under DBT. Launched at a roundtable of 20 biotech/deep-tech startups and ~50 investors.",
+      "type": "mcq",
+      "q": "SPARSH, used for defence pensions, expands to what?",
+      "options": [
+        "Secure Portal for Army Recruitment and Service History",
+        "System for Pension Administration - Raksha",
+        "Special Pension Authority for Retired Service Holders",
+        "System for Procurement and Resource Sharing"
+      ],
+      "answer": 1,
+      "note": "The Defence Accounts Department used SPARSH to normalise discrepant Army, Navy and Air Force pension cases.\nSource: September 2026 Smart Points, PDF p. 62, News 199.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 62,
+        "newsItem": 199
+      }
     },
     {
-      type: "mcq",
-      q: "ISRO launched 'EOS-05' (GISAT-1A) aboard GSLV-F17. Its cryogenic upper stage is powered by the indigenous:",
-      options: ["CE-7.5 engine", "CE20 engine", "Vikas engine", "SCE-200 engine"],
-      answer: 0,
-      note: "CE-7.5. GSLV-F17 was the 19th GSLV flight from the 2nd Launch Pad at Sriharikota — ISRO's first successful launch of 2026. EOS-05 is a hyperspectral imager with 414 spectral channels refreshing imagery every ~30 minutes from geostationary altitude (~36,000 km). Its predecessor GISAT-1/EOS-03 was lost in 2021. (The CE20 powers LVM3's upper stage.)",
+      "type": "mcq",
+      "q": "What was the theme of VIMARSH 2026, the DRDO-Industry Synergy Meet?",
+      "options": [
+        "Atmanirbhar Krishi",
+        "One Ocean One Future",
+        "Varta se Vikas",
+        "Skilling for Tomorrow"
+      ],
+      "answer": 2,
+      "note": "The meet focused on participation by MSMEs and deep-tech startups, technology licensing and sharing DRDO software.\nSource: September 2026 Smart Points, PDF p. 62, News 200.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 62,
+        "newsItem": 200
+      }
     },
     {
-      type: "statements",
-      q: "Consider the following about ISRO's CE20 cryogenic engine:\nI. ISRO conducted a flight acceptance hot test at an uprated thrust of 220 kN at IPRC, Mahendragiri, for the C32 upper stage of an upcoming LVM3 mission.\nII. The CE20 uses liquid hydrogen as fuel and liquid oxygen as oxidiser and is human-rated for Gaganyaan.",
-      options: S,
-      answer: 2,
-      note: "Both correct. The test also demonstrated the LOX Tank Pressurisation Module intended for future Gaganyaan C32 stages. ISRO Director – Dr. V. Narayanan.",
+      "type": "mcq",
+      "q": "KAL, tested from a vehicle-mounted platform at Pokhran, is which type of system?",
+      "options": [
+        "Ballistic missile defence radar",
+        "Reusable spaceplane",
+        "Submarine rescue vehicle",
+        "Long-range one-way attack drone"
+      ],
+      "answer": 3,
+      "note": "IG Defence of Noida developed the indigenous drone with a stated operational range up to 1,000 km.\nSource: September 2026 Smart Points, PDF p. 62, News 201.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 62,
+        "newsItem": 201
+      }
     },
     {
-      type: "mcq",
-      q: "Pixxel raised $100 million in Series C — India's largest single space-tech funding round — co-led by Temasek and:",
-      options: ["Seraphim (UK)", "SoftBank (Japan)", "Accel (US)", "Lightspeed (US)"],
-      answer: 0,
-      note: "Seraphim, taking total funding to $195 million, to build the 'Honeybee' hyperspectral constellation (first launch 2027). Recall from August: PixxelSpace India leads the Allied Orbits consortium that won India's first commercial EO constellation under the EO-PPP framework. CEO – Awais Ahmed.",
+      "type": "mcq",
+      "q": "Nomadic Elephant is a joint military exercise between India and which country?",
+      "options": [
+        "Mongolia",
+        "Kazakhstan",
+        "Kyrgyzstan",
+        "Uzbekistan"
+      ],
+      "answer": 0,
+      "note": "The 18th edition commenced at Pithoragarh, Uttarakhand; the previous edition was held in Ulaanbaatar.\nSource: September 2026 Smart Points, PDF p. 62, News 202.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 62,
+        "newsItem": 202
+      }
     },
     {
-      type: "mcq",
-      q: "Bodhan AI at IIT Madras released four foundational AI models for Indian languages with AI4Bharat. Its Automatic Speech Recognition model covers how many languages?",
-      options: ["22", "23", "27", "65"],
-      answer: 2,
-      note: "ASR – 27; OCR – 23; TTS – 23; Bodhan-Translate – 22, released as Digital Public Goods under the proposed 'Bharat EduAI Stack', plus a Student TutorBot for Classes 6-12. Recall from August: IISc's 'SraVaani' covers 65 languages and dialects. IIT Madras Director – Prof. V. Kamakoti.",
+      "type": "mcq",
+      "q": "SLINEX-26 was conducted between India and which neighbour?",
+      "options": [
+        "Bangladesh",
+        "Sri Lanka",
+        "Maldives",
+        "Myanmar"
+      ],
+      "answer": 1,
+      "note": "The 13th bilateral maritime exercise took place at Visakhapatnam under Eastern Naval Command.\nSource: September 2026 Smart Points, PDF p. 63, News 203.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 63,
+        "newsItem": 203
+      }
     },
     {
-      type: "mcq",
-      q: "Isar Aerospace's 'Spectrum' became the first privately developed rocket to reach orbit from continental European soil. It launched from:",
-      options: [
+      "type": "mcq",
+      "q": "Ankur is the name given to the first aircraft of which HAL trainer programme handed to the IAF?",
+      "options": [
+        "HJT-16 Kiran",
+        "HJT-36 Sitara",
+        "HTT-40",
+        "LCA Tejas Mk2"
+      ],
+      "answer": 2,
+      "note": "HAL also handed over Tejas FOC twin-seat trainers and Dhruv NG helicopters in the source event.\nSource: September 2026 Smart Points, PDF p. 63, News 204.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 63,
+        "newsItem": 204
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which air station was selected for the second Tarang Shakti multinational exercise?",
+      "options": [
+        "Hindon",
+        "Tambaram",
+        "Yelahanka",
+        "Jodhpur"
+      ],
+      "answer": 3,
+      "note": "The source schedules Tarang Shakti 2026 for September 26-October 12; the first edition was held in 2024.\nSource: September 2026 Smart Points, PDF p. 63, News 206.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 63,
+        "newsItem": 206
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "SAT-SAAW is best described as which weapon?",
+      "options": [
+        "Air-to-ground precision-guided glide bomb",
+        "Ship-launched anti-submarine torpedo",
+        "Man-portable air-defence missile",
+        "Intercontinental ballistic missile"
+      ],
+      "answer": 0,
+      "note": "The Ministry of Defence contracted Bharat Dynamics for DRDO-designed Satellite Smart Anti-Airfield Weapon systems.\nSource: September 2026 Smart Points, PDF p. 64, News 208.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 64,
+        "newsItem": 208
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "DRDO's first high-value TDF project with Zero mK concerns development of what?",
+      "options": [
+        "A reusable launch vehicle",
+        "A dilution refrigerator for quantum applications",
+        "A coastal surveillance radar",
+        "A marine gas turbine"
+      ],
+      "answer": 1,
+      "note": "The cryogenic system targets 20 millikelvin operation and aligns with the National Quantum Mission.\nSource: September 2026 Smart Points, PDF p. 64, News 209.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 64,
+        "newsItem": 209
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "INS Sahyadri and Kulish joined the ADMM-Plus maritime activity at which location?",
+      "options": [
+        "Lumut, Malaysia",
+        "Cam Ranh, Vietnam",
+        "Subic Bay, Philippines",
+        "Changi, Singapore"
+      ],
+      "answer": 2,
+      "note": "The Philippine Navy hosted the five-day activity, with Japan as co-chair.\nSource: September 2026 Smart Points, PDF p. 64, News 210.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 64,
+        "newsItem": 210
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Kajal Dhochak won the U20 world wrestling gold in which women's weight category in 2026?",
+      "options": [
+        "50 kg",
+        "57 kg",
+        "62 kg",
+        "76 kg"
+      ],
+      "answer": 3,
+      "note": "She defeated China's Jingru Sun in Bratislava; her previous U20 world gold was in the 72-kg category in 2025.\nSource: September 2026 Smart Points, PDF p. 65, News 212.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 65,
+        "newsItem": 212
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who became the first Indian to win the Grand Chess Tour, according to the September source?",
+      "options": [
+        "R. Praggnanandhaa",
+        "D. Gukesh",
+        "Arjun Erigaisi",
+        "Vidit Gujrathi"
+      ],
+      "answer": 0,
+      "note": "He defeated Fabiano Caruana at the GCT Finals at Saint Louis Chess Club.\nSource: September 2026 Smart Points, PDF p. 65, News 214.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 65,
+        "newsItem": 214
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who received the FPAI Indian Women's Player of the Year award in 2026?",
+      "options": [
+        "Bala Devi",
+        "Manisha Kalyan",
+        "Ashalata Devi",
+        "Dalima Chhibber"
+      ],
+      "answer": 1,
+      "note": "The corresponding men's award went to Lallianzuala Chhangte at the Kolkata ceremony.\nSource: September 2026 Smart Points, PDF p. 66, News 216.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 66,
+        "newsItem": 216
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Abhay Singh won the Tuanku Muhriz Trophy 2026 in which sport?",
+      "options": [
+        "Badminton",
+        "Table tennis",
+        "Squash",
+        "Tennis"
+      ],
+      "answer": 2,
+      "note": "The PSA Challenger Tour event was held in Seremban, Malaysia; he defeated Henry Leung.\nSource: September 2026 Smart Points, PDF p. 67, News 217.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 67,
+        "newsItem": 217
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who became the youngest half-centurion in Duleep Trophy history in the PDF?",
+      "options": [
+        "Ayush Mhatre",
+        "Musheer Khan",
+        "Yash Dhull",
+        "Vaibhav Suryavanshi"
+      ],
+      "answer": 3,
+      "note": "The milestone came for East Zone against Central Zone at Bengaluru, surpassing Laxman Singh's record.\nSource: September 2026 Smart Points, PDF p. 67, News 218.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 67,
+        "newsItem": 218
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which pair won the men's and women's FIH Hockey World Cup 2026 titles respectively in the PDF?",
+      "options": [
+        "Germany and Argentina",
+        "Netherlands and Germany",
+        "Belgium and Australia",
+        "Spain and Netherlands"
+      ],
+      "answer": 0,
+      "note": "Germany beat Spain in the men's final; Argentina beat the Netherlands in the women's final.\nSource: September 2026 Smart Points, PDF p. 67, News 220.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 67,
+        "newsItem": 220
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which tennis player was inducted into the International Tennis Hall of Fame's Player Category?",
+      "options": [
+        "Novak Djokovic",
+        "Roger Federer",
+        "Andy Murray",
+        "Stan Wawrinka"
+      ],
+      "answer": 1,
+      "note": "The ceremony took place in Newport, Rhode Island; Mary Carillo entered the Contributor Category.\nSource: September 2026 Smart Points, PDF p. 68, News 221.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 68,
+        "newsItem": 221
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "India beat which country to win the inaugural FIFAe Continental Championship Asia eFootball Mobile title?",
+      "options": [
+        "Indonesia",
+        "South Korea",
+        "Japan",
+        "Saudi Arabia"
+      ],
+      "answer": 2,
+      "note": "Danial Patel and Mujtaba Husaini represented India at the Kuala Lumpur tournament.\nSource: September 2026 Smart Points, PDF p. 68, News 222.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 68,
+        "newsItem": 222
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The Northeast's first National Centre of Excellence for swimming is planned at which location?",
+      "options": [
+        "Shillong, Meghalaya",
+        "Imphal, Manipur",
+        "Gangtok, Sikkim",
+        "Amingaon, Assam"
+      ],
+      "answer": 3,
+      "note": "The centre is at Amingaon Sports Complex in Kamrup district, using an Olympic-size swimming pool.\nSource: September 2026 Smart Points, PDF p. 68, News 223.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 68,
+        "newsItem": 223
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who became the leading wicket-taker in ICC World Test Championship history in the source?",
+      "options": [
+        "Mitchell Starc",
+        "Pat Cummins",
+        "Nathan Lyon",
+        "Ravichandran Ashwin"
+      ],
+      "answer": 0,
+      "note": "Starc reached the milestone during Australia's second Test against Bangladesh at Mackay.\nSource: September 2026 Smart Points, PDF p. 69, News 225.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 69,
+        "newsItem": 225
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which country was ratified as host of the inaugural ICC Women's Champions Trophy 2027?",
+      "options": [
+        "Sri Lanka",
+        "India",
+        "Australia",
+        "South Africa"
+      ],
+      "answer": 1,
+      "note": "The source specifies a T20I tournament in Mumbai and Vadodara, replacing Sri Lanka as host.\nSource: September 2026 Smart Points, PDF p. 69, News 226.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 69,
+        "newsItem": 226
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Velavan Senthilkumar's Budapest Open 2026 title was in which sport?",
+      "options": [
+        "Tennis",
+        "Badminton",
+        "Squash",
+        "Chess"
+      ],
+      "answer": 2,
+      "note": "He defeated Hungary's Balazs Farkas. Squash is scheduled for its Olympic debut at Los Angeles 2028.\nSource: September 2026 Smart Points, PDF p. 69, News 227.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 69,
+        "newsItem": 227
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which Indian pair won the China Masters 2026 men's doubles badminton title?",
+      "options": [
+        "M. R. Arjun and Dhruv Kapila",
+        "Krishna Prasad and Sai Pratheek",
+        "Manu Attri and B. Sumeeth Reddy",
+        "Satwiksairaj Rankireddy and Chirag Shetty"
+      ],
+      "answer": 3,
+      "note": "They defeated He Jiting and Ren Xiangyu in Shenzhen, becoming the first Indians to win the event in the source.\nSource: September 2026 Smart Points, PDF p. 69, News 228.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 69,
+        "newsItem": 228
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The 19th International Earth Science Olympiad 2026 was held in which city?",
+      "options": [
+        "Turin",
+        "Prague",
+        "Vienna",
+        "Lisbon"
+      ],
+      "answer": 0,
+      "note": "India won nine medals. Soumik Mandal placed third globally in individual standings.\nSource: September 2026 Smart Points, PDF p. 70, News 230.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 70,
+        "newsItem": 230
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which Indian batter surpassed Mithali Raj's international run tally in the September PDF?",
+      "options": [
+        "Harmanpreet Kaur",
+        "Smriti Mandhana",
+        "Shafali Verma",
+        "Jemimah Rodrigues"
+      ],
+      "answer": 1,
+      "note": "Mandhana's century against Hong Kong in the Women's Asia Cup took her beyond Mithali Raj's 10,868 runs.\nSource: September 2026 Smart Points, PDF p. 70, News 231.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 70,
+        "newsItem": 231
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who won his maiden WTT men's singles title at WTT Feeder Olomouc?",
+      "options": [
+        "Manav Thakkar",
+        "Harmeet Desai",
+        "Ankur Bhattacharjee",
+        "G. Sathiyan"
+      ],
+      "answer": 2,
+      "note": "He defeated Slovenia's Deni Kozul and also won men's doubles with Akash Pal.\nSource: September 2026 Smart Points, PDF p. 71, News 234.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 71,
+        "newsItem": 234
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which zone won the Duleep Trophy 2026-27 in the monthly source?",
+      "options": [
+        "South Zone",
+        "West Zone",
+        "Central Zone",
+        "East Zone"
+      ],
+      "answer": 3,
+      "note": "Ishan Kishan led East Zone to victory over South Zone in Chennai; Tilak Varma was Player of the Series.\nSource: September 2026 Smart Points, PDF p. 71, News 235.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 71,
+        "newsItem": 235
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who was Player of the Tournament at the Women's Asia Cup 2026?",
+      "options": [
+        "Deepti Sharma",
+        "Smriti Mandhana",
+        "Harmanpreet Kaur",
+        "Shafali Verma"
+      ],
+      "answer": 0,
+      "note": "India defeated Sri Lanka in Dubai. Shafali Verma was Player of the Match and the highest run-scorer.\nSource: September 2026 Smart Points, PDF p. 72, News 237.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 72,
+        "newsItem": 237
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who became the first Indian male archer to win an individual Archery World Cup Final title?",
+      "options": [
+        "Tarundeep Rai",
+        "Dhiraj Bommadevara",
+        "Atanu Das",
+        "Jayanta Talukdar"
+      ],
+      "answer": 1,
+      "note": "He won men's recurve at Saltillo, Mexico. Dola Banerjee was the first Indian overall to win an individual title at the event.\nSource: September 2026 Smart Points, PDF p. 72, News 239.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 72,
+        "newsItem": 239
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "India's junior women's hockey team beat which country for the AHF Junior Asia Cup 2026 title?",
+      "options": [
+        "South Korea",
+        "Japan",
+        "China",
+        "Malaysia"
+      ],
+      "answer": 2,
+      "note": "The final was in Moqi, China; Khaidem Shileima Chanu captained the team to its third consecutive title.\nSource: September 2026 Smart Points, PDF p. 73, News 240.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 73,
+        "newsItem": 240
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Pramod Bhagat's gold at Japan Para Badminton International 2026 came in which event?",
+      "options": [
+        "Men's singles SH6",
+        "Men's singles WH1",
+        "Men's singles SU5",
+        "Men's singles SL3"
+      ],
+      "answer": 3,
+      "note": "He defeated fellow Indian U Kumar and also won doubles silver with Sukant Kadam.\nSource: September 2026 Smart Points, PDF p. 73, News 241.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 73,
+        "newsItem": 241
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which pair won the US Open 2026 men's and women's singles titles respectively in the PDF?",
+      "options": [
+        "Alexander Zverev and Elena Rybakina",
+        "Ben Shelton and Aryna Sabalenka",
+        "Carlos Alcaraz and Iga Swiatek",
+        "Jannik Sinner and Coco Gauff"
+      ],
+      "answer": 0,
+      "note": "Zverev defeated Shelton; Rybakina defeated Sabalenka. The hard-court Grand Slam is held in New York.\nSource: September 2026 Smart Points, PDF p. 74, News 243.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 74,
+        "newsItem": 243
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who chairs the task force assessing revival of Formula 1 racing in India?",
+      "options": [
+        "P. T. Usha",
+        "Yugal Kishore Joshi",
+        "Jay Shah",
+        "Dilip Tirkey"
+      ],
+      "answer": 1,
+      "note": "The NITI Aayog programme director chairs the task force; India's last F1 races were at Buddh International Circuit in 2011-13.\nSource: September 2026 Smart Points, PDF p. 74, News 244.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 74,
+        "newsItem": 244
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which city was awarded the 2029 World Athletics Championships, the first in Africa?",
+      "options": [
+        "Cape Town",
+        "Cairo",
+        "Nairobi",
+        "Casablanca"
+      ],
+      "answer": 2,
+      "note": "Kasarani Stadium is the proposed venue. Munich was awarded the 2031 edition.\nSource: September 2026 Smart Points, PDF p. 75, News 247.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 75,
+        "newsItem": 247
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who won India's first Asian Games medal in mixed martial arts?",
+      "options": [
+        "Roshibina Devi",
+        "Vinesh Phogat",
+        "Nikhat Zareen",
+        "Suchika Tariyal"
+      ],
+      "answer": 3,
+      "note": "She took bronze in women's Traditional 60-kg MMA at Aichi-Nagoya 2026.\nSource: September 2026 Smart Points, PDF p. 76, News 250.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 76,
+        "newsItem": 250
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Yugan Sakthivel Muthukumaar won junior World Cup gold in which shooting discipline?",
+      "options": [
+        "Men's trap",
+        "Men's skeet",
+        "Men's 10m air rifle",
+        "Men's 25m rapid-fire pistol"
+      ],
+      "answer": 0,
+      "note": "The ISSF Junior World Cup Shotgun event took place in Porpetto, Italy.\nSource: September 2026 Smart Points, PDF p. 77, News 253.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 77,
+        "newsItem": 253
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who were India's opening-ceremony flag-bearers at the 2026 Asian Games in the source?",
+      "options": [
+        "Neeraj Chopra and P. V. Sindhu",
+        "Pawan Sehrawat and Manu Bhaker",
+        "Tajinderpal Singh Toor and Mirabai Chanu",
+        "Harmanpreet Singh and Smriti Mandhana"
+      ],
+      "answer": 1,
+      "note": "Kabaddi player Pawan Sehrawat replaced Tajinderpal Singh Toor; Manu Bhaker was the female flag-bearer.\nSource: September 2026 Smart Points, PDF p. 77, News 254.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 77,
+        "newsItem": 254
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Mirabai Chanu won her first Asian Games medal in which weightlifting category?",
+      "options": [
+        "Women's 55 kg",
+        "Women's 59 kg",
+        "Women's 49 kg",
+        "Women's 45 kg"
+      ],
+      "answer": 2,
+      "note": "She won silver at Aichi-Nagoya 2026; Ri Song Gum of North Korea won gold.\nSource: September 2026 Smart Points, PDF p. 77, News 256.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 77,
+        "newsItem": 256
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who became the most-capped player in Indian women's hockey in the September PDF?",
+      "options": [
+        "Vandana Katariya",
+        "Rani Rampal",
+        "Salima Tete",
+        "Savita Punia"
+      ],
+      "answer": 3,
+      "note": "Goalkeeper Savita made her 321st senior appearance, surpassing Vandana Katariya's 320.\nSource: September 2026 Smart Points, PDF p. 77, News 257.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 77,
+        "newsItem": 257
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which event delivered India's first gold at the Aichi-Nagoya Asian Games in the PDF?",
+      "options": [
+        "Women's cricket",
+        "Men's hockey",
+        "Women's weightlifting",
+        "Men's kabaddi"
+      ],
+      "answer": 0,
+      "note": "India's women defeated Sri Lanka and retained the title won at Hangzhou 2023.\nSource: September 2026 Smart Points, PDF p. 78, News 258.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 78,
+        "newsItem": 258
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The 48th WorldSkills Competition, where India placed tenth, was held in which city?",
+      "options": [
+        "Lyon",
+        "Shanghai",
+        "Kazan",
+        "Abu Dhabi"
+      ],
+      "answer": 1,
+      "note": "India fielded 70 competitors across 63 skills and won six silver medals and 20 Medals for Excellence.\nSource: September 2026 Smart Points, PDF p. 78, News 260.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 78,
+        "newsItem": 260
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who became the first woman from a non-medical branch to attain Air Vice Marshal rank?",
+      "options": [
+        "Padma Bandopadhyay",
+        "Bhawana Kanth",
+        "Shakti Sharma",
+        "Avani Chaturvedi"
+      ],
+      "answer": 2,
+      "note": "She took charge as Assistant Chief of Air Staff (Education). Padma Bandopadhyay reached the rank earlier from the Medical Branch.\nSource: September 2026 Smart Points, PDF p. 79, News 261.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 79,
+        "newsItem": 261
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "RK-251, developed by IASST and IIT Guwahati, is designed to activate in response to what?",
+      "options": [
+        "Low atmospheric pressure",
+        "High seawater salinity",
+        "Ultraviolet light outside the body",
+        "Elevated reactive oxygen species inside cancer cells"
+      ],
+      "answer": 3,
+      "note": "The experimental compound releases NBDHEX, targeting the GSTP1 protein associated with cancer-cell survival.\nSource: September 2026 Smart Points, PDF p. 80, News 264.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 80,
+        "newsItem": 264
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Gnani Artha, combining Evon v3.3 and Plexus, is what?",
+      "options": [
+        "A sovereign AI stack",
+        "A rainfall derivative",
+        "A satellite-navigation receiver",
+        "A pension platform"
+      ],
+      "answer": 0,
+      "note": "GNANI AI developed the stack; Evon v3.3 supports 11 Indian languages with weights released under Apache 2.0.\nSource: September 2026 Smart Points, PDF p. 80, News 266.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 80,
+        "newsItem": 266
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "India's Quantum Computing Thematic Hub under NQM is housed at which institution?",
+      "options": [
+        "IIT Delhi",
+        "IISc Bengaluru",
+        "TIFR Mumbai",
+        "IIT Kanpur"
+      ],
+      "answer": 1,
+      "note": "The Foundation for QC Innovation operates as a Section 8 not-for-profit company under the National Quantum Mission.\nSource: September 2026 Smart Points, PDF p. 80, News 267.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 80,
+        "newsItem": 267
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NASA's Nancy Grace Roman Space Telescope is headed to which destination?",
+      "options": [
+        "Low Earth orbit",
+        "Mars orbit",
+        "Sun-Earth Lagrange Point L2",
+        "Jupiter's L4 point"
+      ],
+      "answer": 2,
+      "note": "The source describes a Falcon Heavy launch and a 300-megapixel infrared Wide Field Instrument.\nSource: September 2026 Smart Points, PDF p. 81, News 268.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 81,
+        "newsItem": 268
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "BIO-NIVESH was launched to connect which groups?",
+      "options": [
+        "Farmers and crop insurers only",
+        "Tourists and homestay owners",
+        "Exporters and customs brokers",
+        "Biotechnology innovators and investors"
+      ],
+      "answer": 3,
+      "note": "The platform was launched by Jitendra Singh; BIRAC was also designated a second-level manager for the RDI Fund.\nSource: September 2026 Smart Points, PDF p. 81, News 270.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 81,
+        "newsItem": 270
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "ISRO's EOS-05, also called GISAT-1A, was launched aboard which rocket?",
+      "options": [
+        "GSLV-F17",
+        "PSLV-C58",
+        "LVM3-M4",
+        "SSLV-D3"
+      ],
+      "answer": 0,
+      "note": "The hyperspectral Earth-imaging satellite targets a near-geostationary altitude; the upper stage uses CE-7.5.\nSource: September 2026 Smart Points, PDF p. 81, News 271.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 81,
+        "newsItem": 271
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Pixxel's Honeybee constellation concerns which technology?",
+      "options": [
+        "Satellite navigation",
+        "Hyperspectral Earth observation",
+        "Broadband-only geostationary links",
+        "Lunar sample return"
+      ],
+      "answer": 1,
+      "note": "Pixxel's Series C funding supports Honeybee; PixxelSpace India also leads the Allied Orbits consortium.\nSource: September 2026 Smart Points, PDF p. 82, News 274.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 82,
+        "newsItem": 274
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Bodhan AI developed its Indian-language foundation models with which partner?",
+      "options": [
+        "BhashaNet",
+        "C-DAC Noida",
+        "AI4Bharat",
+        "NITI Aayog"
+      ],
+      "answer": 2,
+      "note": "The IIT Madras initiative covers ASR, OCR, text-to-speech and translation as digital public goods.\nSource: September 2026 Smart Points, PDF p. 82, News 275.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 82,
+        "newsItem": 275
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Isar Aerospace's Spectrum rocket reached orbit from which spaceport?",
+      "options": [
         "Kourou, French Guiana",
-        "Andøya Spaceport, Norway",
         "Esrange, Sweden",
-        "SaxaVord, Scotland",
+        "SaxaVord, United Kingdom",
+        "Andøya, Norway"
       ],
-      answer: 1,
-      note: "Andøya, Norway, on its 2nd test flight 'Onward and Upward' (the first failed in Mar 2025), deploying 5 CubeSats into a ~500 km sun-synchronous orbit. Spectrum is a two-stage propane/LOX rocket with 9 Aquila engines on stage 1. Isar is Munich-based, founded 2018.",
+      "answer": 3,
+      "note": "The Munich-based company used Aquila engines and a propane-liquid oxygen propulsion system.\nSource: September 2026 Smart Points, PDF p. 82, News 276.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 82,
+        "newsItem": 276
+      }
     },
     {
-      type: "mcq",
-      q: "GalaxEye became the first Indian startup to receive a US patent for satellite imaging technology, for 'OptoSAR', which synchronises:",
-      options: [
-        "Optical and hyperspectral sensors",
-        "Optical and Synthetic Aperture Radar sensors",
-        "Thermal and LiDAR sensors",
-        "Radar and radio-occultation sensors",
+      "type": "mcq",
+      "q": "Astrogate Labs is developing India's first indigenous OISL terminal. What does OISL stand for?",
+      "options": [
+        "Optical Inter-Satellite Link",
+        "Orbital Imaging and Surface Lander",
+        "Oceanic Integrated Surveillance Laboratory",
+        "Optical Infrared Satellite Launcher"
       ],
-      answer: 1,
-      note: "Optical + SAR for spatially and temporally aligned imaging. 'Mission Drishti', the world's first OptoSAR satellite, launched May 3, 2026; GalaxEye plans 30 satellites in 5 years and acquired 'StarOps' in Aug 2026. CEO – Suyash Singh.",
+      "answer": 0,
+      "note": "The Bengaluru company also develops the AstroLink Micro space-to-ground laser-communication terminal.\nSource: September 2026 Smart Points, PDF p. 83, News 277.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 83,
+        "newsItem": 277
+      }
     },
     {
-      type: "mcq",
-      q: "Which company launched 'GPT-6 Astra', described as the 'world's most intelligent' AI model?",
-      options: ["Google DeepMind", "Anthropic", "OpenAI", "Meta"],
-      answer: 2,
-      note: "OpenAI (HQ – San Francisco | CEO – Sam Altman | Chairman – Bret Taylor | Established 2015). Recall from August: Meta open-sourced 'Muse Glimmer' and NVIDIA released 'Nemotron 3.5 Lightning'.",
+      "type": "mcq",
+      "q": "GalaxEye's OptoSAR technology combines which sensor types?",
+      "options": [
+        "Thermal and sonar only",
+        "Optical and Synthetic Aperture Radar",
+        "Magnetometer and gravimeter",
+        "Ultraviolet and seismic"
+      ],
+      "answer": 1,
+      "note": "OptoSAR synchronises optical and radar imaging; Mission Drishti is the associated satellite.\nSource: September 2026 Smart Points, PDF p. 83, News 278.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 83,
+        "newsItem": 278
+      }
     },
-  ],
+    {
+      "type": "mcq",
+      "q": "ISRO's CE20 cryogenic engine powers which launch vehicle's upper stage?",
+      "options": [
+        "PSLV",
+        "SSLV",
+        "LVM3",
+        "ASLV"
+      ],
+      "answer": 2,
+      "note": "CE20 uses liquid hydrogen and liquid oxygen; the uprated test at Mahendragiri targeted C32 upper-stage applications.\nSource: September 2026 Smart Points, PDF p. 83, News 279.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 83,
+        "newsItem": 279
+      }
+    },
+    {
+      "type": "statements",
+      "q": "Consider the following about CE20:\nI. It uses liquid hydrogen as fuel and liquid oxygen as oxidiser.\nII. It powers the upper stage of PSLV.",
+      "options": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "answer": 0,
+      "note": "Only I. CE20 powers the cryogenic upper stage of LVM3; the uprated test targeted C32 applications.\nSource: September 2026 Smart Points, PDF p. 83, News 279.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 83,
+        "newsItem": 279
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Samtel Avionics partnered with Japan's BULL on which space challenge?",
+      "options": [
+        "Human lunar habitats",
+        "Asteroid mining",
+        "Mars weather forecasting",
+        "Space-debris mitigation"
+      ],
+      "answer": 3,
+      "note": "The source links the partnership to India's debris-free space-mission goal for 2030.\nSource: September 2026 Smart Points, PDF p. 84, News 281.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 84,
+        "newsItem": 281
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The AI Centre of Excellence approved for Bhubaneswar under IndiaAI Mission will be implemented by whom?",
+      "options": [
+        "Software Technology Parks of India",
+        "NABARD",
+        "Indian Council of Agricultural Research",
+        "Bureau of Indian Standards"
+      ],
+      "answer": 0,
+      "note": "Odisha-specific priorities include oceanography, coastal fisheries and ocean energy; Blue Cloud Softech is the industry partner.\nSource: September 2026 Smart Points, PDF p. 84, News 283.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 84,
+        "newsItem": 283
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which NASA spacecraft supplied data identifying the McGetchin lunar crater?",
+      "options": [
+        "Mars Reconnaissance Orbiter",
+        "Lunar Reconnaissance Orbiter",
+        "Juno",
+        "Cassini"
+      ],
+      "answer": 1,
+      "note": "The findings used LRO images and Diviner thermal-instrument data and were published in Science Advances.\nSource: September 2026 Smart Points, PDF p. 85, News 284.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 85,
+        "newsItem": 284
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "India's 51st Doppler Weather Radar was inaugurated at Jamadarpali in which district?",
+      "options": [
+        "Ganjam, Odisha",
+        "Cuttack, Odisha",
+        "Sambalpur, Odisha",
+        "Balasore, Odisha"
+      ],
+      "answer": 2,
+      "note": "It was inaugurated under Mission Mausam. Odisha's other radars listed are Gopalpur and Paradip.\nSource: September 2026 Smart Points, PDF p. 85, News 285.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 85,
+        "newsItem": 285
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Megha-Tropiques and SARAL are joint satellite missions of India and which country?",
+      "options": [
+        "Japan",
+        "United States",
+        "Russia",
+        "France"
+      ],
+      "answer": 3,
+      "note": "ISRO and CNES collaborated on the tropical water-cycle and ocean-altimetry missions, both launched by PSLV.\nSource: September 2026 Smart Points, PDF p. 85, News 286.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 85,
+        "newsItem": 286
+      }
+    },
+    {
+      "type": "statements",
+      "q": "Consider the following about India's joint satellite missions:\nI. Megha-Tropiques is a joint ISRO-JAXA mission.\nII. SARAL is designed primarily for crop-pest forecasting.",
+      "options": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "answer": 3,
+      "note": "Neither is correct. Megha-Tropiques and SARAL are ISRO-CNES missions with France, studying the tropical water cycle and ocean altimetry respectively.\nSource: September 2026 Smart Points, PDF p. 85, News 286.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 85,
+        "newsItem": 286
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which institution became the first NIT with a dedicated campus-based astronomy observatory?",
+      "options": [
+        "NIT Srinagar",
+        "NIT Rourkela",
+        "NIT Warangal",
+        "NIT Tiruchirappalli"
+      ],
+      "answer": 0,
+      "note": "NSOAA was developed with scientific guidance from the Indian Institute of Astrophysics, Bengaluru.\nSource: September 2026 Smart Points, PDF p. 86, News 287.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 86,
+        "newsItem": 287
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "INCOIS's NIRMaL Sagar pilot aims to establish a framework for tracking what?",
+      "options": [
+        "Space debris",
+        "Marine litter",
+        "Groundwater extraction",
+        "Glacier retreat"
+      ],
+      "answer": 1,
+      "note": "National Initiative for Remediation of Marine Litter was launched at Visakhapatnam with Andhra University and VIBHA.\nSource: September 2026 Smart Points, PDF p. 86, News 288.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 86,
+        "newsItem": 288
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Project NETRA concerns which activity?",
+      "options": [
+        "National electronic toll reconciliation",
+        "River-water quality monitoring",
+        "Space-object tracking and analysis",
+        "Digital land registration"
+      ],
+      "answer": 2,
+      "note": "ISRO's radar facility at Chandrapur, Assam is a component, alongside Hanle's telescope and Bengaluru's control centre.\nSource: September 2026 Smart Points, PDF p. 86, News 290.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 86,
+        "newsItem": 290
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "RDI Fund support to Agnikul Cosmos is intended for development of what?",
+      "options": [
+        "Ankur basic trainer",
+        "Aravalli helicopter engine",
+        "Aqua Line signalling",
+        "Agnibaan reusable launch vehicle"
+      ],
+      "answer": 3,
+      "note": "Agnikul's earlier work includes the Agnilet single-piece 3D-printed rocket engine.\nSource: September 2026 Smart Points, PDF p. 87, News 291.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 87,
+        "newsItem": 291
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which university institution designed the first indigenous university micro-GPU described in the PDF?",
+      "options": [
+        "IIT Delhi",
+        "IIT Bombay",
+        "IISc Bengaluru",
+        "IIT Hyderabad"
+      ],
+      "answer": 0,
+      "note": "The design by M.Tech students was implemented in RTL and mapped to a Spartan-7 FPGA.\nSource: September 2026 Smart Points, PDF p. 87, News 292.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 87,
+        "newsItem": 292
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "IIT Madras partnered with UNESCO MGIEP for which purpose?",
+      "options": [
+        "Quantum submarine communications",
+        "AI-powered and immersive learning technologies",
+        "Coastal mangrove mapping",
+        "Rainfall futures trading"
+      ],
+      "answer": 1,
+      "note": "UNESCO's Mahatma Gandhi Institute of Education for Peace and Sustainable Development is based in New Delhi.\nSource: September 2026 Smart Points, PDF p. 122, News 413.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 122,
+        "newsItem": 413
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Aravalli, developed through the HAL-Safran SAFHAL venture, is what?",
+      "options": [
+        "A long-range air-defence missile",
+        "An underwater rescue vehicle",
+        "A new-generation helicopter engine",
+        "A satellite imaging payload"
+      ],
+      "answer": 2,
+      "note": "It is intended for the Indian Multi-Role Helicopter and its naval variant, with manufacturing at Tumakuru.\nSource: September 2026 Smart Points, PDF p. 122, News 414.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 122,
+        "newsItem": 414
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The DoT-C-DOT End-to-End Optical Network Test Bed will be located in which city?",
+      "options": [
+        "Bengaluru",
+        "Hyderabad",
+        "Pune",
+        "New Delhi"
+      ],
+      "answer": 3,
+      "note": "The strategic agreement runs for five years, with the test bed at C-DOT's campus.\nSource: September 2026 Smart Points, PDF p. 122, News 415.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 122,
+        "newsItem": 415
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Shunya, the Tata Elxsi-Sarla Aviation development project, is what?",
+      "options": [
+        "An electric vertical-take-off-and-landing air taxi",
+        "A hydrogen freight train",
+        "A reusable satellite bus",
+        "An autonomous cargo submarine"
+      ],
+      "answer": 0,
+      "note": "The proposed eVTOL combines vertical take-off and landing with fixed-wing cruise; Sylla is the earlier demonstrator.\nSource: September 2026 Smart Points, PDF p. 122, News 416.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 122,
+        "newsItem": 416
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The India-US TRUST initiative expands to what?",
+      "options": [
+        "Technology Research for Unified Satellite Tracking",
+        "Transforming the Relationship Utilizing Strategic Technology",
+        "Trade Reform Using Secure Transactions",
+        "Transnational Research for Urban Sustainable Transport"
+      ],
+      "answer": 1,
+      "note": "The TRUST Fellowship supports critical-technology collaboration through Indian host institutions.\nSource: September 2026 Smart Points, PDF p. 126, News 431.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 126,
+        "newsItem": 431
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "CHAYANKAN uses AI and geospatial analytics for monitoring what?",
+      "options": [
+        "Mangrove fish stocks",
+        "Urban air traffic",
+        "Tea plantations",
+        "Solar flares"
+      ],
+      "answer": 2,
+      "note": "NIT Rourkela, NRSC and Tea Board India signed the tripartite agreement, including mapping, yield estimation and pest forecasts.\nSource: September 2026 Smart Points, PDF p. 127, News 435.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 127,
+        "newsItem": 435
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NIXI and APNIC's partnership promotes which pair of internet technologies?",
+      "options": [
+        "Bluetooth and NFC",
+        "GSM and CDMA",
+        "HDMI and USB",
+        "IPv6 and Resource Public Key Infrastructure"
+      ],
+      "answer": 3,
+      "note": "The MoU includes an APNIC RPKI repository mirror in India managed by NIXI, which administers .IN and .भारत domains.\nSource: September 2026 Smart Points, PDF p. 129, News 443.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 129,
+        "newsItem": 443
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "CISF's partnership with IIT Kanpur concerns cybersecurity and which other capability?",
+      "options": [
+        "Drone and anti-drone technology",
+        "Underwater mining",
+        "High-altitude mountaineering",
+        "Nuclear-fuel enrichment"
+      ],
+      "answer": 0,
+      "note": "The MoUs include C3iHub training and a drone-technology Centre of Excellence at Behror, Rajasthan.\nSource: September 2026 Smart Points, PDF p. 131, News 449.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 131,
+        "newsItem": 449
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "HALE UAV, linked to the Bharat Forge-Pratt & Whitney collaboration, expands to what?",
+      "options": [
+        "High-Accuracy Low-Emission Unmanned Armoured Vehicle",
+        "High-Altitude Long-Endurance Unmanned Aerial Vehicle",
+        "Hybrid Autonomous Launch and Entry Utility Vehicle",
+        "Heavy Airlift Logistics and Emergency Uncrewed Vehicle"
+      ],
+      "answer": 1,
+      "note": "The collaboration evaluates advanced turboprop engines for DRDO's HALE UAV.\nSource: September 2026 Smart Points, PDF p. 131, News 451.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 131,
+        "newsItem": 451
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NIELIT partnered with which company for an Agentic AI Skilling Initiative?",
+      "options": [
+        "Nvidia India",
+        "Qualcomm India",
+        "Intel India",
+        "AMD India"
+      ],
+      "answer": 2,
+      "note": "The two programmes are Agentic AI for Everyone and Engineering Agentic AI Systems.\nSource: September 2026 Smart Points, PDF p. 131, News 452.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 131,
+        "newsItem": 452
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "IIT (BHU) Varanasi partnered with which US university for electric-vehicle and sustainable-mobility research?",
+      "options": [
+        "Stanford University",
+        "University of Chicago",
+        "Harvard University",
+        "University of Michigan"
+      ],
+      "answer": 3,
+      "note": "The MoU covers joint research and innovation in electric vehicles and sustainable mobility.\nSource: September 2026 Smart Points, PDF p. 133, News 460.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 133,
+        "newsItem": 460
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which institution partnered with TCS to establish an AI Centre of Excellence at its HPC Lab?",
+      "options": [
+        "IIEST Shibpur",
+        "NIT Durgapur",
+        "IIT Kharagpur",
+        "Jadavpur University"
+      ],
+      "answer": 0,
+      "note": "The centre covers skills, research, industrial consulting and entrepreneurship support.\nSource: September 2026 Smart Points, PDF p. 134, News 462.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 134,
+        "newsItem": 462
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NTPC's 50:50 renewable-energy JV was signed with which company?",
+      "options": [
+        "Siemens Energy India",
+        "EDF Power Solutions India",
+        "GE Vernova India",
+        "Vestas India"
+      ],
+      "answer": 1,
+      "note": "The agreement covers pumped storage, hydro, other renewable projects and a distribution business.\nSource: September 2026 Smart Points, PDF p. 134, News 464.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 134,
+        "newsItem": 464
+      }
+    }
+  ]
 };

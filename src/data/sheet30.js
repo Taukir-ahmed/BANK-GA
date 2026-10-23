@@ -1,362 +1,1564 @@
-// September 2026 is built week by week from the CA Weekly PDFs. Each week's
-// questions sit under a marker below — append the next week at the end of the
-// array so existing question numbers (and any mustKnow refs) stay stable.
-const S = ["Only I", "Only II", "Both I and II", "Neither I nor II"];
-
+// September 2026 monthly replacement. Versioned score ID keeps weekly attempts separate.
 export default {
-  id: 30,
-  month: "September 2026",
-  title: "Sheet 30",
-  subtitle: "Banking, RBI & Finance",
-  questions: [
-    // ── Week 1 (Sep 1–7) ─────────────────────────────────────────────────
+  "id": "september-2026-monthly-30-v1",
+  "baseId": 30,
+  "order": 30,
+  "month": "September 2026",
+  "title": "Sheet 30",
+  "subtitle": "Monthly · Banking, RBI & Finance",
+  "source": {
+    "document": "Smart Points PDF (September 2026)",
+    "publisher": "Smartkeeda",
+    "period": "monthly"
+  },
+  "questions": [
     {
-      type: "mcq",
-      q: "As per NSO, India's real GDP grew ___ year-on-year in Q1 FY27 (Apr-Jun 2026):",
-      options: ["6.7%", "7.4%", "7.8%", "8.6%"],
-      answer: 2,
-      note: "7.8%, moderating from a revised 8.6% in Q4 FY26. Real GDP – ₹81.36 lakh Cr; nominal GDP grew 10.3% to ₹88.27 lakh Cr; real GVA grew 8.2%. Agriculture grew 3.6%; mining contracted 2.4%. RBI's full-year FY27 projection remains 6.7%.",
-    },
-    {
-      type: "statements",
-      q: "Consider the following about MoSPI's 'National Accounts Statistics 2026':\nI. It is based on the revised national accounts series with base year 2022-23.\nII. It adopts the Double Deflation Method, with output values adjusted using the Output Producer Price Index.",
-      options: S,
-      answer: 2,
-      note: "Both correct. Gross Fixed Capital Formation grew 11.9% at constant prices in Q1 FY27 (from 5.8%); the secondary sector grew 8.6% and primary 2.9%. Recall from August: MoSPI announced PPI would replace WPI as the deflator.",
-    },
-    {
-      type: "mcq",
-      q: "Tata Capital signed an MoU to set up a dedicated 'Japan Desk' with which Japanese bank?",
-      options: ["MUFG Bank", "Resona Bank", "Mizuho Bank", "SMBC"],
-      answer: 1,
-      note: "Resona Bank, which earlier invested $20 million as a Limited Partner in Tata Capital Growth Fund III. HQ of Tata Capital – Mumbai | Chairman – Saurabh Agrawal | MD & CEO – Rajiv Sabharwal. Japan – Tokyo – Yen | PM – Sanae Takaichi.",
-    },
-    {
-      type: "mcq",
-      q: "SEBI introduced an 'IT Resilience Index (ITRI)' for Market Infrastructure Institutions, scored on a 100-point scale. Which two parameters carry the highest weight of 20% each?",
-      options: [
-        "Integrity and Governance",
-        "Availability and Security",
-        "Scalability and Reliability",
-        "Business continuity and Modularity",
+      "type": "mcq",
+      "q": "Tata Capital's Japan Desk follows an MoU with which Japanese bank?",
+      "options": [
+        "Resona Bank",
+        "Mizuho Bank",
+        "Sumitomo Mitsui Banking Corporation",
+        "MUFG Bank"
       ],
-      answer: 1,
-      note: "Availability and Security (20% each); integrity, governance, reliability & monitoring, business continuity, and modularity & flexibility get 10% each; scalability and other parameters 5% each — 9 parameters in all. The Industry Standards Forum will set baseline thresholds and SOPs. SEBI Chairman – Tuhin Kanta Pandey.",
+      "answer": 0,
+      "note": "The Japanese-language desk will help Japanese companies explore business opportunities in India.\nSource: September 2026 Smart Points, PDF p. 29, News 84.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 29,
+        "newsItem": 84
+      }
     },
     {
-      type: "mcq",
-      q: "Which bank launched 'UPI Global Reverse Acceptance', enabling cross-border P2M transactions in India for visitors from countries in NPCI International's ecosystem?",
-      options: ["State Bank of India", "Bank of Baroda", "ICICI Bank", "Canara Bank"],
-      answer: 1,
-      note: "Bank of Baroda. UPI is operational in 11 countries — UAE, France, Bhutan, Sri Lanka, Nepal, Singapore, Mauritius, Qatar, Cambodia, Greece and Maldives. BoB: HQ – Vadodara | MD & CEO – Debadatta Chand | Tagline – 'India's International Bank'.",
-    },
-    {
-      type: "mcq",
-      q: "From October 2026, SBI's Basic Savings Bank Deposit (BSBD) account holders get how many free cash withdrawals through branches per month?",
-      options: ["2", "4", "5", "6"],
-      answer: 1,
-      note: "4, with ₹15 plus GST per withdrawal beyond that regardless of amount. Applies to branch-channel BSBD accounts (Product Code 1011-1701); digital transactions remain free. SBI Chairman – Challa Sreenivasulu Setty.",
-    },
-    {
-      type: "mcq",
-      q: "IDFC FIRST Bank partnered with IIM Calcutta Innovation Park to launch 'IGNITE', a startup incubation programme under its FIRST IMPACT initiative, with total support of:",
-      options: ["₹1 Cr", "₹2 Cr", "₹5 Cr", "₹10 Cr"],
-      answer: 1,
-      note: "₹2 Cr, including a direct grant corpus of ₹1.36 Cr, for early-stage enterprises working on sustainable solutions. IIMCIP has supported 2,000+ startups and seed-funded 136. IDFC FIRST Bank: CEO – V. Vaidyanathan | Established 2018.",
-    },
-    {
-      type: "mcq",
-      q: "India achieved ~78% of its FY27 disinvestment and asset monetisation target within five months. The single largest contributor was a 6.5% stake sale in:",
-      options: ["Coal India", "NHPC", "LIC", "Hindustan Copper"],
-      answer: 2,
-      note: "LIC (₹31,515 Cr), followed by Coal India 2% (₹5,542 Cr), NHPC 6.01% (₹4,357 Cr) and Hindustan Copper 6% (₹3,041 Cr). In total ₹62,124 Cr was raised against a ₹80,000 Cr target — ₹55,757 Cr from minority stake sales in 9 PSUs and ₹6,367 Cr via InvITs.",
-    },
-    {
-      type: "mcq",
-      q: "RBI relaxed the weekly access rule for its concessional USD-INR swap facility. Banks can now approach RBI outside their designated weekly window for swaps above:",
-      options: ["$25 million", "$50 million", "$100 million", "$250 million"],
-      answer: 2,
-      note: "$100 million; smaller transactions still go only on the bank's allotted day. The facility (from Jun 8, 2026) covers FCNR(B) deposits, ECBs and OFCBs and drew $72.85 bn by Aug 21 — $65.40 bn from FCNR(B). Recall from August: the same figures were reported alongside the Citigroup–Axis Bank NRI tie-up.",
-    },
-    {
-      type: "mcq",
-      q: "Bajaj General Insurance launched 'My Family Complete', a health product notable for covering:",
-      options: [
-        "Domestic workers of the family",
-        "Pet dogs and cats under the same policy",
-        "Overseas treatment without limit",
-        "Parents-in-law up to 90 years",
+      "type": "mcq",
+      "q": "SEBI's IT Resilience Index framework applies to which entities?",
+      "options": [
+        "Only insurance brokers",
+        "Market Infrastructure Institutions",
+        "Only pension funds",
+        "State cooperative departments"
       ],
-      answer: 1,
-      note: "Pet dogs and cats from 3 months of age, alongside adults from 18 and dependent children from 3 months to 30 years. Sum insured ₹5 lakh to ₹5 Cr; tenures up to 5 years. HQ – Pune | MD & CEO – Dr. Tapan Singhel.",
+      "answer": 1,
+      "note": "ITRI assesses critical IT systems across nine weighted parameters, including availability, security, integrity and business continuity.\nSource: September 2026 Smart Points, PDF p. 29, News 85.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 29,
+        "newsItem": 85
+      }
     },
     {
-      type: "mcq",
-      q: "NABARD signed an MoU on financing rural-linked infrastructure with NaBFID. Who chairs NaBFID?",
-      options: ["Shaji K. V.", "K. V. Kamath", "Rajkiran Rai G", "Ajay Banga"],
-      answer: 1,
-      note: "K. V. Kamath. NABARD: HQ – Mumbai | Chairman – Shaji K. V. | Founded 1982. NaBFID (National Bank for Financing Infrastructure and Development): HQ – Mumbai.",
-    },
-    {
-      type: "mcq",
-      q: "Yuko Keicho was appointed Vice President and Auditor General of the World Bank Group. She previously served for 5 years as Auditor General of:",
-      options: ["IMF", "Asian Development Bank", "Bank of Japan", "AIIB"],
-      answer: 1,
-      note: "ADB. She will lead the Internal Audit Vice Presidency. World Bank: HQ – Washington D.C. | President – Ajay Banga | MD/CFO – Anshula Kant | 189 members.",
-    },
-    {
-      type: "mcq",
-      q: "India Post Payments Bank marked its 9th Foundation Day on Sep 1, 2026. Which of these did it launch on the occasion?",
-      options: [
-        "DakPay Sound Box",
-        "Surakshit Savings Account",
-        "SHG Savings Account",
-        "Sampoorna Savings Account",
+      "type": "mcq",
+      "q": "Which bank launched UPI Global Reverse Acceptance for foreign visitors making payments in India?",
+      "options": [
+        "State Bank of India",
+        "Punjab National Bank",
+        "Bank of Baroda",
+        "Canara Bank"
       ],
-      answer: 0,
-      note: "DakPay Sound Box for merchants, plus a Digital Insurance Technology Platform and a Digital Mutual Fund Platform. The three savings variants (SHG, Surakshit with ₹25,000 cyber-insurance cover, Sampoorna) were introduced over the past year. IPPB is 100% government-owned, launched Sep 1, 2018. HQ – New Delhi | MD & CEO – R Viswesvaran | Chairman – Subrat Das.",
+      "answer": 2,
+      "note": "The service supports cross-border person-to-merchant payments through NPCI International's global ecosystem.\nSource: September 2026 Smart Points, PDF p. 29, News 86.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 29,
+        "newsItem": 86
+      }
     },
     {
-      type: "mcq",
-      q: "PhonePe launched 'PhonePe UPI 123Pay' for feature phones without internet. NPCI's underlying UPI123Pay framework was first launched on Mar 8, 2022 by:",
-      options: [
-        "Nirmala Sitharaman",
-        "Shaktikanta Das",
-        "Dilip Asbe",
-        "Sanjay Malhotra",
+      "type": "mcq",
+      "q": "Relay, an AI agent for payment operations of small businesses, was launched by which company?",
+      "options": [
+        "Razorpay",
+        "PayGlocal",
+        "Pine Labs",
+        "Cashfree Payments"
       ],
-      answer: 1,
-      note: "Then RBI Governor Shaktikanta Das. PhonePe's version comes pre-bundled on Nokia, HMD, Lava and Itel feature phones with an AI voice helpline in English and 12 Indian languages. PhonePe led UPI in Jul 2026 with 10.86 billion transactions worth ₹14.44 lakh Cr. MD & CEO – Sameer Nigam.",
+      "answer": 3,
+      "note": "Cashfree's Relay automates payment operations for SMBs and startups.\nSource: September 2026 Smart Points, PDF p. 29, News 87.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 29,
+        "newsItem": 87
+      }
     },
     {
-      type: "mcq",
-      q: "NCDEX launched 'RAINCHNNAI', a SEBI-approved cash-settled futures contract to hedge exposure to Chennai's Northeast monsoon, which accounts for roughly what share of the city's annual rainfall?",
-      options: ["30%", "50%", "70%", "90%"],
-      answer: 2,
-      note: "~70% of ~1,400 mm. Built on a Cumulative Deviation Rainfall model, tick size 1 mm, contracts for Sep–Dec. RAINMUMBAI was India's first exchange-traded weather derivative (benchmarked to a 1991-2020 LPA dataset); together they cover both monsoons. NCDEX: HQ – Mumbai | MD & CEO – Vikas Goel | Established 2003.",
-    },
-    {
-      type: "mcq",
-      q: "LIC launched 'Bima Platinum' and 'Jeevan Raksha' to mark its ___ anniversary:",
-      options: ["60th", "65th", "70th", "75th"],
-      answer: 2,
-      note: "70th (founded 1956). Bima Platinum gives guaranteed additions of ₹70 per ₹1,000 of annual premium, minimum sum assured ₹3 lakh, entry from 30 days. Jeevan Raksha: entry age 18-45, sum assured ₹5-24 lakh. CEO – R Doraiswamy | Tagline – 'Yogakshemam Vahamyaham'.",
-    },
-    {
-      type: "mcq",
-      q: "Suman Ray was appointed Executive Director of RBI w.e.f. Sep 1, 2026. He was previously:",
-      options: [
-        "Regional Director for Maharashtra",
-        "CGM-in-Charge, Department of Supervision",
-        "Director of DICGC",
-        "Regional Director for Delhi",
+      "type": "mcq",
+      "q": "From October 2026, SBI's revised BSBD branch-cash rules allow how many free withdrawals each month?",
+      "options": [
+        "Four",
+        "Two",
+        "Six",
+        "Ten"
       ],
-      answer: 0,
-      note: "Regional Director for Maharashtra; he will oversee the DICGC department and Premises Department. Recall from August: Monisha Chakraborty (CGM-in-Charge, Supervision) was appointed ED from Aug 3. RBI Governor – Sanjay Malhotra (26th).",
+      "answer": 0,
+      "note": "The change applies to the specified Basic Savings Bank Deposit Account branch channel; digital transactions remain free.\nSource: September 2026 Smart Points, PDF p. 30, News 88.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 30,
+        "newsItem": 88
+      }
     },
     {
-      type: "mcq",
-      q: "Jio Platforms received SEBI's final IPO approval to raise ~₹37,700 Cr. Which company holds a 9.98% stake in Jio Platforms?",
-      options: ["Google", "Meta", "KKR", "Vista Equity"],
-      answer: 1,
-      note: "Meta; Google holds 7.73% and Reliance Industries 66.43%. Up to 270 million fresh shares of ₹10 face value; ~₹27,500 Cr earmarked to repay Reliance Jio Infocomm debt; 19 BRLMs led by Kotak Mahindra Capital. Group CEO – Pankaj Mohan Pawar.",
-    },
-    {
-      type: "mcq",
-      q: "S&P Global Ratings retained India's long-term sovereign rating at 'BBB' with a stable outlook and projected FY27 GDP growth at:",
-      options: ["6.4%", "6.6%", "6.9%", "7.7%"],
-      answer: 1,
-      note: "6.6%, moderating from 7.7% in FY26, with 7% average growth over the next 3 years. HQ – New York | President – Yann Le Pallec.",
-    },
-    {
-      type: "mcq",
-      q: "UPI set a new monthly volume record in August 2026 with:",
-      options: [
-        "23.66 billion transactions",
-        "24.16 billion transactions",
-        "24.51 billion transactions",
-        "25.02 billion transactions",
+      "type": "mcq",
+      "q": "IDFC FIRST Bank partnered with which institution for the IGNITE startup-incubation programme?",
+      "options": [
+        "IIT Bombay SINE",
+        "IIM Calcutta Innovation Park",
+        "IIM Ahmedabad CIIE",
+        "IIT Madras Research Park"
       ],
-      answer: 2,
-      note: "24.51 billion worth ₹29.82 lakh Cr, beating July's 23.66 billion. The all-time value high remains ₹29.90 lakh Cr (May 2026). Average daily volume rose to 791 million; y-o-y volume grew 22% from 19.63 billion in Aug 2025.",
+      "answer": 1,
+      "note": "IGNITE operates under FIRST IMPACT and supports early-stage enterprises with sustainable business solutions.\nSource: September 2026 Smart Points, PDF p. 30, News 89.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 30,
+        "newsItem": 89
+      }
     },
     {
-      type: "mcq",
-      q: "NPCI International signed a commercial agreement with NIPC to enable UPI payments in which country?",
-      options: ["Kazakhstan", "Uzbekistan", "Kyrgyzstan", "Azerbaijan"],
-      answer: 1,
-      note: "Uzbekistan, with clearances from RBI and the Central Bank of Uzbekistan. NIPL CEO – Ritesh Shukla. Uzbekistan – Tashkent – Som | President – Shavkat Mirziyoyev | PM – Abdulla Aripov.",
-    },
-
-    // ── Week 2 (Sep 8–14) ────────────────────────────────────────────────
-    {
-      type: "mcq",
-      q: "SEBI granted a 'Category I' merchant banking licence to Zerodha Corporate Advisors. Under the 2025 amendment regulations, the minimum net worth for a new Category I merchant banker is:",
-      options: ["₹5 Cr", "₹10 Cr", "₹50 Cr", "₹100 Cr"],
-      answer: 2,
-      note: "₹50 Cr (from ₹5 Cr), effective Jan 2026, plus ₹12.5 Cr liquid net worth and an underwriting cap of 20x liquid net worth. Category II needs only ₹10 Cr but cannot lead-manage mainboard IPOs. Zerodha infused ₹55 Cr. SEBI had 248 registered merchant bankers as of Aug 31, 2026. Zerodha CEO – Nithin Kamath.",
-    },
-    {
-      type: "mcq",
-      q: "RBI approved Carol Kripanayana Furtado as Interim CEO for 3 months of which small finance bank?",
-      options: ["Equitas SFB", "Ujjivan SFB", "AU SFB", "ESAF SFB"],
-      answer: 1,
-      note: "Ujjivan SFB, succeeding Sanjeev Nautiyal. HQ – Bengaluru | Tagline – 'Build a Better Life' | Established 2017.",
-    },
-    {
-      type: "mcq",
-      q: "Axis Bank and Scapia launched a co-branded travel credit card. It is Scapia's third banking partnership after:",
-      options: [
-        "HDFC Bank and ICICI Bank",
-        "BOBCARD and Federal Bank",
-        "SBI Card and Yes Bank",
-        "IndusInd Bank and RBL Bank",
+      "type": "mcq",
+      "q": "RBI's concessional USD-INR swap relaxation allows out-of-window access for transactions above what threshold?",
+      "options": [
+        "USD 10 million",
+        "USD 500 million",
+        "USD 100 million",
+        "USD 1 billion"
       ],
-      answer: 1,
-      note: "BOBCARD and Federal Bank. The Scapia Axis Bank card is on Mastercard and RuPay, onboarding from Sep 3, 2026. Axis Bank: MD & CEO – Amitabh Chaudhry. Scapia: HQ – Bengaluru | CEO – Anil Goteti.",
+      "answer": 2,
+      "note": "Smaller transactions remain tied to the bank's designated weekly day. The facility is linked to FCNR(B) deposits.\nSource: September 2026 Smart Points, PDF p. 31, News 91.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 31,
+        "newsItem": 91
+      }
     },
     {
-      type: "mcq",
-      q: "Sandeep Kumar was appointed MD & CEO of LIC Housing Finance, succeeding:",
-      options: ["Y. Viswanatha Gowd", "T. Adhikari", "Siddhartha Mohanty", "R Doraiswamy"],
-      answer: 1,
-      note: "T. Adhikari. Sandeep Kumar was previously COO. LIC HFL: HQ – Mumbai | Tagline – 'Where Dreams come HOME'.",
-    },
-    {
-      type: "mcq",
-      q: "Razorpay launched 'RAY', a conversational AI account manager on WhatsApp for businesses, in partnership with:",
-      options: ["HDFC Bank", "IndusInd Bank", "Axis Bank", "RBL Bank"],
-      answer: 1,
-      note: "IndusInd Bank; Bajaj Finance was among the first businesses live. Recall from August: Razorpay launched 'Vulcan' (a payments foundation model) and a multi-currency EEFC account with RBL Bank. Razorpay CEO – Harshil Mathur.",
-    },
-    {
-      type: "mcq",
-      q: "The Bank of Canada unveiled a vertical CAD 20 note featuring King Charles III. Canada's first vertical banknote was the CAD 10 note (2018) featuring:",
-      options: ["Terry Fox", "Viola Desmond", "Agnes Macphail", "Sir John A. Macdonald"],
-      answer: 1,
-      note: "Viola Desmond. Charles III is the 4th monarch on a Canadian note; the reverse shows the Canadian National Vimy Memorial in France; portrait by Jorge Rodrigo Peral. Canada – Ottawa – CAD | PM – Mark Carney.",
-    },
-    {
-      type: "mcq",
-      q: "Bank of Baroda raised $400 million by reissuing its August 2031 dollar bonds, taking its total to $1.1 billion. It became the ___ state-owned bank to cross $1 billion under RBI's discounted funding window:",
-      options: ["1st", "2nd", "3rd", "4th"],
-      answer: 1,
-      note: "2nd, after SBI, and the 5th issuer overall. Indian lenders raised $11.65 bn via dollar bonds in Jun–Aug 2026, led by ICICI Bank. RBI's FCNR(B) deposit hedging window closed on Aug 31, 2026, earlier than the scheduled Sep 30.",
-    },
-    {
-      type: "mcq",
-      q: "WhatsApp launched a native in-app Bill Payments feature in India, powered by:",
-      options: ["Bharat Connect", "ONDC", "Aadhaar Pay", "e-RUPI"],
-      answer: 0,
-      note: "Bharat Connect (formerly BBPS) — 22,722 billers across 30 categories, payable via UPI, credit or debit cards. WhatsApp Pay processed 150 million transactions in Jun 2026, ~0.7% of UPI volume. Meta CEO – Mark Zuckerberg.",
-    },
-    {
-      type: "mcq",
-      q: "As per RBI's June 2026 Financial Stability Report, the Gross NPA ratio of scheduled commercial banks fell to a multi-decadal low of:",
-      options: ["1.2%", "1.8%", "2.3%", "2.8%"],
-      answer: 1,
-      note: "1.8% as of Mar 2026; CRAR 17.7%, CET1 15.3%. Large corporate GNPA fell to 1.2% (from 2.4% in Sep 2024). Stress tests on 174 NBFCs show CRAR staying above the 15% minimum even under severe stress (20.9%). The top risk flagged by banks and NBFCs: AI-driven cyberattacks.",
-    },
-    {
-      type: "mcq",
-      q: "As per RBI, gold loans by NBFCs grew ___ year-on-year in July 2026:",
-      options: ["43.9%", "68.5%", "88.1%", "136.4%"],
-      answer: 1,
-      note: "68.5% (from 43.9% a year earlier), the fastest-growing NBFC retail category, with a book of ~₹3.54 trillion versus banks' ₹5.52 trillion. Banks' gold loan growth slowed to 88.1% from 136.4%. Overall NBFC credit grew 14.9% to ₹59.89 trillion; bank credit 19.1%.",
-    },
-    {
-      type: "mcq",
-      q: "Coastal Local Area Bank became India's first Local Area Bank to get 'Scheduled Bank' status. It is headquartered at:",
-      options: ["Visakhapatnam", "Vijayawada", "Kakinada", "Nellore"],
-      answer: 1,
-      note: "Vijayawada, Andhra Pradesh — India's first LAB, operational since Dec 27, 1999, now in the Second Schedule of the RBI Act, 1934. Scheduled status enables access to RBI liquidity facilities and money market operations. MD & CEO – B Venugopal Reddy.",
-    },
-    {
-      type: "mcq",
-      q: "Bandhan Bank launched its first proprietary credit card portfolio with Mastercard. Which of the following is NOT one of its four tiers?",
-      options: ["Sparks", "Ignite", "Blaze", "Lumina"],
-      answer: 2,
-      note: "The tiers are Sparks, Ignite, Flare and Lumina. Bandhan Bank: HQ – Kolkata | MD & CEO – Partha Pratim Sengupta | Tagline – 'Aapka Bhala, Sabki Bhalai' | Established 2015. Mastercard CEO – Michael Miebach.",
-    },
-    {
-      type: "mcq",
-      q: "Tatsuya Fujimoto was appointed MD & CEO of IFFCO-TOKIO General Insurance, a JV between IFFCO and Tokio Marine in the ratio:",
-      options: ["50:50", "51:49", "74:26", "60:40"],
-      answer: 1,
-      note: "51:49 (IFFCO majority). He succeeds Subrata Mondal and was Director (Operations). HQ – Gurugram | Tagline – 'Muskurate Raho' | Established 2000.",
-    },
-    {
-      type: "mcq",
-      q: "IRDAI imposed a ₹1 crore penalty on ICICI Lombard for outsourcing and governance lapses under which section of the Insurance Act, 1938?",
-      options: ["Section 64", "Section 102", "Section 105", "Section 112"],
-      answer: 1,
-      note: "Section 102, for violations linked to the IRDAI (Outsourcing of Activities by Indian Insurers) Regulations, 2017 and corporate governance guidelines. ICICI Lombard: MD & CEO – Sanjeev Mantri | Tagline – 'Nibhaye Vaade'. IRDAI Chairman – Ajay Seth.",
-    },
-    {
-      type: "mcq",
-      q: "The Ministry of Cooperation restored the 'CRCS-Sahara Refund Portal' to process ~20 lakh pending claims. The portal was originally launched on:",
-      options: ["Jul 18, 2023", "Mar 29, 2023", "Nov 15, 2022", "Jan 10, 2024"],
-      answer: 0,
-      note: "Jul 18, 2023. ₹9,267 Cr has been refunded to 41.57 lakh depositors of 4 societies (Sahara Credit Cooperative – Lucknow, Saharayn Universal – Bhopal, Humara India – Kolkata, Stars Multipurpose – Hyderabad). Funds come from the Sahara-SEBI Refund Account (corpus ₹24,979.67 Cr). Minister of Cooperation: Amit Shah.",
-    },
-    {
-      type: "mcq",
-      q: "PhonePe and Visa launched 'Tap to Pay', 'Cross Border Scan to Pay' and 'Smart Accept' at the 7th Global Fintech Fest 2026 in Mumbai. GFF is organised principally by:",
-      options: [
-        "RBI, SEBI and IRDAI",
-        "PCI, NPCI and FCC",
-        "NASSCOM and FICCI",
-        "IBA and NPCI",
+      "type": "mcq",
+      "q": "Bajaj General Insurance's My Family Complete extends shared health protection to which unusual group?",
+      "options": [
+        "Only commercial livestock",
+        "Only overseas students",
+        "Only domestic workers",
+        "Pet dogs and cats along with family members"
       ],
-      answer: 1,
-      note: "Payments Council of India, NPCI and Fintech Convergence Council. Theme: 'Potential to Impact: Agentic AI | Tokenisation | Quantum'. PhonePe is the first Indian app to offer Visa's Cross Border Scan to Pay (14 markets). Visa: HQ – Foster City, California | CEO – Ryan McInerney.",
+      "answer": 3,
+      "note": "The product combines human family coverage with pet-dog and pet-cat protection in a single framework.\nSource: September 2026 Smart Points, PDF p. 31, News 92.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 31,
+        "newsItem": 92
+      }
     },
     {
-      type: "mcq",
-      q: "NPCI launched two agentic AI platforms at GFF 2026. 'AiNxt' is an open-source enterprise platform; the other, for agent-to-agent orchestration within the payments ecosystem, is:",
-      options: ["UPI Circle", "AtOM", "BHIM Agent", "Sahayak"],
-      answer: 1,
-      note: "AtOM (Agentic Orchestration and Messaging). AiNxt follows a Bring-Your-Own-Model approach with 4 components (AiNxt OS, Code, CLI, Enterprise). NPCI is also building a 'Unified Agentic Protocol' and an AI agent registry. NPCI: Chairman – Ajay Kumar Choudhary | MD & CEO – Dilip Asbe.",
-    },
-    {
-      type: "statements",
-      q: "Consider the following about PFRDA's recent NPS measures:\nI. It standardised NPS Multiple Scheme Framework schemes into 5 equity-allocation-based risk categories, with a maximum of 2 schemes per category per tier.\nII. It raised the lump-sum withdrawal limit at exit to 80% of corpus for non-government subscribers with savings above ₹12 lakh.",
-      options: S,
-      answer: 2,
-      note: "Both correct. Pension funds got 30 days to rename schemes (fund abbreviation + NPS + category code + name) and 45 days to merge excess schemes. PFRDA also set up a committee on a guaranteed-return pension scheme for the non-government sector and plans to launch a 'Swasthya' scheme. Chairperson – Sivasubramanian Ramann | Founded 2003.",
-    },
-    {
-      type: "mcq",
-      q: "As per RBI's BSR-1 for June 2026, bank credit growth accelerated to ___ y-o-y at end-June:",
-      options: ["9.9%", "11.5%", "16.5%", "21.1%"],
-      answer: 2,
-      note: "16.5% (from 9.9% a year ago); private corporate borrowings grew 21.1%, credit to female borrowers 19.7%. WALR on outstanding credit eased to 9.26%. Per BSR-2, deposits grew 11.5%; households held 58.8% of deposits; deposits of ₹1 Cr and above are 47.3% of term deposits.",
-    },
-    {
-      type: "mcq",
-      q: "Bank of Maharashtra introduced a '24x7 Automated Locker Facility' — the first of its kind by a PSB — at:",
-      options: [
-        "Parliament House",
-        "Supreme Court of India",
-        "Bombay High Court",
-        "RBI headquarters",
+      "type": "mcq",
+      "q": "NABARD partnered with which institution to finance infrastructure with rural and agricultural linkages?",
+      "options": [
+        "NaBFID",
+        "NHB",
+        "EXIM Bank",
+        "SIDBI"
       ],
-      answer: 1,
-      note: "Supreme Court of India, inaugurated by CJI Surya Kant; lockers imported from Japan. BoM had opened a full-service branch at the SC in Aug 2024. HQ – Pune | MD & CEO – Nidhu Saxena | Tagline – 'One Family One Bank'.",
+      "answer": 0,
+      "note": "NaBFID is the National Bank for Financing Infrastructure and Development; both institutions are headquartered in Mumbai.\nSource: September 2026 Smart Points, PDF p. 31, News 93.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 31,
+        "newsItem": 93
+      }
     },
     {
-      type: "mcq",
-      q: "The Ministry of Finance secured $1 billion from the IFC to expand long-term MSME credit, channelled through:",
-      options: ["NABARD", "SIDBI", "EXIM Bank", "NaBFID"],
-      answer: 1,
-      note: "SIDBI — $500 mn already provided, $500 mn via SIDBI's lender syndicate — swapped into rupees through RBI's special swap window, enabling MSME loans with tenures up to 7 years. Finance Minister: Nirmala Sitharaman.",
+      "type": "mcq",
+      "q": "Yuko Keicho was appointed Vice President and Auditor General of which institution?",
+      "options": [
+        "International Monetary Fund",
+        "World Bank Group",
+        "New Development Bank",
+        "Asian Infrastructure Investment Bank"
+      ],
+      "answer": 1,
+      "note": "She leads the Internal Audit Vice Presidency and previously served as ADB's Auditor General.\nSource: September 2026 Smart Points, PDF p. 31, News 94.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 31,
+        "newsItem": 94
+      }
     },
     {
-      type: "mcq",
-      q: "ADB signed a ₹1,750 Cr loan with Karnataka to upgrade 500 government schools into Karnataka Public Schools. The total programme cost is:",
-      options: ["₹1,750 Cr", "₹2,000 Cr", "₹2,500 Cr", "₹3,000 Cr"],
-      answer: 2,
-      note: "₹2,500 Cr (₹750 Cr from the state) over 4 years, each school accommodating at least 1,200 students. Separately, ADB signed its first Transaction Advisory Services mandate in India with Madhya Pradesh for 3 clean energy PPP projects (up to $1 bn private investment). ADB: HQ – Mandaluyong | President – Masato Kanda | 69 members.",
+      "type": "mcq",
+      "q": "DakPay Sound Box was introduced by which institution on its Foundation Day?",
+      "options": [
+        "Airtel Payments Bank",
+        "Fino Payments Bank",
+        "India Post Payments Bank",
+        "Paytm Payments Bank"
+      ],
+      "answer": 2,
+      "note": "IPPB also launched digital insurance and mutual-fund platforms. It is fully government-owned and headquartered in New Delhi.\nSource: September 2026 Smart Points, PDF p. 32, News 95.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 32,
+        "newsItem": 95
+      }
     },
-  ],
+    {
+      "type": "mcq",
+      "q": "PhonePe UPI 123Pay primarily enables which users to pay digitally?",
+      "options": [
+        "Only international credit-card users",
+        "Only cryptocurrency holders",
+        "Only corporate treasury users",
+        "Feature-phone users without an internet connection"
+      ],
+      "answer": 3,
+      "note": "It builds on NPCI's UPI123Pay framework and is pre-bundled on selected feature phones.\nSource: September 2026 Smart Points, PDF p. 32, News 96.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 32,
+        "newsItem": 96
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NCDEX's RAINCHNNAI contract hedges exposure to which weather pattern?",
+      "options": [
+        "Chennai's Northeast monsoon",
+        "Mumbai's winter rainfall",
+        "Delhi's summer heat",
+        "Assam's river discharge"
+      ],
+      "answer": 0,
+      "note": "The cash-settled rainfall futures contract uses a Cumulative Deviation Rainfall model and complements RAINMUMBAI.\nSource: September 2026 Smart Points, PDF p. 32, News 97.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 32,
+        "newsItem": 97
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "According to the monthly PDF's NSO figures, India's real GDP growth in Q1 FY27 was what?",
+      "options": [
+        "6.7%",
+        "7.8%",
+        "8.6%",
+        "10.3%"
+      ],
+      "answer": 1,
+      "note": "The quarter is April-June 2026. The source separately reports nominal GDP growth of 10.3% and real GVA growth of 8.2%.\nSource: September 2026 Smart Points, PDF p. 33, News 98.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 33,
+        "newsItem": 98
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which insurer launched Bima Platinum and Jeevan Raksha for its 70th anniversary?",
+      "options": [
+        "SBI Life Insurance",
+        "HDFC Life Insurance",
+        "Life Insurance Corporation of India",
+        "ICICI Life Insurance"
+      ],
+      "answer": 2,
+      "note": "LIC was founded in 1956 and is headquartered in Mumbai; its tagline is Yogakshemam Vahamyaham.\nSource: September 2026 Smart Points, PDF p. 33, News 99.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 33,
+        "newsItem": 99
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who was appointed RBI Executive Director with effect from September 1, 2026?",
+      "options": [
+        "Rajendra Kumar Saboo",
+        "Sandeep Kumar",
+        "Abhinav Trivedi",
+        "Suman Ray"
+      ],
+      "answer": 3,
+      "note": "The monthly source assigns the DICGC and Premises departments to Suman Ray.\nSource: September 2026 Smart Points, PDF p. 33, News 100.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 33,
+        "newsItem": 100
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "S&P retained India's long-term sovereign rating at which level with a stable outlook?",
+      "options": [
+        "BBB",
+        "A-",
+        "BB+",
+        "AAA"
+      ],
+      "answer": 0,
+      "note": "The PDF distinguishes this S&P rating from JCR's upgrade of India to A-.\nSource: September 2026 Smart Points, PDF p. 34, News 102.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 34,
+        "newsItem": 102
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NIPL signed an agreement with NIPC to enable UPI payments in which country?",
+      "options": [
+        "Kazakhstan",
+        "Uzbekistan",
+        "Kyrgyzstan",
+        "Tajikistan"
+      ],
+      "answer": 1,
+      "note": "The agreement received RBI and Central Bank of Uzbekistan clearances. Uzbekistan's capital is Tashkent and currency is the som.\nSource: September 2026 Smart Points, PDF p. 34, News 104.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 34,
+        "newsItem": 104
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "National Accounts Statistics 2026 uses which base year for the revised national accounts series?",
+      "options": [
+        "2011-12",
+        "2017-18",
+        "2022-23",
+        "2024-25"
+      ],
+      "answer": 2,
+      "note": "The publication adopts Double Deflation, using an Output Producer Price Index to adjust output values.\nSource: September 2026 Smart Points, PDF p. 35, News 105.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 35,
+        "newsItem": 105
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Whose additional charge as UCO Bank MD and CEO was extended until November 30, 2026?",
+      "options": [
+        "Debadatta Chand",
+        "Binod Kumar",
+        "Rajneesh Karnatak",
+        "Rajendra Kumar Saboo"
+      ],
+      "answer": 3,
+      "note": "He succeeded Ashwani Kumar in June 2026. UCO Bank is headquartered in Kolkata.\nSource: September 2026 Smart Points, PDF p. 35, News 106.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 35,
+        "newsItem": 106
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "SEBI's Category I merchant-banking licence allows Zerodha Corporate Advisors to do what?",
+      "options": [
+        "Lead-manage mainboard IPOs",
+        "Issue currency notes",
+        "Underwrite health insurance",
+        "Operate a pension fund"
+      ],
+      "answer": 0,
+      "note": "Category I permits IPOs, FPOs, rights issues and the Book Running Lead Manager role. Category II cannot lead-manage mainboard equity IPOs.\nSource: September 2026 Smart Points, PDF p. 35, News 107.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 35,
+        "newsItem": 107
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who was appointed Interim CEO of Ujjivan Small Finance Bank for three months?",
+      "options": [
+        "Suman Ray",
+        "Carol Kripanayana Furtado",
+        "Yuko Keicho",
+        "Arundhati Bhattacharya"
+      ],
+      "answer": 1,
+      "note": "The appointment succeeds Sanjeev Nautiyal. Ujjivan SFB is headquartered in Bengaluru.\nSource: September 2026 Smart Points, PDF p. 36, News 108.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 36,
+        "newsItem": 108
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Scapia's new co-branded travel card was launched with which bank?",
+      "options": [
+        "ICICI Bank",
+        "HDFC Bank",
+        "Axis Bank",
+        "IndusInd Bank"
+      ],
+      "answer": 2,
+      "note": "The Scapia Axis Bank Credit Card is available on Mastercard and RuPay networks.\nSource: September 2026 Smart Points, PDF p. 36, News 109.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 36,
+        "newsItem": 109
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who became MD and CEO of LIC Housing Finance in the September source?",
+      "options": [
+        "T. Adhikari",
+        "Rajiv Sabharwal",
+        "R. Doraiswamy",
+        "Sandeep Kumar"
+      ],
+      "answer": 3,
+      "note": "Sandeep Kumar previously served as COO. LIC Housing Finance's tagline is Where Dreams come HOME.\nSource: September 2026 Smart Points, PDF p. 36, News 110.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 36,
+        "newsItem": 110
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "RAY, a WhatsApp-based AI account manager for businesses, was launched by Razorpay with which bank?",
+      "options": [
+        "IndusInd Bank",
+        "Axis Bank",
+        "Kotak Mahindra Bank",
+        "Bank of Baroda"
+      ],
+      "answer": 0,
+      "note": "RAY offers text and voice support for payments, settlements, refunds and account queries.\nSource: September 2026 Smart Points, PDF p. 36, News 111.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 36,
+        "newsItem": 111
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Canada's new vertical CAD 20 banknote features which monarch?",
+      "options": [
+        "Queen Elizabeth II",
+        "King Charles III",
+        "King George VI",
+        "King Edward VII"
+      ],
+      "answer": 1,
+      "note": "The reverse depicts the Canadian National Vimy Memorial in France. Canada's first vertical note featured Viola Desmond.\nSource: September 2026 Smart Points, PDF p. 36, News 112.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 36,
+        "newsItem": 112
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "WhatsApp's native bill-payment feature in India is powered by which platform?",
+      "options": [
+        "SWIFT",
+        "TReDS",
+        "Bharat Connect",
+        "RTGS exclusively"
+      ],
+      "answer": 2,
+      "note": "The feature supports bill payments using UPI, credit cards and debit cards.\nSource: September 2026 Smart Points, PDF p. 37, News 114.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 37,
+        "newsItem": 114
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "SBI partnered with Bisleri under which plastic-waste initiative?",
+      "options": [
+        "Project NETRA",
+        "Mission LiFE Schools",
+        "Green Deposits First",
+        "Bottles for Change"
+      ],
+      "answer": 3,
+      "note": "The association covers SBI branches and offices. SBI's stated net-zero target in the source is 2055.\nSource: September 2026 Smart Points, PDF p. 37, News 115.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 37,
+        "newsItem": 115
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which institution released the June 2026 Financial Stability Report cited in the PDF?",
+      "options": [
+        "Reserve Bank of India",
+        "SEBI",
+        "NITI Aayog",
+        "Ministry of Corporate Affairs"
+      ],
+      "answer": 0,
+      "note": "The report covers bank asset quality, capital adequacy and NBFC stress tests; surveyed entities identified AI-driven cyberattacks as a leading risk.\nSource: September 2026 Smart Points, PDF p. 37, News 116.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 37,
+        "newsItem": 116
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which institution became India's first Local Area Bank to receive Scheduled Bank status?",
+      "options": [
+        "Capital Small Finance Bank",
+        "Coastal Local Area Bank",
+        "Dhanlaxmi Bank",
+        "Karnataka Bank"
+      ],
+      "answer": 1,
+      "note": "Coastal Bank is based in Vijayawada. Inclusion in the Second Schedule to the RBI Act, 1934 confers scheduled status.\nSource: September 2026 Smart Points, PDF p. 38, News 118.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 38,
+        "newsItem": 118
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Sparks, Ignite, Flare and Lumina are credit-card tiers launched by which bank with Mastercard?",
+      "options": [
+        "Federal Bank",
+        "RBL Bank",
+        "Bandhan Bank",
+        "IDFC FIRST Bank"
+      ],
+      "answer": 2,
+      "note": "This is Bandhan's first proprietary credit-card portfolio. The bank is headquartered in Kolkata.\nSource: September 2026 Smart Points, PDF p. 38, News 119.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 38,
+        "newsItem": 119
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who was appointed MD and CEO of IFFCO-TOKIO General Insurance?",
+      "options": [
+        "Subrata Mondal",
+        "Tapan Singhel",
+        "Sanjeev Mantri",
+        "Tatsuya Fujimoto"
+      ],
+      "answer": 3,
+      "note": "The appointment headline names Fujimoto as successor to Mondal. IFFCO-TOKIO is an Indian-Japanese insurance joint venture.\nSource: September 2026 Smart Points, PDF p. 38, News 120.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 38,
+        "newsItem": 120
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The restored CRCS-Sahara Refund Portal is administered under which ministry?",
+      "options": [
+        "Ministry of Cooperation",
+        "Ministry of Corporate Affairs",
+        "Ministry of Labour and Employment",
+        "Ministry of Commerce and Industry"
+      ],
+      "answer": 0,
+      "note": "The portal processes eligible claims from four Sahara cooperative societies using the Sahara-SEBI Refund Account.\nSource: September 2026 Smart Points, PDF p. 39, News 123.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 39,
+        "newsItem": 123
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "PhonePe's Cross Border Scan to Pay feature was launched with which card network?",
+      "options": [
+        "Mastercard",
+        "Visa",
+        "American Express",
+        "Diners Club"
+      ],
+      "answer": 1,
+      "note": "The partnership also introduced Tap to Pay and Smart Accept; the latter enables smartphone card acceptance without a separate POS device.\nSource: September 2026 Smart Points, PDF p. 39, News 124.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 39,
+        "newsItem": 124
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "PFRDA's NPS Multiple Scheme Framework classification is based primarily on what?",
+      "options": [
+        "Subscriber's home state",
+        "Employer's industry code",
+        "Equity allocation and associated risk",
+        "Number of nominees"
+      ],
+      "answer": 2,
+      "note": "MSF schemes must fit within one of five equity-allocation risk categories and follow standardised names.\nSource: September 2026 Smart Points, PDF p. 40, News 125.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 40,
+        "newsItem": 125
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "In RBI's Basic Statistical Returns, BSR-1 and BSR-2 concern which pair respectively?",
+      "options": [
+        "Inflation and unemployment",
+        "Exports and imports",
+        "Pensions and insurance claims",
+        "Bank credit and bank deposits"
+      ],
+      "answer": 3,
+      "note": "The quarterly credit and deposit returns were released through RBI's Database on Indian Economy portal.\nSource: September 2026 Smart Points, PDF p. 41, News 127.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 41,
+        "newsItem": 127
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Visa's A2A Protect aims to prevent which type of fraud?",
+      "options": [
+        "Account-to-account payment fraud",
+        "Marine cargo fraud",
+        "Crop insurance fraud",
+        "Counterfeit physical currency only"
+      ],
+      "answer": 0,
+      "note": "It assesses risk before money leaves an account and integrates Featurespace technology and Visa Graph IQ.\nSource: September 2026 Smart Points, PDF p. 41, News 128.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 41,
+        "newsItem": 128
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which public sector bank introduced a 24x7 automated locker facility at the Supreme Court?",
+      "options": [
+        "Canara Bank",
+        "Bank of Maharashtra",
+        "Punjab National Bank",
+        "Union Bank of India"
+      ],
+      "answer": 1,
+      "note": "The facility was inaugurated by the Chief Justice. Bank of Maharashtra is headquartered in Pune.\nSource: September 2026 Smart Points, PDF p. 42, News 129.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 42,
+        "newsItem": 129
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "ARISE Homecoming is a hiring initiative launched by which bank?",
+      "options": [
+        "SBI",
+        "Bank of India",
+        "Axis Bank",
+        "IDBI Bank"
+      ],
+      "answer": 2,
+      "note": "It connects globally educated Indian students and early-career professionals with opportunities in India.\nSource: September 2026 Smart Points, PDF p. 42, News 130.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 42,
+        "newsItem": 130
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NPCI's AtOM platform expands to what?",
+      "options": [
+        "Automated Treasury Operations Management",
+        "Aadhaar Transaction Online Monitor",
+        "Advanced Tokenisation of Money",
+        "Agentic Orchestration and Messaging"
+      ],
+      "answer": 3,
+      "note": "AtOM handles agent-to-agent orchestration in payments. NPCI also launched the open-source AiNxt platform.\nSource: September 2026 Smart Points, PDF p. 42, News 131.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 42,
+        "newsItem": 131
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "FOMO Pay and NIPL's UPI QR partnership targets merchants in which country?",
+      "options": [
+        "Singapore",
+        "Malaysia",
+        "Indonesia",
+        "Thailand"
+      ],
+      "answer": 0,
+      "note": "Indian visitors pay in rupees while participating Singapore merchants receive Singapore dollars.\nSource: September 2026 Smart Points, PDF p. 43, News 132.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 43,
+        "newsItem": 132
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which is NOT one of the four licensed credit information companies listed in the PDF?",
+      "options": [
+        "TransUnion CIBIL",
+        "CAMS",
+        "CRIF High Mark",
+        "Experian"
+      ],
+      "answer": 1,
+      "note": "The fourth is Equifax. The source notes a credit-score scale of 300-900 and RBI penalties for delayed updates.\nSource: September 2026 Smart Points, PDF p. 43, News 133.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 43,
+        "newsItem": 133
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The Bankers' Books Evidence Act, 2026 modernises evidence rules by recognising which records?",
+      "options": [
+        "Only handwritten banking ledgers",
+        "Only notarised foreign-bank statements",
+        "Physical, electronic, digital, virtual and cloud-based banking records",
+        "Only printed cheque registers"
+      ],
+      "answer": 2,
+      "note": "It replaces the 1891 Act and provides separate certification mechanisms for physical and electronic records.\nSource: September 2026 Smart Points, PDF p. 43, News 134.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 43,
+        "newsItem": 134
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which company completed India's first pilot issuance of tokenised corporate bonds?",
+      "options": [
+        "NTPC Limited",
+        "Power Grid Corporation",
+        "NABARD",
+        "REC Limited"
+      ],
+      "answer": 3,
+      "note": "The pilot used distributed ledger technology and RBI's wholesale CBDC for settlement under SEBI's regulatory sandbox.\nSource: September 2026 Smart Points, PDF p. 43, News 135.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 43,
+        "newsItem": 135
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Indian Bank's board approved a representative office in which city?",
+      "options": [
+        "Dubai",
+        "Tokyo",
+        "London",
+        "Paris"
+      ],
+      "answer": 0,
+      "note": "Indian Bank already has overseas branches in Singapore, Colombo and Jaffna, plus an IFSC Banking Unit at GIFT City.\nSource: September 2026 Smart Points, PDF p. 44, News 136.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 44,
+        "newsItem": 136
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Flash, an express checkout for international customers of Indian merchants, was introduced by whom?",
+      "options": [
+        "PhonePe",
+        "PayGlocal",
+        "Cashfree Payments",
+        "Razorpay"
+      ],
+      "answer": 1,
+      "note": "With consent, Flash reuses previously verified personal and payment information to reduce repeated data entry.\nSource: September 2026 Smart Points, PDF p. 44, News 137.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 44,
+        "newsItem": 137
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "UIDAI's new Face Authentication SDK removes which requirement for integrating apps?",
+      "options": [
+        "Any customer consent",
+        "Any anti-spoofing checks",
+        "Switching to a separate FaceRD application",
+        "All device registration"
+      ],
+      "answer": 2,
+      "note": "The SDK embeds authentication in native Android and iOS apps; a sandbox supports controlled integration testing.\nSource: September 2026 Smart Points, PDF p. 44, News 138.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 44,
+        "newsItem": 138
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "RBI's September draft KYC amendments address suspected money-mule activity and which related risk?",
+      "options": [
+        "Marine pollution",
+        "Crop failure",
+        "Foreign tourist overstays",
+        "Cyber-enabled financial fraud"
+      ],
+      "answer": 3,
+      "note": "The draft supplies banks with a standard procedure for reviewing suspicious accounts and transactions.\nSource: September 2026 Smart Points, PDF p. 45, News 139.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 45,
+        "newsItem": 139
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which UPI category remains free regardless of transaction amount under the September source?",
+      "options": [
+        "Person-to-person transfers",
+        "All person-to-merchant payments",
+        "Only securities-market payments",
+        "Only international merchant payments"
+      ],
+      "answer": 0,
+      "note": "The source separately exempts UPI payments up to ₹2,000 and RuPay debit-card transactions; merchant rules differ.\nSource: September 2026 Smart Points, PDF p. 45, News 140.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 45,
+        "newsItem": 140
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "UPI Tap & Pay uses which technology at compatible POS terminals?",
+      "options": [
+        "Bluetooth beacons only",
+        "Near Field Communication",
+        "Satellite messaging",
+        "Optical fibre identification"
+      ],
+      "answer": 1,
+      "note": "The same launch included MyUPI support, Safety Switch and UPI Number Delink.\nSource: September 2026 Smart Points, PDF p. 46, News 142.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 46,
+        "newsItem": 142
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which department releases India's Wholesale Price Index estimates?",
+      "options": [
+        "Department of Financial Services",
+        "Department of Expenditure",
+        "DPIIT",
+        "Department of Economic Affairs"
+      ],
+      "answer": 2,
+      "note": "The August 2026 WPI estimates in the monthly source use base year 2022-23.\nSource: September 2026 Smart Points, PDF p. 46, News 143.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 46,
+        "newsItem": 143
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The August 2026 CPI series in the source uses which base?",
+      "options": [
+        "2012 = 100",
+        "2011-12 = 100",
+        "2022-23 = 100",
+        "2024 = 100"
+      ],
+      "answer": 3,
+      "note": "NSO releases CPI and Consumer Food Price Index estimates. The PDF gives headline retail inflation as 4.82%.\nSource: September 2026 Smart Points, PDF p. 46, News 144.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 46,
+        "newsItem": 144
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "The Periodic Labour Force Survey is released by which organisation?",
+      "options": [
+        "National Statistics Office",
+        "Reserve Bank of India",
+        "Labour Bureau exclusively",
+        "NABARD"
+      ],
+      "answer": 0,
+      "note": "The August monthly bulletin covers unemployment, labour-force participation and worker-population ratios.\nSource: September 2026 Smart Points, PDF p. 47, News 145.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 47,
+        "newsItem": 145
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which Nobel laureate was appointed World Bank Chief Economist and SVP for Development Economics?",
+      "options": [
+        "Abhijit Banerjee",
+        "Michael Kremer",
+        "Esther Duflo",
+        "Amartya Sen"
+      ],
+      "answer": 1,
+      "note": "The appointment takes effect October 1, 2026, succeeding Indermit Gill. Kremer shared the 2019 economics Nobel with Banerjee and Duflo.\nSource: September 2026 Smart Points, PDF p. 47, News 147.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 47,
+        "newsItem": 147
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Novio partnered with which bank for a co-branded RuPay card for UPI-active and first-time credit users?",
+      "options": [
+        "Indian Bank",
+        "Union Bank of India",
+        "Indian Overseas Bank",
+        "Bank of Maharashtra"
+      ],
+      "answer": 2,
+      "note": "The launch offers RuPay Select and Platinum variants, including FD-backed options.\nSource: September 2026 Smart Points, PDF p. 47, News 148.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 47,
+        "newsItem": 148
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Who became MD and CEO of Standard Chartered Capital Ltd?",
+      "options": [
+        "Ashok Vaswani",
+        "V. Vaidyanathan",
+        "Rajiv Anand",
+        "Abhinav Trivedi"
+      ],
+      "answer": 3,
+      "note": "The company is a non-deposit-taking, systemically important NBFC wholly owned by Standard Chartered Bank.\nSource: September 2026 Smart Points, PDF p. 48, News 150.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 48,
+        "newsItem": 150
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Pradhan Mantri Jan Dhan Yojana was launched on which date?",
+      "options": [
+        "August 28, 2014",
+        "September 25, 2014",
+        "July 1, 2015",
+        "January 1, 2016"
+      ],
+      "answer": 0,
+      "note": "PMJDY completed 12 years in 2026. It combines basic accounts with RuPay cards and an eligible overdraft facility.\nSource: September 2026 Smart Points, PDF p. 48, News 151.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 48,
+        "newsItem": 151
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which component contributed most to inflows under RBI's special USD-INR swap facility by August 31, 2026?",
+      "options": [
+        "External commercial borrowings",
+        "FCNR(B) deposits",
+        "Overseas foreign-currency bonds",
+        "Foreign direct investment"
+      ],
+      "answer": 1,
+      "note": "The source attributes about 93% of the facility's inflows to FCNR(B) deposits.\nSource: September 2026 Smart Points, PDF p. 49, News 152.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 49,
+        "newsItem": 152
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which agency upgraded India's long-term foreign- and local-currency issuer ratings to A-?",
+      "options": [
+        "S&P Global Ratings",
+        "Moody's Ratings",
+        "Japan Credit Rating Agency",
+        "Fitch Ratings"
+      ],
+      "answer": 2,
+      "note": "JCR raised the rating from BBB+ with a stable outlook and lifted the country ceiling to A.\nSource: September 2026 Smart Points, PDF p. 49, News 153.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 49,
+        "newsItem": 153
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Under revised NPS PoP charges, accounts with no contribution for four consecutive quarters receive which treatment?",
+      "options": [
+        "Automatic closure and forfeiture",
+        "Mandatory conversion to an annuity",
+        "Doubling of annual charges",
+        "Exemption from the annual PoP charge"
+      ],
+      "answer": 3,
+      "note": "PoP means Point of Presence; the revised structure takes effect October 1, 2026.\nSource: September 2026 Smart Points, PDF p. 49, News 155.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 49,
+        "newsItem": 155
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "How do NDB's Maharajah INR Bonds differ from Masala Bonds?",
+      "options": [
+        "Maharajah bonds are onshore; Masala bonds are issued outside India",
+        "Maharajah bonds are dollar-denominated; Masala bonds are gold-backed",
+        "Both can only be issued outside India",
+        "Both are exclusively equity instruments"
+      ],
+      "answer": 0,
+      "note": "Both are rupee-denominated. IRDAI permitted Indian insurers to invest in NDB's proposed onshore bonds.\nSource: September 2026 Smart Points, PDF p. 50, News 156.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 50,
+        "newsItem": 156
+      }
+    },
+    {
+      "type": "statements",
+      "q": "Consider the following about rupee-denominated bonds:\nI. Masala Bonds are issued within India.\nII. NDB's proposed Maharajah INR Bonds are onshore instruments.",
+      "options": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "answer": 1,
+      "note": "Only II. Masala Bonds are issued outside India; Maharajah INR Bonds are proposed onshore rupee bonds.\nSource: September 2026 Smart Points, PDF p. 50, News 156.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 50,
+        "newsItem": 156
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "SEBI exempted which foreign portfolio investors from furnishing investor-group details?",
+      "options": [
+        "Those investing only in unlisted startups",
+        "Those investing exclusively in government securities",
+        "All equity-only investors",
+        "Only commodity-futures investors"
+      ],
+      "answer": 1,
+      "note": "The exemption now applies irrespective of the route, extending beyond the earlier Fully Accessible Route limitation.\nSource: September 2026 Smart Points, PDF p. 50, News 157.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 50,
+        "newsItem": 157
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which company became the first private-sector issuer of tokenised corporate bonds on NSE?",
+      "options": [
+        "Reliance Industries",
+        "Tata Consultancy Services",
+        "Larsen & Toubro",
+        "Infosys"
+      ],
+      "answer": 2,
+      "note": "REC's public-sector issuance preceded L&T's September 9 issuance under SEBI's sandbox framework.\nSource: September 2026 Smart Points, PDF p. 50, News 158.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 50,
+        "newsItem": 158
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which body became RBI's second recognised self-regulatory organisation for fintech after FACE?",
+      "options": [
+        "Payments Council of India",
+        "Indian Banks' Association",
+        "Association of Mutual Funds in India",
+        "Unified Fintech Forum"
+      ],
+      "answer": 3,
+      "note": "UFF is the rebranded Digital Lenders Association of India. Recognition follows RBI's SRO-FT framework.\nSource: September 2026 Smart Points, PDF p. 51, News 161.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 51,
+        "newsItem": 161
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "SBI's digital conversion from savings to salary accounts was launched with which partner?",
+      "options": [
+        "ScoreMe Solutions",
+        "Scapia",
+        "Featurespace",
+        "Resona Bank"
+      ],
+      "answer": 0,
+      "note": "Eligible existing savings-account holders can switch to salary accounts without a branch visit.\nSource: September 2026 Smart Points, PDF p. 51, News 162.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 51,
+        "newsItem": 162
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "RBI's 2026 minimum-capital directions for market risk align with which framework?",
+      "options": [
+        "Basel I only",
+        "Revised Basel III",
+        "Solvency II",
+        "IFRS 17"
+      ],
+      "answer": 1,
+      "note": "The final Commercial Banks - Minimum Capital Requirements for Market Risk Directions take effect April 1, 2027.\nSource: September 2026 Smart Points, PDF p. 52, News 163.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 52,
+        "newsItem": 163
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "In the UPI merchant-fee context, MDR stands for what?",
+      "options": [
+        "Monthly Deposit Ratio",
+        "Market Debt Reserve",
+        "Merchant Discount Rate",
+        "Minimum Digital Return"
+      ],
+      "answer": 2,
+      "note": "The PDF distinguishes merchant categories, caps and GST on the service charge; MDR is a charge for payment acceptance.\nSource: September 2026 Smart Points, PDF p. 52, News 165.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 52,
+        "newsItem": 165
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "ISG launched Visa Payment Passkey at which event?",
+      "options": [
+        "World Economic Forum Annual Meeting",
+        "India Mobile Congress",
+        "Raisina Dialogue",
+        "Global Fintech Fest 2026"
+      ],
+      "answer": 3,
+      "note": "The launch at Mumbai's GFF involved several Indian public sector banks as participating issuers.\nSource: September 2026 Smart Points, PDF p. 53, News 167.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 53,
+        "newsItem": 167
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "ICICI Prudential Life Insurance was renamed to what, effective September 22, 2026 in the source?",
+      "options": [
+        "ICICI Life Insurance Limited",
+        "ICICI Lombard Life Limited",
+        "Prudential Bharat Life Limited",
+        "ICICI Assurance Corporation"
+      ],
+      "answer": 0,
+      "note": "The Registrar of Companies issued a fresh incorporation certificate following shareholder approval.\nSource: September 2026 Smart Points, PDF p. 53, News 168.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 53,
+        "newsItem": 168
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "TBX TrustHub's B2B bill-payment capability uses which platform?",
+      "options": [
+        "SWIFT gpi",
+        "Bharat Connect for Business",
+        "NACH Payroll",
+        "TReDS exclusively"
+      ],
+      "answer": 1,
+      "note": "TrustHub acts as a Participating Agent Institution; IDFC FIRST Bank serves as sponsor operating unit.\nSource: September 2026 Smart Points, PDF p. 53, News 169.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 53,
+        "newsItem": 169
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Which company planned India's first Blue Bond for maritime and coastal infrastructure?",
+      "options": [
+        "Power Finance Corporation",
+        "NABARD",
+        "Sagarmala Finance Corporation",
+        "Small Industries Development Bank of India"
+      ],
+      "answer": 2,
+      "note": "A blue bond finances ocean-, sea-, coast- and river-linked projects. SMFCL is a maritime-focused NBFC.\nSource: September 2026 Smart Points, PDF p. 54, News 170.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 54,
+        "newsItem": 170
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NPS Swasthya combines an investment account with which additional component?",
+      "options": [
+        "A guaranteed housing loan",
+        "A crop-insurance policy",
+        "A foreign-currency deposit",
+        "A mandatory super top-up health-insurance policy"
+      ],
+      "answer": 3,
+      "note": "PFRDA's guidelines provide a family floater for the subscriber, spouse and up to two dependent children, excluding parents.\nSource: September 2026 Smart Points, PDF p. 54, News 171.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 54,
+        "newsItem": 171
+      }
+    },
+    {
+      "type": "statements",
+      "q": "Consider the following about NPS Swasthya:\nI. It combines an investment account with a separate mandatory super top-up health-insurance policy.\nII. The family floater automatically includes the subscriber's parents.",
+      "options": [
+        "Only I",
+        "Only II",
+        "Both I and II",
+        "Neither I nor II"
+      ],
+      "answer": 0,
+      "note": "Only I. The listed family floater covers the subscriber, spouse and up to two dependent children, excluding parents.\nSource: September 2026 Smart Points, PDF p. 54, News 171.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 54,
+        "newsItem": 171
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "SEBI's PRIM route allows portfolio managers to invest in what?",
+      "options": [
+        "Direct plans of mutual funds",
+        "Only physical gold",
+        "Only agricultural land",
+        "Only insurance policies"
+      ],
+      "answer": 0,
+      "note": "PRIM means Portfolio Managers Route for Investing in Mutual Fund Units and accompanies the 2026 Portfolio Managers Regulations.\nSource: September 2026 Smart Points, PDF p. 54, News 172.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 54,
+        "newsItem": 172
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "ICAI's SSA 5000 concerns assurance of which disclosures?",
+      "options": [
+        "Only bank cash balances",
+        "Sustainability disclosures",
+        "Only customs valuation",
+        "Only personal income-tax returns"
+      ],
+      "answer": 1,
+      "note": "It aligns with IAASB's ISSA 5000 and is relevant to BRSR disclosures, with applicability from financial years beginning April 1, 2027.\nSource: September 2026 Smart Points, PDF p. 55, News 173.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 55,
+        "newsItem": 173
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Advantage SBI Card, digitally available through YONO, is secured against what?",
+      "options": [
+        "A gold ETF",
+        "A life-insurance policy",
+        "A fixed deposit",
+        "A demat equity portfolio"
+      ],
+      "answer": 2,
+      "note": "The FD-backed secured card journey covers Elite, Prime, SimplyCLICK and SimplySAVE variants.\nSource: September 2026 Smart Points, PDF p. 55, News 174.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 55,
+        "newsItem": 174
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "Under RBI's revised AIFI valuation norms, unquoted InvIT and REIT units normally use which valuation?",
+      "options": [
+        "Face value of ₹100 in every case",
+        "The last IPO price permanently",
+        "The lender's choice without disclosure",
+        "NAV disclosed by the trust"
+      ],
+      "answer": 3,
+      "note": "If prescribed NAV disclosure is absent, or units are infrequently traded, the source specifies a fallback value of ₹1.\nSource: September 2026 Smart Points, PDF p. 55, News 175.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 55,
+        "newsItem": 175
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "IITM Unicorn Frontier Fund I is backed by which institution and its research park?",
+      "options": [
+        "IIT Madras",
+        "IIT Bombay",
+        "IIT Delhi",
+        "IIT Kanpur"
+      ],
+      "answer": 0,
+      "note": "Unicorn India Ventures manages the deep-tech fund. Its first close was announced at Sangam 2026 in Bengaluru.\nSource: September 2026 Smart Points, PDF p. 56, News 176.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 56,
+        "newsItem": 176
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "ADB's loan to upgrade schools into Karnataka Public Schools was signed with which state?",
+      "options": [
+        "Kerala",
+        "Karnataka",
+        "Tamil Nadu",
+        "Telangana"
+      ],
+      "answer": 1,
+      "note": "The programme upgrades 500 government schools with state and ADB financing.\nSource: September 2026 Smart Points, PDF p. 116, News 393.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 116,
+        "newsItem": 393
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "ADB's first Indian Transaction Advisory Services mandate concerns renewable-energy PPPs in which state?",
+      "options": [
+        "Gujarat",
+        "Rajasthan",
+        "Madhya Pradesh",
+        "Maharashtra"
+      ],
+      "answer": 2,
+      "note": "Projects include solar generation and battery storage at Shajapur; ADB acts as transaction adviser.\nSource: September 2026 Smart Points, PDF p. 116, News 394.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 116,
+        "newsItem": 394
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "IFC's long-term MSME credit support is channelled through which Indian institution?",
+      "options": [
+        "NABARD",
+        "NHB",
+        "EXIM Bank",
+        "SIDBI"
+      ],
+      "answer": 3,
+      "note": "The facility uses SIDBI and its lender syndicate and is swapped into rupees through RBI's special window.\nSource: September 2026 Smart Points, PDF p. 116, News 395.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 116,
+        "newsItem": 395
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NABARD partnered with IMD to integrate agrometeorological data into which platform?",
+      "options": [
+        "Data in Climate Resilient Agriculture",
+        "National Tribunals Data Grid",
+        "UPI Global",
+        "Pehchaan"
+      ],
+      "answer": 0,
+      "note": "The open-source DiCRA platform is supported by NABARD and UNDP.\nSource: September 2026 Smart Points, PDF p. 124, News 422.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 124,
+        "newsItem": 422
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "SEBI's updated MoU on regulated central counterparties is with which European authority?",
+      "options": [
+        "European Central Bank",
+        "ESMA",
+        "European Banking Authority",
+        "European Court of Auditors"
+      ],
+      "answer": 1,
+      "note": "The European Securities and Markets Authority agreement covers cooperation and information exchange and replaces the 2017 MoU.\nSource: September 2026 Smart Points, PDF p. 125, News 427.",
+      "mustKnow": true,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 125,
+        "newsItem": 427
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "NCDEX partnered with the Cotton Association of India to deepen participation in what?",
+      "options": [
+        "Rice crop insurance",
+        "Physical gold trading",
+        "Cotton derivatives",
+        "Sovereign bond auctions"
+      ],
+      "answer": 2,
+      "note": "The five-year partnership aims to improve price discovery and risk management in the cotton sector.\nSource: September 2026 Smart Points, PDF p. 126, News 432.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 126,
+        "newsItem": 432
+      }
+    },
+    {
+      "type": "mcq",
+      "q": "TCS's modernisation partnership with DGCX concerns which market?",
+      "options": [
+        "Retail banking in London",
+        "Insurance broking in Singapore",
+        "Pension administration in Tokyo",
+        "Derivatives trading in Dubai"
+      ],
+      "answer": 3,
+      "note": "The project combines TCS BaNCS, Quartz and Quartz Gateway for trading, surveillance and connectivity.\nSource: September 2026 Smart Points, PDF p. 130, News 446.",
+      "mustKnow": false,
+      "source": {
+        "document": "Smart Points PDF (September 2026)",
+        "page": 130,
+        "newsItem": 446
+      }
+    }
+  ]
 };

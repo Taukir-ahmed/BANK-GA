@@ -15,12 +15,19 @@ npm run dev
 grouped by their `month` field — no index file to edit, no imports to add. If
 the dev server is running it hot-reloads; your saved scores are untouched.
 
-**Building a month from weekly PDFs** (September onwards): create the four
-sheets once, then append each new week's questions at the *end* of every
-sheet's `questions` array under a `// ── Week N ──` marker. Never insert in the
-middle — question numbers drive `mustKnow.js` and the static sheets' news
-references. When the monthly Smart Points PDF arrives, add whatever the weeklies
-missed the same way.
+**Building a month from weekly PDFs:** create the four sheets once, then append
+each new week's questions at the end of every sheet's `questions` array. Keep
+question numbers stable while the weekly set is in use.
+
+**Replacing weeklies with a monthly PDF:** archive the weekly sheets under
+`docs/`, rebuild the month from the monthly source, and assign new versioned
+`id` values so weekly scores cannot appear on replacement questions. Use
+numeric `baseId` and `order` fields to preserve sheet labels and ordering.
+Curate `mustKnow` inline instead of reusing weekly question-number references.
+
+September 2026 now uses the monthly Smart Points source: **368 questions across
+four sheets**, replacing the September 1–7 sets. Answer notes cite PDF pages and
+news-item numbers. See [September source and coverage](docs/september-2026-source.md).
 
 Sheet file shape:
 
