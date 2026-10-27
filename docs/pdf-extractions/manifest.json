@@ -1,0 +1,37 @@
+[
+  {
+    "month": "August 2026",
+    "file": "pdfs/Smar697d8050bf3a00cc48f2992et Points PDF (August 2026).pdf",
+    "pages": 119,
+    "sha256": "4dad4454dec8ebda9c02c53ff07fca9e4c9a6a138018253c56df27b48c2f962f",
+    "extraction": "docs/pdf-extractions/august-2026.md"
+  },
+  {
+    "month": "July 2026",
+    "file": "pdfs/Smar697d8050bf3a00cc48f2992et Points PDF (July 2026).pdf",
+    "pages": 123,
+    "sha256": "4b8dca9562ea953670fa474414d42fa0d3c1e130cbcc32e255324ed6d2186fec",
+    "extraction": "docs/pdf-extractions/july-2026.md"
+  },
+  {
+    "month": "June 2026",
+    "file": "pdfs/Smar697d8050bf3a00cc48f2992et Points PDF (June 2026).pdf",
+    "pages": 124,
+    "sha256": "dcd92e24feb20426fe58519561d2d72b85854309ddf7b8467b57f2096864fb1d",
+    "extraction": "docs/pdf-extractions/june-2026.md"
+  },
+  {
+    "month": "May 2026",
+    "file": "pdfs/Smar697d8050bf3a00cc48f2992et Points PDF (May 2026).pdf",
+    "pages": 103,
+    "sha256": "a74f3a05aa9c3ab8d0477fcb0fd4b6f864d74f5315dd830e64f3d9b89993f047",
+    "extraction": "docs/pdf-extractions/may-2026.md"
+  },
+  {
+    "month": "September 2026",
+    "file": "pdfs/Smar697d8050bf3a00cc48f2992et Points PDF (September 2026) (1).pdf",
+    "pages": 144,
+    "sha256": "9af032e596e403075f8ec6d81fd6b7640901cac0a2da8035bb1f7b4e654ca997",
+    "extraction": "docs/pdf-extractions/september-2026.md"
+  }
+]

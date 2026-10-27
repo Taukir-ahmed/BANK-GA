@@ -1,9 +1,10 @@
 import { useState, useEffect, useMemo } from "react";
 import { sheets, groupByMonth, buildMix, buildStarredMix } from "./data";
+import MockExam from "./MockExam";
+import { mockSets } from "./data/mocks";
 
-const LETTERS = ["A", "B", "C", "D"];
+const LETTERS = ["A", "B", "C", "D", "E"];
 const STORE_KEY = "ca-drill-results";
-const EXAM = new Date("2026-10-04T00:00:00");
 
 function loadResults() {
   try {
@@ -24,11 +25,8 @@ function fmtTime(s) {
   return `${String(m).padStart(2, "0")}:${String(s % 60).padStart(2, "0")}`;
 }
 
-function daysLeft() {
-  return Math.max(0, Math.ceil((EXAM - new Date()) / 86400000));
-}
-
 function sheetEyebrow(sheet) {
+  if (sheet.isMock) return "Bank mains · General / Financial Awareness";
   if (sheet.isMonthlyStatic) return `Monthly static · ${sheet.month}`;
   if (sheet.id === "mix") return "Cross-month";
   if (sheet.id === "starred") return "Every month";
@@ -58,15 +56,26 @@ export default function App() {
       <header className="masthead">
         <h1 className="masthead__title">Current Affairs Drill</h1>
         <div className="masthead__meta">
-          IBPS PO Mains · {daysLeft()} days left
+          SBI Clerk · IBPS Clerk · RRB PO Mains
         </div>
       </header>
 
       {view.name === "home" && (
         <Home
           results={results}
-          onPick={(sheet) => setView({ name: "mode", sheet })}
+          onPick={(sheet) => setView({ name: sheet.isMock ? "mock" : "mode", sheet })}
           onReview={(sheet) => setView({ name: "review", sheet })}
+        />
+      )}
+
+      {view.name === "mock" && (
+        <MockExam key={view.sheet.id} sheet={view.sheet}
+          onBack={() => setView({name: "home"})}
+          onFinish={(payload) => {
+            saveResult(view.sheet.id, payload);
+            setResults(loadResults());
+            setView({name: "review", sheet: view.sheet});
+          }}
         />
       )}
 
@@ -112,7 +121,7 @@ export default function App() {
           onBack={() => setView({ name: "home" })}
           onRetake={() =>
             setView({
-              name: "mode",
+              name: view.sheet.isMock ? "mock" : "mode",
               sheet: view.sourceSheet ?? view.sheet,
             })
           }
@@ -135,6 +144,22 @@ function Home({ results, onPick, onReview }) {
 
   return (
     <>
+      <section className="mock-section" aria-label="Bank mains mock tests">
+        <div className="month__band"><h2 className="month__name">Bank mains mock tests</h2><span className="month__stat">{mockSets.length} sets · 50 questions each</span></div>
+        <p className="sheet-card__desc">May–September 2026 · Repeated topics, different angles. Practise the finding, publisher, institution and linked facts.</p>
+        <div className="sheet-grid">
+          {mockSets.map(mock => <div className="sheet-card mock-feature" key={mock.id}>
+            <div className="sheet-card__no">General / Financial Awareness</div>
+            <h3 className="sheet-card__name">{mock.subtitle}</h3>
+            <p className="sheet-card__desc">{mock.questions.length} questions · {mock.timeLimitSeconds / 60} minutes · +1 / −0.25<br />Five options · Answers after submission</p>
+            <div className="btn-row">
+              <button className="btn" onClick={() => onPick(mock)}>{results[mock.id] ? 'Retake' : 'Start'} {mock.subtitle}</button>
+              {results[mock.id] && <button className="btn btn--ghost" onClick={() => onReview(mock)}>Review {mock.subtitle}</button>}
+            </div>
+            <div className="sheet-card__stat">{results[mock.id] ? <>Last score: <b>{results[mock.id].netScore}</b>/{mock.questions.length}</> : 'Not attempted yet'}</div>
+          </div>)}
+        </div>
+      </section>
       <p className="lede">
         {totalQ} questions across {sheets.length} sheets. The same high-value
         facts return in <em>different wording</em> — forward, reversed, and as
@@ -572,7 +597,8 @@ function Review({ sheet, result, onBack, onRetake }) {
     );
   }
 
-  const pct = Math.round((result.score / result.total) * 100);
+  const displayScore = result.netScore ?? result.score;
+  const pct = Math.round((displayScore / result.total) * 100);
 
   return (
     <>
@@ -581,12 +607,13 @@ function Review({ sheet, result, onBack, onRetake }) {
           {sheetEyebrow(sheet)} · {sheet.subtitle}
         </div>
         <div className="score__figure">
-          {result.score}
+          {displayScore}
           <span>/{result.total}</span>
         </div>
         <div className="score__line">
           {pct}% · {fmtTime(result.time)} · {result.mode} mode
         </div>
+        {sheet.isMock && <p className="mock-result-detail">{result.correct} correct · {result.wrong} wrong · {result.unattempted} unattempted<br />Penalty: {(result.wrong * sheet.negativeMark).toFixed(2)} marks{result.reason === 'time-expired' ? ' · Time expired — automatically submitted' : ''}</p>}
         <div className="btn-row" style={{ marginTop: 20 }}>
           <button className="btn" onClick={onRetake}>
             Take again
@@ -599,7 +626,7 @@ function Review({ sheet, result, onBack, onRetake }) {
 
       <div className="filter-row">
         {[
-          ["wrong", "Got wrong"],
+          ["wrong", sheet.isMock ? "Wrong / blank" : "Got wrong"],
           ["right", "Got right"],
           ["all", "Everything"],
         ].map(([k, label]) => (

@@ -1,6 +1,39 @@
 # CA Drill — Current Affairs question bank
 
-Fact-recall drilling for IBPS PO Mains GA.
+Fact-recall drilling and General/Financial Awareness mocks for bank mains exams.
+
+## Bank mains mocks
+
+The home page includes **Sets 1-4**, fixed 50-question mocks based on the five PDFs
+in `pdfs/` (May–September 2026). It uses five choices, 35 minutes, +1/−0.25 marking,
+change/clear responses, review flags and automatic submission when time expires.
+Answers, explanations and source page references appear after submission.
+Mock results use separate versioned IDs and mocks stay outside random monthly drills.
+
+This uses the SBI Clerk GA section length. It provides shared topic preparation
+for IBPS Clerk and RRB PO; their section layouts differ. These are original
+practice questions grounded in the uploaded PDFs, not official exam questions.
+
+The complete extracted text, PDF hashes and news index are preserved in
+`docs/pdf-extractions/`. Each mock has a ledger at `docs/mock-set-N-source.md`.
+Keep these records for source checks and planned revision in future sets.
+Authored questions live in `scripts/build-mock-set1.mjs`; regenerate with
+`node scripts/build-mock-set1.mjs`. Validate with `node --test scripts/test-mock.mjs`.
+
+Sets 2-4 contain **150 questions** from 75 source families. Each family returns
+in a different set with another recall target: report publisher versus finding,
+scheme benefit versus institution, exercise partner versus venue, and related
+static facts. Repetition and rewording are intentional, as requested. Each new set
+also contains statement or matching formats. Explanations connect the tested fact
+to its surrounding details. `docs/mock-revision-links.md` records these links.
+
+Each of Sets 2-4 also has eight questions that open with a familiar fact and ask
+for a different supporting detail after the comma. The actual target is kept
+unambiguous; review notes explain the reading trap after submission. The same
+approach should be included in future sets alongside other question formats.
+
+Edit `scripts/mock-families.mjs` to author Sets 2-4, then regenerate them with
+`node scripts/build-mocks-2-4.mjs`. Saved scores remain separate for all four sets.
 
 ## Run it
 
