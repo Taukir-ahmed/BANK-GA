@@ -58,9 +58,9 @@ question numbers stable while the weekly set is in use.
 numeric `baseId` and `order` fields to preserve sheet labels and ordering.
 Curate `mustKnow` inline instead of reusing weekly question-number references.
 
-September 2026 now uses the monthly Smart Points source: **368 questions across
-four sheets**, replacing the September 1–7 sets. Answer notes cite PDF pages and
-news-item numbers. See [September source and coverage](docs/september-2026-source.md).
+September 2026 now uses the monthly Smart Points source: **175 questions across
+four sheets** (44, 44, 44 and 43), matching the size of the other monthly sets.
+Answer notes cite PDF pages and news-item numbers. See [September source and coverage](docs/september-2026-source.md).
 
 Sheet file shape:
 
